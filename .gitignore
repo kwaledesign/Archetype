@@ -1,0 +1,5 @@
+.DS_Store
+docs/artifacts
+docs/logs
+docs/output
+docs/output-long

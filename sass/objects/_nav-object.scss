@@ -1,0 +1,30 @@
+/**
+ * Nav Object
+ * 
+ */
+
+// By default, this class displays <ol> and <ul> lists horizontally
+
+// @TODO:  %nav-object {...}  %vertical-nav-object {@extend nav-object; ...}
+
+%nav-object {
+  list-style: none;
+  margin-left: 0;                /////////vertical rythm????????
+  padding-left: 0;  // disable default list padding
+  @extend cf;
+    & > li { 
+      float: left; 
+    }
+    & > li > a { 
+      display: inline-block; 
+    }  
+          
+}
+
+/*h5bp*/
+nav ul,
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

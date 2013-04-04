@@ -1,0 +1,10 @@
+/**
+ * Close Object
+ * 
+ */
+
+%close-object() {
+  position: absolute; 
+  right: $close-position-right; 
+  top: $close-position-top;  
+}

@@ -1,0 +1,32 @@
+/**
+ * Code
+ */
+$copy--code-text:                     $monospace;
+
+$copy--code-border-color:             white(20);
+$copy--code-border:                   1px solid $copy--code-border-color;  // var the border color
+$copy--code-padding:                  0 3px;
+$copy--code-bg-color:                 $white(10);
+$copy--code-text-color:               lighten(red, 10%);
+
+/**
+ * Pre
+ */
+$copy--pre-margin:                    0 auto rhythm(1);
+$copy--pre-text:                      $copy--code-text;
+
+.#{$main-type-scope} {
+  code {
+    display: inline-block;
+    background: $copy--code-bg-color;
+    border: $copy--code-border;
+    color: $copy--code-text-color;
+    padding: $copy--code-padding;
+  }
+  pre {
+    margin: $copy--pre-margin;
+  }
+  pre, code, tt {
+    font-family: $copy--pre-text;
+  }
+}

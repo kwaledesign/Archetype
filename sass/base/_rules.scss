@@ -1,0 +1,14 @@
+/**
+ * Rules
+ * 
+ */  
+
+.#{$main-type-scope} {
+  hr { 
+    display: block; 
+    border: 0;
+    @include leading-border($copy--hr-width, .5);
+    border-color: $copy--hr-color;
+  }
+}
+

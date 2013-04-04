@@ -1,0 +1,77 @@
+/**
+ * Labels
+ * 
+ */
+
+/**
+ * @todo:
+ * 1. convert padding units to em's
+ * 2. label txt shadow??
+ * 3. variable names
+ * 4. remove mixin???
+ */
+
+/**
+ * Label Variables
+ * 
+ * 1. optionally rename label skin styles
+ */
+
+/* label Structure Namespace: */
+$small-label:                         inline;     /* 1 */
+$large-label:                         block;      /* 1 */
+
+/* label Skin Namespace: */
+$default-label:                       info;       /* 1 */
+$positive-label:                      success;    /* 1 */
+$negative-label:                      error;      /* 1 */
+$warning-label:                       warning;    /* 1 */
+
+/**
+ * Label Structure
+ */
+.label--#{$small-label} {
+  line-height: $base-line-height;  
+  display: inline;
+  border-radius: 0px;
+  padding: 1px 4px 2px;
+  font-size: $base-font-size;
+  font-weight: bold; 
+}
+
+.label--#{$large-label} {
+  line-height: $base-line-height;  
+  display: inline;
+  border-radius: 0px;
+  padding: 1px 4px 2px;
+  font-size: $base-font-size; 
+  font-weight: bold; 
+}
+
+/**
+ * Label Skin 
+ */
+.label--#{$default-label} {
+  background-color: #929498;
+  color: $white;
+  border: none;
+}
+
+.label--#{$positive-label} {
+  background-color: #7fae00;
+  color: $white;
+  border: none;
+}
+
+.label--#{$negative-label} {
+  background-color: #E91C21;
+  color: $white;
+  border: none;
+}
+
+.label--#{$warning-label} {
+  background-color: red;
+  color: $white;
+  border: none;
+}
+

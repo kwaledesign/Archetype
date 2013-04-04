@@ -1,0 +1,269 @@
+/**
+ * Tabs
+ * 
+ */
+
+/**
+ * @todo:
+ * 1. lots of cleanup!!
+ */
+
+/**
+ * Tab Variables
+ *
+ * 1. Optionally rename alert skin styles
+ * 2. The breakpoint(s) at which this component 'breaks' - unrelated to any other component bp
+ *    specific only to this particular component. These types of bp's are also unrelated to higher
+ *    level layout bp's - they are tightly coupled to the component and are, therefore, best kept
+ *    together within the same stylesheet.
+ */
+
+/* Tab Breakpoints */
+$tab--breakpoint:                     20em;       /* 2 */
+
+/* Tab Class Namespace: */
+$primary:                             primary;    /* 1 */
+$secondary:                           secondary;  /* 1 */
+
+/* Tab Skin */
+$tab--border:                         none;
+$tab--bg:                             none;
+$tab--border-radius:                  4px;
+$tab--alignment:                      left;       /* 3 */  //for top and bottom, determine l or r align - will float that dir.
+/* Hover State */
+$tab--hover-border:                   none;
+$tab--hover-bg:                       none;
+/* Active State */
+$tab--active-text-color:              white(30%);
+$tab--active-bg-color:                $white;
+$tab--active-border:                  1px solid white(20%);
+
+/* Vertical Tabs */
+$tab-vertical--border-radius:         0;
+$tab-vertical--border:                1px solid white(20%);
+$tab-vertical--bg:                    white(5%);
+// Hover State
+$tab-vertical--hover-border:          $tab-vertical--border;
+$tab-vertical--hover-bg:              white(10%);
+// Active State
+$tab-vertical--active-text-color:     $white;
+$tab-vertical--active-bg-color:       white(20%);
+$tab-vertical--active-border:         1px solid white(20%);
+
+
+
+
+/**
+ * Tab Structure
+ */
+@mixin tab-structure($style: top) {
+  @if $style == "top" {
+    & > li {
+      margin: 0 0 -1px 0;  // overlay the bottom border for horizontal tabs
+      float: left;
+    }
+    & > li > a {
+      padding: 8px 12px 8px 12px;
+      margin-right: 2px;
+      line-height: $base-line-height;
+      min-width: 80px;
+    }
+  }
+  @if $style == "vertical" {
+    & > li {
+      float: none;
+    }
+    & > li > a {
+      padding: 8px 12px 8px 12px;
+      //margin-right: 2px;
+      line-height: $base-line-height;
+      width: 100%;
+      display: block;
+    }
+  }
+  @if $style == "bottom" {
+    & > li {
+      margin: -1px 0 0 0;  // overlay the top border for bottom tabs
+      float: $alignment;
+    }
+    & > li > a {
+      padding: 8px 12px 8px 12px;
+      margin-right: 2px;
+      line-height: $base-line-height;
+      min-width: 80px;
+    }
+  }
+  @if $style == "side-left" {
+    float: left;
+    margin-right: ms(1);
+    & > li {
+      margin: 0 -1px 0 0;  // overlay the right border for side-left tabs
+      float: none;
+    }
+    & > li > a {
+      padding: 8px 12px 8px 12px;
+      margin-bottom: 3px;
+      line-height: $base-line-height;
+      min-width: 80px;
+    }
+  }
+  @if $style == "side-right" {
+    float: right;
+    margin-left: ms(1);
+    & > li {
+      margin: 0 0 0 -1px;  // overlay the right border for side-right tabs
+      float: none;
+    }
+    & > li > a {
+      padding: 8px 12px 8px 12px;
+      margin-bottom: 3px;
+      line-height: $base-line-height;
+      min-width: 80px;
+    }
+  }
+}
+
+/**
+ * Tab Skin Mixin 
+ */
+
+@mixin tab-skin($tab-skin) {
+  @if $tab-skin == "top" {
+    // horizontal tab line
+    border-bottom: $tab--active-border; 
+    & > li > a {
+      //  tab styles
+      border: $tab--border;
+      background-color: $tab-top--bg;
+      border-radius: $tab--border-radius $tab-border-radius 0 0;
+      //  tab hover styles
+      &:hover {
+        border-color: $tab--hover-border;
+        background-color: $tab--hover-bg;
+      }
+    }
+    // active tab styles
+    & > .active > a,
+    & > .active > a:hover {
+      color: $tab--active-text-color;
+      background-color: $tab--active-bg-color;
+      border: $tab--active-border;
+      border-bottom-color: transparent;  // remove bottom border of active tab
+      cursor: default;
+    }
+  }
+  @if $tab-skin == "vertical" {
+    & > li > a {
+      //  vertical tab styles
+      border: $tab-vertical--border;
+      border-bottom: none;
+      width: 100%;
+      background-color: $tab-vertical--bg;
+      //  tab hover styles
+      &:hover {
+        border-color: $tab-vertical--hover-border;
+        background-color: $tab-vertical--hover-bg;
+      }
+    }
+    & > li:first-child > a {
+      @include border-top-radius($tab-vertical--border-radius);
+    }
+    & > li:last-child > a {
+      @include border-bottom-radius($tab-vertical--border-radius);
+      border-bottom: $tab-vertical--border;
+    }
+    & > .active > a,
+    & > .active > a:hover {
+      color: $tab-vertical--active-text-color;
+      background-color: $tab-vertical--active-bg-color;
+      border: $tab-vertical--active-border;
+      cursor: default;
+    }
+  }
+  @if $tab-skin == "bottom" {
+    // horizontal tab line
+    border-top: $tab--active-border;
+    & > li > a {
+      border: $tab--border;
+      background-color: $tab--bg;
+      border-radius: 0 0 $tab--border-radius $tab--border-radius;
+      &:hover {
+        border-color: $tab--hover-border;
+        background-color: $tab--hover-bg;
+      }
+    }
+    & > .active > a,
+    & > .active > a:hover {
+      color: $tab--active-text-color;
+      background-color: $tab--active-bg-color;
+      border: $tab--active-border;
+      border-top-color: transparent;  // remove top border of active tab
+      cursor: default;
+    } 
+  }
+  @if $tab-skin == "side-left" {
+    // seperator line between tab and tab-content
+    border-right: $tab--active-border;
+    & > li > a {
+      border: $tab--border;
+      background-color: $tab--bg;
+      border-radius: $tab--border-radius 0 0 $tab--border-radius;
+      &:hover {
+        border-color: $tab--hover-border;
+        background-color: $tab--hover-bg;
+      }
+    }
+    & .active > a,
+    & .active > a:hover {
+      color: $tab--active-text-color;
+      background-color: $tab--active-bg-color;
+      border: $tab--active-border;
+      border-right-color: transparent;  // remove right border of active tab
+      cursor: default;
+    }    
+  }
+  @if $tab-skin == "side-right" {
+    border-left: $tab--active-border;
+    & > li > a {
+      border: $tab--border;
+      background-color: $tab--bg;
+      border-radius: 0 $tab--border-radius $tab--border-radius 0;
+      &:hover {
+        border-color: $tab--hover-border;
+        background-color: $tab--hover-bg;
+      }
+    }
+    & .active > a,
+    & .active > a:hover {
+      color: $tab--active-text-color;
+      background-color: $tab--active-bg-color;
+      border: $tab--active-border;
+      border-left-color: transparent;  // remove left border of active tab
+      cursor: default;
+    }  
+  }
+}
+
+@mixin tabs($tab--type) { 
+  // Tab Container
+  .tab-container { @extend %cf; }    // Clear any floats
+  // Tab Content
+  .tab-content { overflow: auto; } // prevent content from running below tabs 
+  // Tabs
+  .tab--#{$primary}, 
+  .tab--#{$secondary} {                                                 //** mobile first tabs - less than bp vertical style
+    @include tab-structure(vertical);
+    @include tab-skin(vertical);
+  } 
+  @media (screen and min-width: $tab--breakpoint) {                   //** for screens widder than $tab-breakpoint 
+    .tab--#{$primary} {
+      @include tab-structure($tab--type);
+      @include tab-skin($tab--skin);
+    }
+    .tab--#{$secondary} {
+      @include tab-structure($tab--type);
+      @include tab-skin($tab--type);
+    }
+  }
+}
+

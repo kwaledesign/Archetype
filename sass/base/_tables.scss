@@ -1,0 +1,153 @@
+/**
+ * Table Styles
+ *
+ */
+
+/**
+ * Table Variables
+ * 
+ */
+
+/**
+ * Table Structure
+ */
+
+$table-cell--padding:  8px;
+
+
+/**
+ * Table Skin
+ */
+
+$table--border-radius: 4px;         //$global__border-radius;
+$table--border: 1px solid #333;     //$table--border;
+$table--bg-color-hover: red;
+$table--strip-color: yellow;
+
+$table--bg-color-success: green;
+$table--bg-color-error: red;
+$table--bg-color-warning: yellow;
+
+
+
+$table-border-color: $strong-color--bg;               /// these colors need adjustment....badly
+$table-border: 1px solid $table-border-color;
+$table-head-bg-color: $subtle-color--bg;
+// zebra striping (even rows)
+$table-zebra-bg-color: $muted-color--bg;
+$table-footer-bg-color: $subtle-color--bg;
+
+$table-header-text: $strong-color--txt;
+
+$table__bg-color: $muted-color--bg;
+
+
+
+
+/**
+ * Base Table Styles
+ */
+table { 
+  max-width: 100%;
+  border-spacing: 0;
+ }
+
+.table {
+  width: 100%;
+  margin-bottom: $base-line-height;
+  background-color: $table--bg-color;
+  border: 1px solid $table--border;
+  border-collapse: separate; // Done so we can round those corners!
+  border-left: 0;
+  @include border-radius($table--border-radius);
+  th,
+  td {
+    border-left: $table--border;
+    padding: $table-cell--padding;
+    line-height: $base-line-height;
+    text-align: left;
+    vertical-align: top;  
+  }
+  th {
+    font-weight: bold;
+  }
+  // Bottom align for column headings
+  thead th {
+    vertical-align: bottom;
+  }
+  // Prevent a double border
+  caption + thead tr:first-child th,
+  caption + tbody tr:first-child th,
+  caption + tbody tr:first-child td,
+  colgroup + thead tr:first-child th,
+  colgroup + tbody tr:first-child th,
+  colgroup + tbody tr:first-child td,
+  thead:first-child tr:first-child th,
+  tbody:first-child tr:first-child th,
+  tbody:first-child tr:first-child td {
+    border-top: 0;
+  }
+  // For first th or td in the first row in the first thead or tbody
+  thead:first-child tr:first-child > th:first-child,
+  tbody:first-child tr:first-child > td:first-child {
+    @include border-top-left-radius($table--border-radius);
+  }
+  thead:first-child tr:first-child > th:last-child,
+  tbody:first-child tr:first-child > td:last-child {
+    @include border-top-right-radius($table--border-radius);
+  }
+  // For first th or td in the last row in the last thead or tbody
+  thead:last-child tr:last-child > th:first-child,
+  tbody:last-child tr:last-child > td:first-child,
+  tfoot:last-child tr:last-child > td:first-child {
+    @include border-bottom-left-radius($table--border-radius);
+  }
+  thead:last-child tr:last-child > th:last-child,
+  tbody:last-child tr:last-child > td:last-child,
+  tfoot:last-child tr:last-child > td:last-child {
+    @include border-bottom-right-radius($table--border-radius);
+  }
+
+  // Clear border-radius for first and last td in the last row in the last tbody for table with tfoot
+  tfoot + tbody:last-child tr:last-child td:first-child {
+    @include border-bottom-left-radius(0);
+  }
+  tfoot + tbody:last-child tr:last-child td:last-child {
+    @include border-bottom-right-radius(0);
+  }
+
+  // Special fixes to round the left border on the first td/th
+  caption + thead tr:first-child th:first-child,
+  caption + tbody tr:first-child td:first-child,
+  colgroup + thead tr:first-child th:first-child,
+  colgroup + tbody tr:first-child td:first-child {
+    @include border-top-left-radius($table--border-radius);
+  }
+  caption + thead tr:first-child th:last-child,
+  caption + tbody tr:first-child td:last-child,
+  colgroup + thead tr:first-child th:last-child,
+  colgroup + tbody tr:first-child td:last-child {
+    @include border-top-right-radius($table--border-radius);
+  }
+}
+
+/**
+ * Table Zebra Stripes
+ */
+.table--srtriped  tbody {
+  > tr:nth-child(odd) > td,
+  > tr:nth-child(odd) > th {
+    background-color: $table--strip-color;
+  }
+}   
+
+/**
+ * Table Hover Highlight
+ */
+.table--hover tbody {
+  tr:hover td,
+  tr:hover th {
+    background-color: $table--bg-color-hover;
+  }
+}
+

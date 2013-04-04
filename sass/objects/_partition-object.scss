@@ -1,0 +1,11 @@
+/**
+ * Partition Object
+ * 
+ */
+
+.partition {
+  display: block;
+  position: relative;
+  @extend %cf;
+}
+

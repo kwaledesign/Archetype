@@ -1,0 +1,363 @@
+/**
+ * Buttons
+ * 
+ */
+
+
+/**
+ * @todo:
+ * 1. namespace button-varible names!!!!!
+ * 2. tab focus state...tab-focus mixin???
+ * 3. split round button mixin to it's own component
+ * 4. button-groups
+ */
+
+/**
+ * Button Variables
+ *
+ * 1. optionally rename button skin styles
+ */
+
+/* button Structure Namespace: */
+$small:                               small;      /* 1 */
+//? medium ?
+$large:                               large;      /* 1 */
+$touch:                               full;       /* 1 */
+/* button Skin Namespace: */
+$default:                             default;    /* 1 */
+$positive:                            primary;    /* 1 */
+$secondary:                           secondary;  /* 1 */
+$negative:                            danger;     /* 1 */
+
+/* button Skin Variables: */
+
+/**
+ * Default Button and States
+ */
+$btn__default--color1:                                #B3B3B3;
+$btn__default--color2:                                darken($btn__default--color1, 10%);
+$btn__default--text-color:                            $white;
+$btn__default--text-shadow:                           darken($btn__default--color1, 20%) 0 -1px 0;
+$btn__default--border:                                1px solid darken($btn__default--color1, 5%);
+$btn__default--box-shadow:                            lighten($btn__default--color1, 15%) 0 1px 0 inset;
+// Hover
+$btn__default--hover-color1:                          darken($btn__default--color2, 5%);
+$btn__default--hover-color2:                          $btn__default--color2; 
+$btn__default--hover-text-color:                      darken($btn__default--text-color, 10%);
+$btn__default--hover-text-shadow:                     $btn__default--text-shadow;
+$btn__default--hover-border:                          $btn__default--border;
+$btn__default--hover-box-shadow:                      none;
+// Active
+$btn__default--active-color1:                         $btn__default--color2; 
+$btn__default--active-color2:                         $btn__default--color2; 
+$btn__default--active-text-color:                     $btn__default--hover-text-color;
+$btn__default--active-text-shadow:                    none;
+$btn__default--active-border:                         $btn__default--border;
+$btn__default--active-box-shadow:                     darken($btn__default--color2, 10%) 0 1px 2px inset;
+// Disabled
+$btn__default--disabled-color1:                       $btn__default--color2; 
+$btn__default--disabled-color2:                       $btn__default--color2; 
+$btn__default--disabled-text-color:                   darken($btn__default--text-color, 10%);
+$btn__default--disabled-text-shadow:                  $btn__default--text-shadow;
+$btn__default--disabled-border:                       $btn__default--border;
+$btn__default--disabled-box-shadow:                   none;
+
+/**
+ * Primary Button and States
+ */
+$btn__primary--color1:                                #00a6fc;
+$btn__primary--color2:                                darken($btn__primary--color1, 10%);
+$btn__primary--text-color:                            $white;
+$btn__primary--text-shadow:                           darken($btn__primary--color1, 20%) 0 -1px 0;
+$btn__primary--border:                                1px solid darken($btn__primary--color1, 5%);
+$btn__primary--box-shadow:                            lighten($btn__primary--color1, 15%) 0 1px 0 inset;
+// Hover
+$btn__primary--hover-color1:                          darken($btn__primary--color2, 5%);
+$btn__primary--hover-color2:                          $btn__primary--color2; 
+$btn__primary--hover-text-color:                      darken($btn__primary--text-color, 10%);
+$btn__primary--hover-text-shadow:                     $btn__primary--text-shadow;
+$btn__primary--hover-border:                          $btn__primary--border;
+$btn__primary--hover-box-shadow:                      none;
+// Active
+$btn__primary--active-color1:                         $btn__primary--color2; 
+$btn__primary--active-color2:                         $btn__primary--color2; 
+$btn__primary--active-text-color:                     $btn__primary--hover-text-color;
+$btn__primary--active-text-shadow:                    none;
+$btn__primary--active-border:                         $btn__primary--border;
+$btn__primary--active-box-shadow:                     darken($btn__primary--color2, 10%) 0 1px 2px inset;
+// Disabled
+$btn__primary--disabled-color1:                       $btn__primary--color2; 
+$btn__primary--disabled-color2:                       $btn__primary--color2; 
+$btn__primary--disabled-text-color:                   darken($btn__primary--text-color, 10%);
+$btn__primary--disabled-text-shadow:                  $btn__primary--text-shadow;
+$btn__primary--disabled-border:                       $btn__primary--border;
+$btn__primary--disabled-box-shadow:                   none;
+
+/**
+ * Secondary Button and States
+ */
+$btn__secondary--color1:                              white(10%);
+$btn__secondary--color2:                              darken($btn__secondary--color1, 10%);
+$btn__secondary--text-color:                          $white;
+$btn__secondary--text-shadow:                         darken($btn__secondary--color1, 20%) 0 -1px 0;
+$btn__secondary--border:                              1px solid darken($btn__secondary--color1, 5%);
+$btn__secondary--box-shadow:                          lighten($btn__secondary--color1, 15%) 0 1px 0 inset;
+// Hover
+$btn__secondary--hover-color1:                        darken($btn__secondary--color2, 5%);
+$btn__secondary--hover-color2:                        $btn__secondary--color2; 
+$btn__secondary--hover-text-color:                    darken($btn__secondary--text-color, 10%);
+$btn__secondary--hover-text-shadow:                   $btn__secondary--text-shadow;
+$btn__secondary--hover-border:                        $btn__secondary--border;
+$btn__secondary--hover-box-shadow:                    none;
+// Active
+$btn__secondary--active-color1:                       $btn__secondary--color2; 
+$btn__secondary--active-color2:                       $btn__secondary--color2; 
+$btn__secondary--active-text-color:                   $btn__secondary--hover-text-color;
+$btn__secondary--active-text-shadow:                  none;
+$btn__secondary--active-border:                       $btn__secondary--border;
+$btn__secondary--active-box-shadow:                   darken($btn__secondary--color2, 10%) 0 1px 2px inset;
+// Disabled
+$btn__secondary--disabled-color1:                     $btn__secondary--color2; 
+$btn__secondary--disabled-color2:                     $btn__secondary--color2; 
+$btn__secondary--disabled-text-color:                 darken($btn__secondary--text-color, 10%);
+$btn__secondary--disabled-text-shadow:                $btn__secondary--text-shadow;
+$btn__secondary--disabled-border:                     $btn__secondary--border;
+$btn__secondary--disabled-box-shadow:                 none;
+
+/**
+ * Success Button and States
+ */
+$btn__success--color1:                                #5b8737;
+$btn__success--color2:                                darken($btn__success--color1, 10%);
+$btn__success--text-color:                            $white;
+$btn__success--text-shadow:                           darken($btn__success--color1, 20%) 0 -1px 0;
+$btn__success--border:                                1px solid darken($btn__success--color1, 5%);
+$btn__success--box-shadow:                            lighten($btn__success--color1, 15%) 0 1px 0 inset;
+// Hover
+$btn__success--hover-color1:                          darken($btn__success--color2, 5%);
+$btn__success--hover-color2:                          $btn__success--color2; 
+$btn__success--hover-text-color:                      darken($btn__success--text-color, 10%);
+$btn__success--hover-text-shadow:                     $btn__success--text-shadow;
+$btn__success--hover-border:                          $btn__success--border;
+$btn__success--hover-box-shadow:                      none;
+// Active
+$btn__success--active-color1:                         $btn__success--color2; 
+$btn__success--active-color2:                         $btn__success--color2; 
+$btn__success--active-text-color:                     $btn__success--hover-text-color;
+$btn__success--active-text-shadow:                    none;
+$btn__success--active-border:                         $btn__success--border;
+$btn__success--active-box-shadow:                     darken($btn__success--color2, 10%) 0 1px 2px inset;
+// Disabled
+$btn__success--disabled-color1:                       $btn__success--color2; 
+$btn__success--disabled-color2:                       $btn__success--color2; 
+$btn__success--disabled-text-color:                   darken($btn__success--text-color, 10%);
+$btn__success--disabled-text-shadow:                  $btn__success--text-shadow;
+$btn__success--disabled-border:                       $btn__success--border;
+$btn__success--disabled-box-shadow:                   none;
+
+/**
+ * Danger Button
+ */
+$btn__danger--color1:                                 #e91c21;
+$btn__danger--color2:                                 darken($btn__danger--color1, 10%);
+$btn__danger--text-color:                             $white;
+$btn__danger--text-shadow:                            darken($btn__danger--color1, 20%) 0 -1px 0;
+$btn__danger--border:                                 1px solid darken($btn__danger--color1, 5%);
+$btn__danger--box-shadow:                             lighten($btn__danger--color1, 15%) 0 1px 0 inset;
+// Hover
+$btn__danger--hover-color1:                           darken($btn__danger--color2, 5%);
+$btn__danger--hover-color2:                           $btn__danger--color2; 
+$btn__danger--hover-text-color:                       darken($btn__danger--text-color, 10%);
+$btn__danger--hover-text-shadow:                      $btn__danger--text-shadow;
+$btn__danger--hover-border:                           $btn__danger--border;
+$btn__danger--hover-box-shadow:                       none;
+// Active
+$btn__danger--active-color1:                          $btn__danger--color2; 
+$btn__danger--active-color2:                          $btn__danger--color2; 
+$btn__danger--active-text-color:                      $btn__danger--hover-text-color;
+$btn__danger--active-text-shadow:                     none;
+$btn__danger--active-border:                          $btn__danger--border;
+$btn__danger--active-box-shadow:                      darken($btn__danger--color2, 10%) 0 1px 2px inset;
+// Disabled
+$btn__danger--disabled-color1:                        $btn__danger--color2; 
+$btn__danger--disabled-color2:                        $btn__danger--color2; 
+$btn__danger--disabled-text-color:                    darken($btn__danger--text-color, 10%);
+$btn__danger--disabled-text-shadow:                   $btn__danger--text-shadow;
+$btn__danger--disabled-border:                        $btn__danger--border;
+$btn__danger--disabled-box-shadow:                    none;
+
+/**
+ * Link Button
+ *
+ * de-emphasized button style, looks like link, behaves like button
+ */
+$btn__link--text-color:                               $link-color;
+// Hover
+$btn__link--hover-text-color:                         $link-color-hover;
+// Active
+$btn__link--active-text-color:                        darken($btn__link--hover-text-color, 10%);
+// Disabled
+$btn__link--disabled-text-color:                      $subtle-text-color;
+
+
+
+/**
+ * Button Structure
+ *
+ * Extends button object
+ *
+ * 6. Normalise box model styles.
+ * 7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ */
+
+/* Small Button */
+.btn--#{$small} {
+  font-size: ($base-font-size - 4px);
+  padding: 2px 6px; //6
+  line-height: $base-line-height;//7
+  margin: 0;//6
+  border-radius: 3px;//8
+}
+
+/* Medium Button */
+.btn--#{$medium} {
+  font-size: ($base-font-size - 2px);
+  padding: 5px 9px; //6
+  line-height: $base-line-height;//7
+  margin: 5px;//6
+  border-radius: 5px;//8
+}
+
+/* Large Button */
+.btn--#{$large} {
+  font-size: ($base-font-size + 2px);
+  padding: 9px 14px; //6
+  line-height: $base-line-height;//7
+  margin: 5px;//6
+  border-radius: 7px;//8
+}
+
+/* full screen, block level button style for small screens */
+.btn--#{$touch} {
+  @extend .btn-large;
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/**
+ * Button Skin
+ *
+ * basic skin styles for prototyping
+ * override these with your project specific design
+ */
+
+/* Prototype Skin */
+@mixin button-skin($button-skin) {
+  @if $button-skin == #{$default} {
+    background-color: $btn__
+    color: $white;
+    border: 1px solid $strong;
+    &:hover {
+    background-color: shade($subtle, 15%); 
+    }
+    &:active,
+    &.active {
+    background-color: tint($subtle, 15%);
+    }
+    &.disabled,
+    &[disabled] {
+    opacity: 0.6;
+    cursor: default;
+    }
+  }
+  @if $button-skin == #{$positive} {
+    background-color: $subtle;
+    color: $white;
+    border: 1px solid $strong;
+    &:hover {
+    background-color: shade($subtle, 15%); 
+    }
+    &:active,
+    &.active {
+    background-color: tint($subtle, 15%);
+    }
+    &.disabled,
+    &[disabled] {
+    opacity: 0.6;
+    cursor: default;
+    }
+  }
+ @if $button-skin == #{$negative} {
+    background-color: $subtle;
+    color: $white;
+    border: 1px solid $strong;
+    &:hover {
+    background-color: shade($subtle, 15%); 
+    }
+    &:active,
+    &.active {
+    background-color: tint($subtle, 15%);
+    }
+    &.disabled,
+    &[disabled] {
+    opacity: 0.6;
+    cursor: default;
+    }
+  }
+ @if $button-skin == #{$secondary} {
+    background-color: $subtle;
+    color: $white;
+    border: 1px solid $strong;
+    &:hover {
+    background-color: shade($subtle, 15%); 
+    }
+    &:active,
+    &.active {
+    background-color: tint($subtle, 15%);
+    }
+    &.disabled,
+    &[disabled] {
+    opacity: 0.6;
+    cursor: default;
+    }
+  }
+}
+
+
+
+//$round-button-padding: ($round-button-size - $round-button-icon-size) / 2;
+
+@mixin round-button($round-button-size, $round-button-icon-size: $btn-font-size) {
+  @include button-structure(50%, $btn-font-size, $round-button-padding);
+  width: $round-button-size;
+  height: $round-button-size;
+  //padding: $round-button-padding;
+}
+
+
+.btn--round {
+  font-size: ($base-font-size + 2px);
+  padding: 9px 14px; //6
+  line-height: $base-line-height;//7
+  margin: 5px;//6
+  border-radius: 7px;//8 
+
+  width: 
+  height:
+  position: relative;
+// apply this to a span element
+  & > .btn--icon {
+  position: absolute;
+  top: ($round-btn-size - $round-btn-height) / 2;
+  left:
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  }
+}
+

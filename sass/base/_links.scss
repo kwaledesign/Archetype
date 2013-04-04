@@ -1,0 +1,57 @@
+/**
+ * Link Styles
+ *
+ * link styles are scoped. only 'default' values are those provided by the normalize reset
+ * this is done to avoid repeatidly overridding
+ * see: http://css-tricks.com/opt-in-typography/  &  http://anthonyshort.me/2012/05/global-typographic-styles-suck 
+ */
+
+/**
+ * Link Variables
+ * 
+ */
+
+
+/**
+ * Primary Copy Scope
+ */
+$copy--link-color: blue;
+$copy--link-color-visited: purple;
+$copy--link-color-hover: red;
+$copy--link-color-focus: green;
+
+
+/**
+ * Main Copy Scope
+ */
+.#{$main-type-scope} {
+  a {
+    color: $copy--link-color;
+    font-weight: normal;                   
+    text-decoration: none;
+    &:visited { 
+      color: $copy--link-color-visited; 
+    }
+    &:hover { 
+      color: $copy--link-color-hover; 
+    } 
+    &:focus { 
+      color: $copy--link-color-focus; 
+    }
+  }
+}
+
+/**
+ * Identify External Links
+ */
+
+/**
+//$site-domain: kwaledesign;
+
+  a[href ^= 'http']:not([href *= '#{$site-domain}.']) { 
+    background: transparent url(arrow.png) no-repeat center right; 
+    padding-right: 16px; 
+  }
+*/
+
+

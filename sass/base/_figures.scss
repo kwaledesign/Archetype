@@ -1,0 +1,20 @@
+/**
+ * Figure & Figcaption
+ */
+
+.#{$main-type-scope} {
+  figure {
+    margin-bottom : $base-line-height; 
+    img {
+      margin-bottom : $base-line-height / 4;              // spacer unit this
+    }
+    figcaption {
+      display: block;
+      font-weight: normal;
+      font-size: ms(-1);
+      color: $subtle-text-color;
+      font-family: $copy--body-text; 
+    }
+  }
+}
+
