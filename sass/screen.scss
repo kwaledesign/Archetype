@@ -1,9 +1,10 @@
 /**
  * Achetype
  * 
+ * 1. Imported first to allow for color variables to be available within the settings file.
  */
 
-@import "base/color-pallet";
+@import "base/color-pallet";                          /* 1 */
 @import "settings";
 
 
