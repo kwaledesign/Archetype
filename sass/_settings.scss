@@ -21,6 +21,16 @@
 //@import "breakpoint";                            /* 5 */
 
 /**
+ * Compass
+ * 
+ * 1. Enable Compass to use HTML hacks to support IE 6 and 7
+ *    Note: Archetype supports IE9+ (IE6-8 are served a linear layout)
+ */
+$legacy-support-for-ie6 : false;                          /* 1 */
+$legacy-support-for-ie7 : false;                          /* 1 */
+$legacy-support-for-ie8 : true;                           /* 1 */
+
+/**
  * Modular Scale
  * 
  * https://github.com/scottkellum/modular-scale
