@@ -3,25 +3,22 @@
  *
  */
 
+
 /**
- * @todo:
- * 1. normalize include!!
+ * Imports
  *
+ * 1. https://github.com/chriseppstein/compass
+ * 2. https://github.com/scottkellum/modular-scale
+ * 3. https://github.com/kwaledesign/Archetype
+ * 4. https://github.com/kwaledesign/Colorkit
+ * 5. https://github.com/Team-Sass/breakpoint
  */
 
-/**
- * Imports 
- * 
- */
-
-// Compass framework
-@import "compass";
-// Sass Modular Scale
-@import "modular-scale";
-// Archetype
-@import "archetype";
-// Colorkit
-//@import "colorkit";
+@import "compass";                              /* 1 */
+@import "modular-scale";                        /* 2 */
+@import "archetype";                            /* 3 */
+//@import "colorkit";                           /* 4 */
+//@import "breakpoint";                         /* 5 */
 
 /**
  * Modular Scale
@@ -51,33 +48,37 @@
  * minor-third 5:6
  * major-second 8:9
  * minor-second 15:16
+ *
+ * 1. Default to $base-font-size 
  */
 
-$base-size: 16px;   /* default to $base-font-size */
+$base-size: 16px;                                     /* 1 */
 $ratio: fourth();
 
 
 /**
  * Compass Vertical Rhythm 
  * 
+ * 1. Set this false for px's
+ * 2. This is automaticly converted to 100% by compass
+ * 3. Establishes a baseline for $base-font-size
  */
 
-$relative-font-sizing : true;  // set false for px's
-$base-font-size: $base-size;   // this is automaticly converted to 100% by compass (1em)
-$base-line-height: 24px;       // this is automaticly converted to ems by compass (1.5em)
-
-// Establishes a baseline for the given font-size.
-@include establish-baseline($base-font-size);
+$relative-font-sizing : true;                         /* 2 */
+$base-font-size: $base-size;                          /* 2 */ 
+$base-line-height: 24px;
+@include establish-baseline($base-font-size);         /* 3 */
 
 /**
  * Typography Variables
+ *
+ * 1. Text Selection Highlight Color
+ * 2. Text Selection Highlight Color
  */
 
-/*Text Selection Highlight Color*/
-$selection-highlight-color:           #fe57a1;
+$selection-highlight-color:           #fe57a1;        /* 1 */
 $tap-highlight-color:                 black(75);
-/*Text Selection Highlight Color*/
-$selection-text-color:                $white;
+$selection-text-color:                $white;         /* 2 */
 
 
 /**
@@ -96,18 +97,4 @@ $quarter-spacer-unit: $base-spacer-unit / 4;
 $radius-unit--small: 3px;
 $radius-unit--large: 6px;
 
-/**
- * Archetype Prototype
- *
- * Prototype classes for each module component:  sass/layout/p-modules/
- *
- *
- */
-
-$p-library: fales;
-$p-tabs: false;
-$p-buttons: false;
-$p-labels: false;
-
-//@include prototype();
 
