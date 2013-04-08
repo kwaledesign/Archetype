@@ -3,25 +3,22 @@
  *
  */
 
+
 /**
- * @todo:
- * 1. normalize include!!
+ * Imports
  *
+ * 1. https://github.com/chriseppstein/compass
+ * 2. https://github.com/scottkellum/modular-scale
+ * 3. https://github.com/kwaledesign/Archetype
+ * 4. https://github.com/kwaledesign/Colorkit
+ * 5. https://github.com/Team-Sass/breakpoint
  */
 
-/**
- * Imports 
- * 
- */
-
-// Compass framework
-@import "compass";
-// Sass Modular Scale
-@import "modular-scale";
-// Archetype
-@import "archetype";
-// Colorkit
-//@import "colorkit";
+@import "compass";                              /* 1 */
+@import "modular-scale";                        /* 2 */
+@import "archetype";                            /* 3 */
+//@import "colorkit";                           /* 4 */
+//@import "breakpoint";                         /* 5 */
 
 /**
  * Modular Scale
@@ -96,18 +93,4 @@ $quarter-spacer-unit: $base-spacer-unit / 4;
 $radius-unit--small: 3px;
 $radius-unit--large: 6px;
 
-/**
- * Archetype Prototype
- *
- * Prototype classes for each module component:  sass/layout/p-modules/
- *
- *
- */
-
-$p-library: fales;
-$p-tabs: false;
-$p-buttons: false;
-$p-labels: false;
-
-//@include prototype();
 
