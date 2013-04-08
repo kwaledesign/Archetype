@@ -14,11 +14,11 @@
  * 5. https://github.com/Team-Sass/breakpoint
  */
 
-@import "compass";                              /* 1 */
-@import "modular-scale";                        /* 2 */
-@import "archetype";                            /* 3 */
-//@import "colorkit";                           /* 4 */
-//@import "breakpoint";                         /* 5 */
+@import "compass";                                 /* 1 */
+@import "modular-scale";                           /* 2 */
+@import "archetype";                               /* 3 */
+//@import "colorkit";                              /* 4 */
+//@import "breakpoint";                            /* 5 */
 
 /**
  * Modular Scale
@@ -72,8 +72,8 @@ $base-line-height: 24px;
 /**
  * Typography Variables
  *
- * 1. Text Selection Highlight Color
- * 2. Text Selection Highlight Color
+ * 1. Text selection highlight color
+ * 2. Text selection text color
  */
 
 $selection-highlight-color:           #fe57a1;        /* 1 */
