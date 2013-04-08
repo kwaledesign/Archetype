@@ -1,78 +1,51 @@
-
-// =======================================================
-//  Grid
-// =======================================================
-
-
-
-// Imports 
-// -------------------------------------------------------
+/**
+ * Susy Grid
+ * 
+ * http://susy.oddbird.net/
+ * https://github.com/ericam/susy
+ */
 
 @import "susy";
 
 
-// Settings 
-// -------------------------------------------------------
-// Enable Susy & Compass to use HTML hacks to support IE 6 and 7:
-// Note: although Susy and Compass support ie 6 & 7, Archetype does not. These settings should not be enabled.
-
-$legacy-support-for-ie6 : false;
-$legacy-support-for-ie7 : false;
-$legacy-support-for-ie8 : true;
-
-// Grid Settings
-// -------------------------------------------------------
-
-$total-cols             : 12;
-$col-width              : 4em;
-$gutter-width           : 1em;
-$side-gutter-width      : $gutter-width;  // $gutter-width/2 
-
-$container-style: fluid;  // static/magic/fluid container setting
-
-// grid bg color:
-$grid-background-baseline-color: rgba(255, 0, 0, 0.20);
-$grid-background-column-color: rgba(100, 100, 225, 0.15);
-$grid-background-gutter-color: rgba(0, 0, 0, 0);
+/**
+ * Grid Variables
+ * 
+ * 1. Class name for Susy container include
+ * 2. $container-style: static/magic/fluid 
+ */
+$susy-container:                                          page;                   /* 1 */
+$total-cols:                                              12;
+$col-width:                                               4em;
+$gutter-width:                                            1em;
+$side-gutter-width:                                       $gutter-width;  
+$container-style:                                         fluid;                  /* 2 */
 
 
-// Susy Grid Mixins
-// -------------------------------------------------------
+/**
+ * Grid Background
+ *
+ * Visually debug grid layouts
+ */
+$grid-background-baseline-color:                          rgba(255, 0, 0, 0.20);
+$grid-background-column-color:                            rgba(100, 100, 225, 0.15);
+$grid-background-gutter-color:                            rgba(0, 0, 0, 0);
 
-// grid mixin:
 @mixin susy-grid-background {
   @include grid-background($total-cols, $col-width, $gutter-width, $base-line-height, $side-gutter-width, $force-fluid: true);
 }
+
+/**
+ * Grid Objects
+ * 
+ * 1. Display grid overlay (disable for production)
+ * 2. Include the susy container
+ */
 .grid {
-	// display grid overlay...disable for production
   @include susy-grid-background;   
 }
 
-#page {
-  //susy mixin - handles sizing, centering, clear-fix, and has-layout (root context) 
+.#{$susy-container} {
   @include container;   
 }
-
-//===
-
-
-// SUSY
-@mixin susy-grid-backgrounds {
-  @if $show-grid and $show-baseline {
-    @include susy-grid-background-baseline;
-  }
-  @else if $show-grid {
-    @include susy-grid-background;
-  }
-  @else if $show-baseline {
-    @include baseline-grid-background;
-  }
-}
-
-@mixin susy-grid-background-baseline {
-  @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $column-width * 0, $grid-background-column-color, $grid-background-gutter-color, $grid-background-baseline-color, $force_fluid: true);
-  @include background-origin(content-box);
-  @include background-clip(content-box);
-}
-
 
