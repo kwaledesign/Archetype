@@ -47,15 +47,9 @@ $alert__error--color-txt:             $alert__default--color-txt;
 
 
 /**
- * Alert Object
- */
-.alert {
-  display: block; 
-  position: relative;  
-}
-
-/**
  * Alert Structure
+ *
+ * Extends alert object
  */
 .alert--#{$small} {
   padding: $quarter-spacer-unit;

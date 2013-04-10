@@ -18,17 +18,11 @@ $large-close:                         large;    /* 1 */
 $positive-close:                      light;    /* 1 */
 $negative-close:                      dark;     /* 1 */
 
-/**
- * Close Object
- * 
- */
-.close {
-  position: absolute; 
-  &:hover { cursor: pointer; }
-}
 
 /**
  * Close Structure
+ *
+ * Extends close object
  */
 .close--#{$small-close} {
   font-size: ms(1); 
