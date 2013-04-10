@@ -1,13 +1,20 @@
-# susy - archetype's default grid (http://susy.oddbird.net/)
+# Susy - https://github.com/ericam/susy
 require 'susy'
 
-# Require any additional compass plugins here.
+# Singularity - https://github.com/Team-Sass/Singularity
+# require 'singularitygs'
 
-# Sassy Modular Scale https://github.com/scottkellum/modular-scale
+# Singularity-Extras - https://github.com/Team-Sass/Singularity-Extras
+# requier 'singularity-extras'
+
+# Modular Scale https://github.com/scottkellum/modular-scale
 require 'modular-scale'
 
-# require 'animation.rb'
-# require "animate"
+# Breakpoint - https://github.com/Team-Sass/breakpoint
+#requier 'breakpoint'
+
+# Colorkit - https://github.com/kwaledesign/Colorkit
+#requier 'colorkit'
 
 
 # Set this to the root of your project when deployed:
@@ -19,7 +26,7 @@ javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-
+output_style = expanded
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
