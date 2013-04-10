@@ -5,8 +5,6 @@
 
 .close {
   position: absolute; 
-  right: $close-position-right; 
-  top: $close-position-top;  
   &:hover { cursor: pointer; }
 }
 
