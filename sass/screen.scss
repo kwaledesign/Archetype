@@ -12,13 +12,13 @@
  * Objects
  * 
  */
-@include "objects/alert-object";
-@include "objects/button-object";
-@include "objects/close-object";
-@include "objects/label-object";
-@include "objects/media-object";
-@include "objects/nav-object";
-@include "objects/partition-object";
+@import "objects/alert-object";
+@import "objects/button-object";
+@import "objects/close-object";
+@import "objects/label-object";
+@import "objects/media-object";
+@import "objects/nav-object";
+@import "objects/partition-object";
 
 
 /**
@@ -60,7 +60,7 @@
  * Layout
  * 
  */
-//@import "layout/susy-grid";
-//@import "layout/singularity-grid";
-@include "layout/print";
+@import "layout/susy-grid";
+@import "layout/singularity-grid";
+@import "layout/print";
 
