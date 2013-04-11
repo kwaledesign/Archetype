@@ -11,7 +11,7 @@
   list-style: none;
   margin-left: 0;                /////////vertical rythm????????
   padding-left: 0;  // disable default list padding
-  @extend cf;
+  @extend %cf;
     & > li { 
       float: left; 
     }
