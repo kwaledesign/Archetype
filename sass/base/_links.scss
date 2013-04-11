@@ -6,23 +6,12 @@
  * see: http://css-tricks.com/opt-in-typography/  &  http://anthonyshort.me/2012/05/global-typographic-styles-suck 
  */
 
-/**
- * Link Variables
- * 
- */
-
 
 /**
- * Primary Copy Scope
- */
-$copy--link-color: blue;
-$copy--link-color-visited: purple;
-$copy--link-color-hover: red;
-$copy--link-color-focus: green;
-
-
-/**
- * Main Copy Scope
+ * Main Type Scope
+ *
+ * $main-type-scope set within base/_typography.scss
+ * $copy-- variables set within base/_color-pallet.scss
  */
 .#{$main-type-scope} {
   a {
@@ -53,5 +42,4 @@ $copy--link-color-focus: green;
     padding-right: 16px; 
   }
 */
-
 

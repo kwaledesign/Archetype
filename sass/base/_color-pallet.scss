@@ -75,6 +75,18 @@ $muted-color--bg:                   $muted;
  * $brand-accent:;
  */
 
+
+/**
+ * Link Colors
+ * 
+ * (main type scope)
+ */
+$copy--link-color: blue;
+$copy--link-color-visited: purple;
+$copy--link-color-hover: red;
+$copy--link-color-focus: green;
+
+
 /**
  * UI and State Colors
  *
