@@ -13,6 +13,9 @@ require 'modular-scale'
 # Breakpoint - https://github.com/Team-Sass/breakpoint
 #requier 'breakpoint'
 
+# Archetype - https://github.com/kwaledesign/Archetype
+require 'archetype'
+
 # Colorkit - https://github.com/kwaledesign/Colorkit
 #requier 'colorkit'
 
