@@ -346,10 +346,14 @@ $all-text-inputs-focus: ();
  * Horizontal-specific styles
  *
  * extends #{$primary-form-scope} class
+ *
+ * 1. cannot @extend an outer selector from within @media, so we declare this outside of @media
  */
+.form-horizontal {
+  .control-group { @extend %cf; }       /* 1 */
+}
 @media screen and (min-width: 600px) {
   .form-horizontal {
-    .control-group { @extend %cf; }
     .control-label {
       float: left;
       width: $horizontal-form-spacer - 20;
