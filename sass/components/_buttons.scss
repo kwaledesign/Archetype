@@ -20,7 +20,7 @@
 
 /* button Structure Namespace: */
 $small:                               small;      /* 1 */
-//? medium ?
+$medium:                              medium;     /* 1 */
 $large:                               large;      /* 1 */
 $touch:                               full;       /* 1 */
 /* button Skin Namespace: */
@@ -43,7 +43,7 @@ $btn__default--box-shadow:                            lighten($btn__default--col
 // Hover
 $btn__default--hover-color1:                          darken($btn__default--color2, 5%);
 $btn__default--hover-color2:                          $btn__default--color2; 
-$btn__default--hover-text-color:                      darken($btn__default--text-color, 10%);
+$btn__default--hover-text-color:                      white(.9);
 $btn__default--hover-text-shadow:                     $btn__default--text-shadow;
 $btn__default--hover-border:                          $btn__default--border;
 $btn__default--hover-box-shadow:                      none;
@@ -57,7 +57,7 @@ $btn__default--active-box-shadow:                     darken($btn__default--colo
 // Disabled
 $btn__default--disabled-color1:                       $btn__default--color2; 
 $btn__default--disabled-color2:                       $btn__default--color2; 
-$btn__default--disabled-text-color:                   darken($btn__default--text-color, 10%);
+$btn__default--disabled-text-color:                   white(.9);
 $btn__default--disabled-text-shadow:                  $btn__default--text-shadow;
 $btn__default--disabled-border:                       $btn__default--border;
 $btn__default--disabled-box-shadow:                   none;
@@ -74,7 +74,7 @@ $btn__primary--box-shadow:                            lighten($btn__primary--col
 // Hover
 $btn__primary--hover-color1:                          darken($btn__primary--color2, 5%);
 $btn__primary--hover-color2:                          $btn__primary--color2; 
-$btn__primary--hover-text-color:                      darken($btn__primary--text-color, 10%);
+$btn__primary--hover-text-color:                      white(.9);
 $btn__primary--hover-text-shadow:                     $btn__primary--text-shadow;
 $btn__primary--hover-border:                          $btn__primary--border;
 $btn__primary--hover-box-shadow:                      none;
@@ -88,7 +88,7 @@ $btn__primary--active-box-shadow:                     darken($btn__primary--colo
 // Disabled
 $btn__primary--disabled-color1:                       $btn__primary--color2; 
 $btn__primary--disabled-color2:                       $btn__primary--color2; 
-$btn__primary--disabled-text-color:                   darken($btn__primary--text-color, 10%);
+$btn__primary--disabled-text-color:                   white(.9);
 $btn__primary--disabled-text-shadow:                  $btn__primary--text-shadow;
 $btn__primary--disabled-border:                       $btn__primary--border;
 $btn__primary--disabled-box-shadow:                   none;
@@ -105,7 +105,7 @@ $btn__secondary--box-shadow:                          lighten($btn__secondary--c
 // Hover
 $btn__secondary--hover-color1:                        darken($btn__secondary--color2, 5%);
 $btn__secondary--hover-color2:                        $btn__secondary--color2; 
-$btn__secondary--hover-text-color:                    darken($btn__secondary--text-color, 10%);
+$btn__secondary--hover-text-color:                    white(.9);
 $btn__secondary--hover-text-shadow:                   $btn__secondary--text-shadow;
 $btn__secondary--hover-border:                        $btn__secondary--border;
 $btn__secondary--hover-box-shadow:                    none;
@@ -119,7 +119,7 @@ $btn__secondary--active-box-shadow:                   darken($btn__secondary--co
 // Disabled
 $btn__secondary--disabled-color1:                     $btn__secondary--color2; 
 $btn__secondary--disabled-color2:                     $btn__secondary--color2; 
-$btn__secondary--disabled-text-color:                 darken($btn__secondary--text-color, 10%);
+$btn__secondary--disabled-text-color:                 white(.9);
 $btn__secondary--disabled-text-shadow:                $btn__secondary--text-shadow;
 $btn__secondary--disabled-border:                     $btn__secondary--border;
 $btn__secondary--disabled-box-shadow:                 none;
@@ -136,7 +136,7 @@ $btn__success--box-shadow:                            lighten($btn__success--col
 // Hover
 $btn__success--hover-color1:                          darken($btn__success--color2, 5%);
 $btn__success--hover-color2:                          $btn__success--color2; 
-$btn__success--hover-text-color:                      darken($btn__success--text-color, 10%);
+$btn__success--hover-text-color:                      white(.9);
 $btn__success--hover-text-shadow:                     $btn__success--text-shadow;
 $btn__success--hover-border:                          $btn__success--border;
 $btn__success--hover-box-shadow:                      none;
@@ -150,7 +150,7 @@ $btn__success--active-box-shadow:                     darken($btn__success--colo
 // Disabled
 $btn__success--disabled-color1:                       $btn__success--color2; 
 $btn__success--disabled-color2:                       $btn__success--color2; 
-$btn__success--disabled-text-color:                   darken($btn__success--text-color, 10%);
+$btn__success--disabled-text-color:                   white(.9);
 $btn__success--disabled-text-shadow:                  $btn__success--text-shadow;
 $btn__success--disabled-border:                       $btn__success--border;
 $btn__success--disabled-box-shadow:                   none;
@@ -167,7 +167,7 @@ $btn__danger--box-shadow:                             lighten($btn__danger--colo
 // Hover
 $btn__danger--hover-color1:                           darken($btn__danger--color2, 5%);
 $btn__danger--hover-color2:                           $btn__danger--color2; 
-$btn__danger--hover-text-color:                       darken($btn__danger--text-color, 10%);
+$btn__danger--hover-text-color:                       white(.9);
 $btn__danger--hover-text-shadow:                      $btn__danger--text-shadow;
 $btn__danger--hover-border:                           $btn__danger--border;
 $btn__danger--hover-box-shadow:                       none;
@@ -181,7 +181,7 @@ $btn__danger--active-box-shadow:                      darken($btn__danger--color
 // Disabled
 $btn__danger--disabled-color1:                        $btn__danger--color2; 
 $btn__danger--disabled-color2:                        $btn__danger--color2; 
-$btn__danger--disabled-text-color:                    darken($btn__danger--text-color, 10%);
+$btn__danger--disabled-text-color:                    white(.9);
 $btn__danger--disabled-text-shadow:                   $btn__danger--text-shadow;
 $btn__danger--disabled-border:                        $btn__danger--border;
 $btn__danger--disabled-box-shadow:                    none;
@@ -191,13 +191,13 @@ $btn__danger--disabled-box-shadow:                    none;
  *
  * de-emphasized button style, looks like link, behaves like button
  */
-$btn__link--text-color:                               $link-color;
+$btn__link--text-color:                               $copy--link-color;
 // Hover
-$btn__link--hover-text-color:                         $link-color-hover;
+$btn__link--hover-text-color:                         $copy--link-color-hover;
 // Active
 $btn__link--active-text-color:                        darken($btn__link--hover-text-color, 10%);
 // Disabled
-$btn__link--disabled-text-color:                      $subtle-text-color;
+$btn__link--disabled-text-color:                      $subtle-color--txt;
 
 
 
