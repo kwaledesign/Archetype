@@ -252,7 +252,7 @@ $btn__link--disabled-text-color:                      $subtle-color--txt;
  * full screen, block level button style for small screens 
  */
 .btn--#{$touch} {
-  @extend .btn-large;
+  @extend .btn--#{large};
   display: block;
   width: 100%;
   padding-left: 0;
