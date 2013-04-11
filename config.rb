@@ -17,8 +17,7 @@ require 'modular-scale'
 require 'archetype'
 
 # Colorkit - https://github.com/kwaledesign/Colorkit
-#requier 'colorkit'
-
+require 'colorkit'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
