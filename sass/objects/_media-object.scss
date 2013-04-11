@@ -22,12 +22,12 @@
  */
 .media__img--left {                   /* 2 */
   float: left;
-  margin-right: $base-spacing-unit;
+  margin-right: $media--spacer;
 }
 
 .media__img--right {                  /* 2 */
   float: right;
-  margin-left: $base-spacing-unit;
+  margin-left: $media--spacer;
 }
 
 .media__img--left img,

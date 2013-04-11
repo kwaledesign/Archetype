@@ -92,13 +92,15 @@ $selection-text-color:                $white;         /* 2 */
 
 
 /**
- * Base Spacer Unit
+ * Spacer Units
  */
 $base-spacer-unit: $base-font-size;
 
 $half-spacer-unit: $base-spacer-unit / 2;
 $third-spacer-unit: $base-spacer-unit / 3;
 $quarter-spacer-unit: $base-spacer-unit / 4;
+
+$media--spacer: $half-spacer-unit;
 
 /**
  * Radius Unit
