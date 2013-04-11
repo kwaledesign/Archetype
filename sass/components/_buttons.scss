@@ -213,7 +213,9 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
  * 8. Basic cosmetics for default buttons. Change or override at will.
  */
 
-/* Small Button */
+/**
+ * Small Button 
+ */
 .btn--#{$small} {
   font-size: ($base-font-size - 4px);
   padding: 2px 6px; //6
@@ -222,7 +224,9 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
   border-radius: 3px;//8
 }
 
-/* Medium Button */
+/**
+ * Medium Button 
+ */
 .btn--#{$medium} {
   font-size: ($base-font-size - 2px);
   padding: 5px 9px; //6
@@ -231,7 +235,9 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
   border-radius: 5px;//8
 }
 
-/* Large Button */
+/**
+ * Large Button 
+ */
 .btn--#{$large} {
   font-size: ($base-font-size + 2px);
   padding: 9px 14px; //6
@@ -240,7 +246,11 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
   border-radius: 7px;//8
 }
 
-/* full screen, block level button style for small screens */
+/**
+ * Full Button
+ *
+ * full screen, block level button style for small screens 
+ */
 .btn--#{$touch} {
   @extend .btn-large;
   display: block;
@@ -255,19 +265,17 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
  * basic skin styles for prototyping
  * override these with your project specific design
  */
-
-/* Prototype Skin */
 @mixin button-skin($button-skin) {
   @if $button-skin == #{$default} {
-    background-color: $btn__
+    background-color: $btn__default--color1;
     color: $white;
     border: 1px solid $strong;
     &:hover {
-    background-color: shade($subtle, 15%); 
+    background-color: $btn__default--color2;
     }
     &:active,
     &.active {
-    background-color: tint($subtle, 15%);
+    background-color: tint($btn_default--color2, 10%);
     }
     &.disabled,
     &[disabled] {
@@ -276,15 +284,15 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
     }
   }
   @if $button-skin == #{$positive} {
-    background-color: $subtle;
+    background-color: $btn__positive--color1;
     color: $white;
     border: 1px solid $strong;
     &:hover {
-    background-color: shade($subtle, 15%); 
+    background-color: $btn__positive--color2; 
     }
     &:active,
     &.active {
-    background-color: tint($subtle, 15%);
+    background-color: tint($btn__positive--color2, 10%);
     }
     &.disabled,
     &[disabled] {
@@ -293,15 +301,15 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
     }
   }
  @if $button-skin == #{$negative} {
-    background-color: $subtle;
+    background-color: $btn__negative--color1;
     color: $white;
     border: 1px solid $strong;
     &:hover {
-    background-color: shade($subtle, 15%); 
+    background-color: $btn__negative--color2; 
     }
     &:active,
     &.active {
-    background-color: tint($subtle, 15%);
+    background-color: tint($btn__negative--color2, 10%);
     }
     &.disabled,
     &[disabled] {
@@ -310,15 +318,15 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
     }
   }
  @if $button-skin == #{$secondary} {
-    background-color: $subtle;
+    background-color: $btn__secondary--color1;
     color: $white;
     border: 1px solid $strong;
     &:hover {
-    background-color: shade($subtle, 15%); 
+    background-color: $btn__secondary--color2; 
     }
     &:active,
     &.active {
-    background-color: tint($subtle, 15%);
+    background-color: tint($btn__secondary--color2, 10%);
     }
     &.disabled,
     &[disabled] {
@@ -329,7 +337,7 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
 }
 
 
-
+/*
 //$round-button-padding: ($round-button-size - $round-button-icon-size) / 2;
 
 @mixin round-button($round-button-size, $round-button-icon-size: $btn-font-size) {
@@ -347,8 +355,8 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
   margin: 5px;//6
   border-radius: 7px;//8 
 
-  width: 
-  height:
+  //width: 
+  //height:
   position: relative;
 // apply this to a span element
   & > .btn--icon {
@@ -360,4 +368,4 @@ $btn__link--disabled-text-color:                      $subtle-text-color;
   margin: 0 auto;
   }
 }
-
+*/
