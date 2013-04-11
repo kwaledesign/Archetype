@@ -14,24 +14,18 @@ html {
   font-family: $normalize-body-font;                      /* 1 */
   -webkit-text-size-adjust: 100%;                         /* 2 */
   -ms-text-size-adjust: 100%;                             /* 2 */
-
   overflow-y: scroll;
   min-height: 100%;
-
 }
 
 body {
-  margin: 0;                                              /* 3 */
-
   color: $copy--body-text-color;
-  background: $copy--body-bg-color;                     // use the mixin for this!!
+  background: $copy--body-bg-color;
   font-family: $copy--body-text;
   font-weight: normal;
-  @include hyphen($auto);
-  word-wrap: break-word;
+  margin: 0;                                              /* 3 */
   padding: 0;
   width: 100%;
   min-height: 100%;
-
 }
 
