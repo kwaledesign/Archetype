@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Alerts</title>
+    
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <link rel="stylesheet" href="../css/docs.css" media="screen">
+</head>
+<body class="container">
+  
+  <header class="header">
+    <section class="main-nav">
+      <a href="#" class="menu-link"><span class="icon-th-list-1"></span>menu</a>
+      <a href="/index.html">Home</a>
+    </section>
+  </header>
+  
+  <nav class="nav--slide">
+ 
+    <a href="/base.html">Base</a>
+    <ul>
+      <li><a href="/base/typography.html">Typography</a></li>
+      <li><a href="/base/color-pallet.html">Color-Pallet</a></li>
+      <li><a href="/base/reset.html">Reset</a></li>
+      <li><a href="/base/page.html">Page</a></li>
+      <li><a href="/base/quotes.html">Quotes</a></li>
+      <li><a href="/base/tables.html">Tables</a></li>
+      <li><a href="/base/rules.html">Rules</a></li>
+      <li><a href="/base/lists.html">Lists</a></li>
+      <li><a href="/base/links.html">Links</a></li>
+      <li><a href="/base/figures.html">Figures</a></li>
+      <li><a href="/base/code.html">Code</a></li>
+      <li><a href="/base/media.html">Media</a></li>
+      <li><a href="/base/forms.html">Forms</a></li>
+    </ul>
+    
+    <a href="/components.html">Components</a>
+    <ul>
+      <li><a href="/components/buttons.html">Buttons</a></li>
+      <li><a href="/components/close.html">Close</a></li>
+      <li><a href="/components/alerts.html">Alerts</a></li>
+      <li><a href="/components/spacers.html">Spacers</a></li>
+      <li><a href="/components/tabs.html">Tabs</a></li>
+      <li><a href="/components/partitions.html">Partitions</a></li>
+      <li><a href="/components/labels.html">Labels</a></li>
+      <li><a href="/components/icons.html">Icons</a></li>
+    </ul>
+    
+    <a href="/objects.html">Objects</a>
+    <ul>
+      <li><a href="/objects/nav-object.html">Nav-Object</a></li>
+      <li><a href="/objects/media-object.html">Media-Object</a></li>
+      <li><a href="/objects/close-object.html">Close-Object</a></li>
+      <li><a href="/objects/alert-object.html">Alert-Object</a></li>
+      <li><a href="/objects/label-object.html">Label-Object</a></li>
+      <li><a href="/objects/partition-object.html">Partition-Object</a></li>
+      <li><a href="/objects/button-object.html">Button-Object</a></li>
+    </ul>
+
+    <a href="/layout.html">Layout</a>
+
+  </nav>   
+
+  <div class="page">
+    <section class="copy">
+<h1 id="alerts">Alerts</h1>
+<p>Alert styles extend the <a href="/objects/alert-object.html">alert object</a>. Alerts are most commonly injected dynamiclly to provide context specific feedback to a specific user action. Alerts also make use of the <a href="/objects/close-object.html">close-object</a> to allow users to dismiss the alert message.</p>
+<div class="highlight"><pre><a name="l-1"></a><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert alert--default alert--small&quot;</span><span class="nt">&gt;</span>This is a small default alert.<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;close&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+</pre></div>
+
+
+<h2 id="small-default-alert">Small Default Alert</h2>
+<div class="alert alert--default alert--small">
+This is a small default alert.<a href="#" class="close">×</a>
+</div>
+
+
+<h2 id="large-default-alert">Large Default Alert</h2>
+<div class="alert alert--default alert--large">
+This is a large default alert.<a href="#" class="close">×</a>
+</div>
+<!-- sectioin "end" -->
+
+
+
+
+<h2 id="success-error-and-warning-alerts">Success, Error, and Warning Alerts</h2>
+<div class="alert alert--success alert--small">
+This is a success alert.<a href="#" class="close">×</a>
+</div>
+
+
+<div class="alert alert--error alert--small">
+This is an error alert.<a href="#" class="close">×</a>
+</div>
+
+
+<div class="alert alert--warning alert--small">
+This is a warning alert.<a href="#" class="close">×</a>
+</div>
+
+
+<h2 id="alert-variables">Alert Variables</h2>
+<div class="highlight"><pre><a name="sass--components--_alerts.scss-idio.html-17"></a><span class="cm">/**</span>
+<a name="sass--components--_alerts.scss-idio.html-18"></a><span class="cm"> * Alert Variables</span>
+<a name="sass--components--_alerts.scss-idio.html-19"></a><span class="cm"> */</span>
+<a name="sass--components--_alerts.scss-idio.html-20"></a>
+<a name="sass--components--_alerts.scss-idio.html-21"></a><span class="cm">/* Alert Structure Namespace: */</span>
+<a name="sass--components--_alerts.scss-idio.html-22"></a><span class="nv">$small</span><span class="o">:</span>                               <span class="n">small</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-23"></a><span class="nv">$large</span><span class="o">:</span>                               <span class="no">large</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-24"></a>
+<a name="sass--components--_alerts.scss-idio.html-25"></a><span class="cm">/* Alert Skin Namespace: */</span>
+<a name="sass--components--_alerts.scss-idio.html-26"></a><span class="nv">$default</span><span class="o">:</span>                             <span class="n">info</span><span class="p">;</span>       <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-27"></a><span class="nv">$positive</span><span class="o">:</span>                            <span class="n">success</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-28"></a><span class="nv">$negative</span><span class="o">:</span>                            <span class="n">error</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-29"></a><span class="nv">$warning</span><span class="o">:</span>                             <span class="n">warning</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
+<a name="sass--components--_alerts.scss-idio.html-30"></a>
+<a name="sass--components--_alerts.scss-idio.html-31"></a><span class="cm">/* Alert Skin Variables: */</span>
+<a name="sass--components--_alerts.scss-idio.html-32"></a><span class="nv">$alert-text-shadow</span><span class="o">:</span>                   <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="mf">.6</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-33"></a><span class="cm">/* default: */</span>
+<a name="sass--components--_alerts.scss-idio.html-34"></a><span class="nv">$alert__default--color-bg</span><span class="o">:</span>            <span class="mh">#999</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-35"></a><span class="nv">$alert__default--border</span><span class="o">:</span>        <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$alert__default--color-bg</span><span class="o">,</span> <span class="mi">15</span><span class="kt">%</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-36"></a><span class="nv">$alert__default--color-txt</span><span class="o">:</span>           <span class="nv">$white</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-37"></a><span class="cm">/* positive: */</span>
+<a name="sass--components--_alerts.scss-idio.html-38"></a><span class="nv">$alert__success--color-bg</span><span class="o">:</span>            <span class="mh">#7fae00</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-39"></a><span class="nv">$alert__success--border</span><span class="o">:</span>        <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$alert__success--color-bg</span><span class="o">,</span> <span class="mi">15</span><span class="kt">%</span><span class="p">);</span> 
+<a name="sass--components--_alerts.scss-idio.html-40"></a><span class="nv">$alert__success--color-txt</span><span class="o">:</span>           <span class="nv">$alert__default--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-41"></a><span class="cm">/* warning: */</span>
+<a name="sass--components--_alerts.scss-idio.html-42"></a><span class="nv">$alert__warning--color-bg</span><span class="o">:</span>            <span class="mh">#f68b01</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-43"></a><span class="nv">$alert__warning--border</span><span class="o">:</span>        <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$alert__warning--color-bg</span><span class="o">,</span> <span class="mi">15</span><span class="kt">%</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-44"></a><span class="nv">$alert__warning--color-txt</span><span class="o">:</span>           <span class="nv">$alert__default--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-45"></a><span class="cm">/* error: */</span>
+<a name="sass--components--_alerts.scss-idio.html-46"></a><span class="nv">$alert__error--color-bg</span><span class="o">:</span>              <span class="mh">#c00000</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-47"></a><span class="nv">$alert__error--border</span><span class="o">:</span>          <span class="mi">2</span><span class="kt">px</span> <span class="no">solid</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$alert__error--color-bg</span><span class="o">,</span> <span class="mi">15</span><span class="kt">%</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-48"></a><span class="nv">$alert__error--color-txt</span><span class="o">:</span>             <span class="nv">$alert__default--color-txt</span><span class="p">;</span>
+</pre></div>
+
+
+<h2 id="alert-structure">Alert Structure</h2>
+<div class="highlight"><pre><a name="sass--components--_alerts.scss-idio.html-52"></a><span class="cm">/**</span>
+<a name="sass--components--_alerts.scss-idio.html-53"></a><span class="cm"> * Alert Structure</span>
+<a name="sass--components--_alerts.scss-idio.html-54"></a><span class="cm"> *</span>
+<a name="sass--components--_alerts.scss-idio.html-55"></a><span class="cm"> * Extends alert object</span>
+<a name="sass--components--_alerts.scss-idio.html-56"></a><span class="cm"> */</span>
+<a name="sass--components--_alerts.scss-idio.html-57"></a><span class="nc">.alert--</span><span class="si">#{</span><span class="nv">$small</span><span class="si">}</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-58"></a>  <span class="na">padding</span><span class="o">:</span> <span class="nv">$quarter-spacer-unit</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-59"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-60"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-61"></a>  <span class="na">margin</span><span class="o">:</span> <span class="nv">$half-spacer-unit</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-62"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-63"></a><span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-64"></a>
+<a name="sass--components--_alerts.scss-idio.html-65"></a><span class="nc">.alert--</span><span class="si">#{</span><span class="nv">$large</span><span class="si">}</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-66"></a>  <span class="na">padding</span><span class="o">:</span> <span class="nv">$half-spacer-unit</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-67"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-68"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-69"></a>  <span class="na">margin</span><span class="o">:</span> <span class="nv">$half-spacer-unit</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-70"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-71"></a><span class="p">}</span>
+</pre></div>
+
+
+<h2 id="alert-skin">Alert Skin</h2>
+<div class="highlight"><pre><a name="sass--components--_alerts.scss-idio.html-75"></a><span class="cm">/**</span>
+<a name="sass--components--_alerts.scss-idio.html-76"></a><span class="cm"> * Alert Skin </span>
+<a name="sass--components--_alerts.scss-idio.html-77"></a><span class="cm"> *</span>
+<a name="sass--components--_alerts.scss-idio.html-78"></a><span class="cm"> */</span>
+<a name="sass--components--_alerts.scss-idio.html-79"></a><span class="k">@mixin</span><span class="nf"> alert-skin</span><span class="p">(</span><span class="nv">$alert-skin</span><span class="p">)</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-80"></a>  <span class="na">text-shadow</span><span class="o">:</span> <span class="nv">$alert-text-shadow</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-81"></a>  <span class="k">@if</span> <span class="nv">$alert-skin</span> <span class="o">==</span> <span class="s2">&quot;default&quot;</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-82"></a>    <span class="na">background-color</span><span class="o">:</span> <span class="nv">$alert__default--color-bg</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-83"></a>    <span class="na">border</span><span class="o">:</span> <span class="nv">$alert__default--border</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-84"></a>    <span class="na">color</span><span class="o">:</span> <span class="nv">$alert__default--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-85"></a>  <span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-86"></a>  <span class="k">@if</span> <span class="nv">$alert-skin</span> <span class="o">==</span> <span class="s2">&quot;success&quot;</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-87"></a>    <span class="na">background-color</span><span class="o">:</span> <span class="nv">$alert__success--color-bg</span><span class="p">;</span> 
+<a name="sass--components--_alerts.scss-idio.html-88"></a>    <span class="na">border</span><span class="o">:</span> <span class="nv">$alert__success--border</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-89"></a>    <span class="na">color</span><span class="o">:</span> <span class="nv">$alert__success--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-90"></a>  <span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-91"></a>  <span class="k">@if</span> <span class="nv">$alert-skin</span> <span class="o">==</span> <span class="s2">&quot;warning&quot;</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-92"></a>    <span class="na">background-color</span><span class="o">:</span> <span class="nv">$alert__warning--color-bg</span><span class="p">;</span> 
+<a name="sass--components--_alerts.scss-idio.html-93"></a>    <span class="na">border</span><span class="o">:</span> <span class="nv">$alert__warning--border</span><span class="p">;</span> 
+<a name="sass--components--_alerts.scss-idio.html-94"></a>    <span class="na">color</span><span class="o">:</span> <span class="nv">$alert__warning--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-95"></a>  <span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-96"></a>  <span class="k">@if</span> <span class="nv">$alert-skin</span> <span class="o">==</span> <span class="s2">&quot;error&quot;</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-97"></a>    <span class="na">background-color</span><span class="o">:</span> <span class="nv">$alert__error--color-bg</span><span class="p">;</span> 
+<a name="sass--components--_alerts.scss-idio.html-98"></a>    <span class="na">border</span><span class="o">:</span> <span class="nv">$alert__error--border</span><span class="p">;</span>  
+<a name="sass--components--_alerts.scss-idio.html-99"></a>    <span class="na">color</span><span class="o">:</span> <span class="nv">$alert__error--color-txt</span><span class="p">;</span>
+<a name="sass--components--_alerts.scss-idio.html-100"></a>  <span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-101"></a><span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-102"></a>
+<a name="sass--components--_alerts.scss-idio.html-103"></a><span class="nc">.alert--default</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-104"></a>  <span class="k">@include</span><span class="nd"> alert-skin</span><span class="p">(</span><span class="no">default</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-105"></a><span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-106"></a>
+<a name="sass--components--_alerts.scss-idio.html-107"></a><span class="nc">.alert--success</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-108"></a>  <span class="k">@include</span><span class="nd"> alert-skin</span><span class="p">(</span><span class="n">success</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-109"></a><span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-110"></a>
+<a name="sass--components--_alerts.scss-idio.html-111"></a><span class="nc">.alert--error</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-112"></a>  <span class="k">@include</span><span class="nd"> alert-skin</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-113"></a><span class="p">}</span>
+<a name="sass--components--_alerts.scss-idio.html-114"></a>
+<a name="sass--components--_alerts.scss-idio.html-115"></a><span class="nc">.alert--warning</span> <span class="p">{</span>
+<a name="sass--components--_alerts.scss-idio.html-116"></a>  <span class="k">@include</span><span class="nd"> alert-skin</span><span class="p">(</span><span class="n">warning</span><span class="p">);</span>
+<a name="sass--components--_alerts.scss-idio.html-117"></a><span class="p">}</span>
+</pre></div>
+
+
+</section>
+
+
+  </div>
+  
+  <footer>
+    <p>Footer goes here</p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
