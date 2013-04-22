@@ -12,6 +12,8 @@
  * 2. move object to object directory
  */
 
+
+/*** @export "alert-variables" css */
 /**
  * Alert Variables
  */
@@ -46,6 +48,7 @@ $alert__error--border:          2px solid darken($alert__error--color-bg, 15%);
 $alert__error--color-txt:             $alert__default--color-txt;
 
 
+/*** @export "alert-structure" css */
 /**
  * Alert Structure
  *
@@ -67,6 +70,8 @@ $alert__error--color-txt:             $alert__default--color-txt;
   border-radius: 2px;
 }
 
+
+/*** @export "alert-skin" css */
 /**
  * Alert Skin 
  *

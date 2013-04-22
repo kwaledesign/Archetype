@@ -8,6 +8,8 @@
  * 1. lots of cleanup!!
  */
 
+
+/*** @export "tab-variables" css */
 /**
  * Tab Variables
  *
@@ -51,8 +53,7 @@ $tab-vertical--active-bg-color:       white(20%);
 $tab-vertical--active-border:         1px solid white(20%);
 
 
-
-
+/*** @export "tab-structure" css */
 /**
  * Tab Structure
  */
@@ -123,6 +124,8 @@ $tab-vertical--active-border:         1px solid white(20%);
   }
 }
 
+
+/*** @export "tab-skin" css */
 /**
  * Tab Skin Mixin 
  */
