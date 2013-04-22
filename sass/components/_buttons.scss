@@ -12,6 +12,8 @@
  * 4. button-groups
  */
 
+
+/*** @export "button-variables" css */
 /**
  * Button Variables
  *
@@ -201,6 +203,7 @@ $btn__link--disabled-text-color:                      $subtle-color--txt;
 
 
 
+/*** @export "button-structure" css */
 /**
  * Button Structure
  *
@@ -259,6 +262,8 @@ $btn__link--disabled-text-color:                      $subtle-color--txt;
   padding-right: 0;
 }
 
+
+/*** @export "button-skin" css */
 /**
  * Button Skin
  *

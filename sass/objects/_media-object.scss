@@ -1,3 +1,4 @@
+/*** @export "media-object" css */
 /**
  * Media Object
  *
@@ -38,7 +39,6 @@
 .media__body {
   overflow: hidden;
 }
-
 
 .media__body,
 .media__body > :last-child {

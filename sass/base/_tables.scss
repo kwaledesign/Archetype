@@ -44,6 +44,7 @@ $table__bg-color: $muted-color--bg;
 
 
 
+/*** @export "base-table-styles" css */
 /**
  * Base Table Styles
  */
@@ -131,6 +132,8 @@ table {
   }
 }
 
+
+/*** @export "table-zebra-stripes" css */
 /**
  * Table Zebra Stripes
  */
@@ -141,6 +144,8 @@ table {
   }
 }   
 
+
+/*** @export "table-hover-highlight" css */
 /**
  * Table Hover Highlight
  */
