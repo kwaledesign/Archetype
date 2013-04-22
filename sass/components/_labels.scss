@@ -11,6 +11,8 @@
  * 4. remove mixin???
  */
 
+
+/*** @export "label-variables" css */
 /**
  * Label Variables
  * 
@@ -27,6 +29,8 @@ $positive-label:                      success;    /* 1 */
 $negative-label:                      error;      /* 1 */
 $warning-label:                       warning;    /* 1 */
 
+
+/*** @export "label-structure" css */
 /**
  * Label Structure
  */
@@ -48,6 +52,8 @@ $warning-label:                       warning;    /* 1 */
   font-weight: bold; 
 }
 
+
+/*** @export "label-skin" css */
 /**
  * Label Skin 
  */
