@@ -66,6 +66,7 @@ $base-size: 16px;                                     /* 1 */
 $ratio: fourth();
 
 
+/*** @export "vertical-rhythm" css */
 /**
  * Compass Vertical Rhythm 
  * 
@@ -73,12 +74,13 @@ $ratio: fourth();
  * 2. This is automaticly converted to 100% by compass
  * 3. Establishes a baseline for $base-font-size
  */
-
 $relative-font-sizing : true;                         /* 2 */
 $base-font-size: $base-size;                          /* 2 */ 
 $base-line-height: 24px;
 @include establish-baseline($base-font-size);         /* 3 */
 
+
+/*** @export "typography-variables" css */
 /**
  * Typography Variables
  *
