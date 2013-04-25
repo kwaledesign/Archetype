@@ -1,10 +1,10 @@
+/*** @export "rules" css */
 /**
  * Rules
  * 
+ * Horizontal rules are scoped with $main-type-scope which is set in the base/_typography.scss partial
  */  
 
-
-/*** @export "rules" css */
 .#{$main-type-scope} {
   hr { 
     display: block; 
