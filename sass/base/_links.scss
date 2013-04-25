@@ -1,40 +1,26 @@
-/**
- * Link Styles
- *
- * $main-type-scope set within base/_typography.scss
- */
-
-
 /*** @export "links" css */
 /**
- * Link Variables
+ * Links
+ *
+ * Links are scoped with $main-type-scope which is set in the base/_typography.scss partial
  */
-$copy--link-color:                                              blue;
-$copy--link-color-visited:                                      purple;
-$copy--link-color-hover:                                        red;
-$copy--link-color-focus:                                        green;
 
-
-/**
- * Link Styles
- */
 .#{$main-type-scope} {
   a {
-    color: $copy--link-color;
+    color: blue;
     font-weight: normal;                   
     text-decoration: none;
     &:visited { 
-      color: $copy--link-color-visited; 
+      color: blue; 
     }
     &:hover { 
-      color: $copy--link-color-hover; 
+      color: blue; 
     } 
     &:focus { 
-      color: $copy--link-color-focus; 
+      color: blue; 
     }
   }
 }
-
 
 /*** @export "external-links" css */
 /**
