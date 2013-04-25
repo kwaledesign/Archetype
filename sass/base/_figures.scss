@@ -1,34 +1,21 @@
 /**
  * Figures
  *
+ * Figures are scoped with $main-type-scope which is set in the base/_typography.scss partial
  */
 
-
-/**
- * Figure Variables
- */
-$copy--figure-margin:                         0 0 $base-line-height 0;
-$copy--figure-img-margin:                     0 0 $quarter-spacer-unit 0;
-$copy--figcaption-font-size:                  ms(-1);
-$copy--figcaption-color-txt:                  $subtle-color--txt;
-$copy--figcaption-font-family:                $copy--body-text;
-
-
-/**
- * Figure Styles
- */
 .#{$main-type-scope} {
   figure {
-    margin-bottom : $copy--figure-margin; 
+    margin-bottom: $base-line-height;
     img {
-      margin-bottom : $copy--figure-img-margin;
+      margin-bottom: $quarter-spacer-unit;
     }
     figcaption {
       display: block;
       font-weight: normal;
-      font-size: $copy--figcaption-font-size;
-      color: $copy--figcaption-color-txt;
-      font-family: $copy--figcaption-font-family;
+      font-size: ms(-1);
+      color: $subtle-color--txt;
+      font-family: $copy--body-text;
     }
   }
 }
