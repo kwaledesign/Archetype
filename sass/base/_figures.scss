@@ -1,19 +1,21 @@
 /**
- * Figure & Figcaption
+ * Figures
+ *
+ * Figures are scoped with $main-type-scope which is set in the base/_typography.scss partial
  */
 
 .#{$main-type-scope} {
   figure {
-    margin-bottom : $base-line-height; 
+    margin-bottom: $base-line-height;
     img {
-      margin-bottom : $base-line-height / 4;              // spacer unit this
+      margin-bottom: $quarter-spacer-unit;
     }
     figcaption {
       display: block;
       font-weight: normal;
       font-size: ms(-1);
       color: $subtle-color--txt;
-      font-family: $copy--body-text; 
+      font-family: $copy--body-text;
     }
   }
 }
