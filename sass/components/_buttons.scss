@@ -193,11 +193,11 @@ $btn__danger--disabled-box-shadow:                    none;
  *
  * de-emphasized button style, looks like link, behaves like button
  */
-$btn__link--text-color:                               $copy--link-color;
+$btn__link--text-color:                               blue;
 // Hover
-$btn__link--hover-text-color:                         $copy--link-color-hover;
+$btn__link--hover-text-color:                         purple;
 // Active
-$btn__link--active-text-color:                        darken($btn__link--hover-text-color, 10%);
+$btn__link--active-text-color:                        darken(blue, 10%);
 // Disabled
 $btn__link--disabled-text-color:                      $subtle-color--txt;
 
