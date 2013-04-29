@@ -6,7 +6,6 @@
 
 /**
  * @todo:
- * 1. namespace button-varible names!!!!!
  * 2. tab focus state...tab-focus mixin???
  * 3. split round button mixin to it's own component
  * 4. button-groups
@@ -31,176 +30,25 @@ $positive:                            primary;    /* 1 */
 $secondary:                           secondary;  /* 1 */
 $negative:                            danger;     /* 1 */
 
-/* button Skin Variables: */
-
 /**
- * Default Button and States
+ * Button Skin Variables: 
  */
-$btn__default--color1:                                #B3B3B3;
-$btn__default--color2:                                darken($btn__default--color1, 10%);
-$btn__default--text-color:                            $white;
-$btn__default--text-shadow:                           darken($btn__default--color1, 20%) 0 -1px 0;
-$btn__default--border:                                1px solid darken($btn__default--color1, 5%);
-$btn__default--box-shadow:                            lighten($btn__default--color1, 15%) 0 1px 0 inset;
-// Hover
-$btn__default--hover-color1:                          darken($btn__default--color2, 5%);
-$btn__default--hover-color2:                          $btn__default--color2; 
-$btn__default--hover-text-color:                      white(.9);
-$btn__default--hover-text-shadow:                     $btn__default--text-shadow;
-$btn__default--hover-border:                          $btn__default--border;
-$btn__default--hover-box-shadow:                      none;
-// Active
-$btn__default--active-color1:                         $btn__default--color2; 
-$btn__default--active-color2:                         $btn__default--color2; 
-$btn__default--active-text-color:                     $btn__default--hover-text-color;
-$btn__default--active-text-shadow:                    none;
-$btn__default--active-border:                         $btn__default--border;
-$btn__default--active-box-shadow:                     darken($btn__default--color2, 10%) 0 1px 2px inset;
-// Disabled
-$btn__default--disabled-color1:                       $btn__default--color2; 
-$btn__default--disabled-color2:                       $btn__default--color2; 
-$btn__default--disabled-text-color:                   white(.9);
-$btn__default--disabled-text-shadow:                  $btn__default--text-shadow;
-$btn__default--disabled-border:                       $btn__default--border;
-$btn__default--disabled-box-shadow:                   none;
 
-/**
- * Primary Button and States
- */
-$btn__primary--color1:                                #00a6fc;
-$btn__primary--color2:                                darken($btn__primary--color1, 10%);
-$btn__primary--text-color:                            $white;
-$btn__primary--text-shadow:                           darken($btn__primary--color1, 20%) 0 -1px 0;
-$btn__primary--border:                                1px solid darken($btn__primary--color1, 5%);
-$btn__primary--box-shadow:                            lighten($btn__primary--color1, 15%) 0 1px 0 inset;
-// Hover
-$btn__primary--hover-color1:                          darken($btn__primary--color2, 5%);
-$btn__primary--hover-color2:                          $btn__primary--color2; 
-$btn__primary--hover-text-color:                      white(.9);
-$btn__primary--hover-text-shadow:                     $btn__primary--text-shadow;
-$btn__primary--hover-border:                          $btn__primary--border;
-$btn__primary--hover-box-shadow:                      none;
-// Active
-$btn__primary--active-color1:                         $btn__primary--color2; 
-$btn__primary--active-color2:                         $btn__primary--color2; 
-$btn__primary--active-text-color:                     $btn__primary--hover-text-color;
-$btn__primary--active-text-shadow:                    none;
-$btn__primary--active-border:                         $btn__primary--border;
-$btn__primary--active-box-shadow:                     darken($btn__primary--color2, 10%) 0 1px 2px inset;
-// Disabled
-$btn__primary--disabled-color1:                       $btn__primary--color2; 
-$btn__primary--disabled-color2:                       $btn__primary--color2; 
-$btn__primary--disabled-text-color:                   white(.9);
-$btn__primary--disabled-text-shadow:                  $btn__primary--text-shadow;
-$btn__primary--disabled-border:                       $btn__primary--border;
-$btn__primary--disabled-box-shadow:                   none;
+/* Default Button Skin */
+$btn__default--color1:                #B3B3B3;
+$btn__default--color2:                darken($btn__default--color1, 10%);
 
-/**
- * Secondary Button and States
- */
-$btn__secondary--color1:                              white(10%);
-$btn__secondary--color2:                              darken($btn__secondary--color1, 10%);
-$btn__secondary--text-color:                          $white;
-$btn__secondary--text-shadow:                         darken($btn__secondary--color1, 20%) 0 -1px 0;
-$btn__secondary--border:                              1px solid darken($btn__secondary--color1, 5%);
-$btn__secondary--box-shadow:                          lighten($btn__secondary--color1, 15%) 0 1px 0 inset;
-// Hover
-$btn__secondary--hover-color1:                        darken($btn__secondary--color2, 5%);
-$btn__secondary--hover-color2:                        $btn__secondary--color2; 
-$btn__secondary--hover-text-color:                    white(.9);
-$btn__secondary--hover-text-shadow:                   $btn__secondary--text-shadow;
-$btn__secondary--hover-border:                        $btn__secondary--border;
-$btn__secondary--hover-box-shadow:                    none;
-// Active
-$btn__secondary--active-color1:                       $btn__secondary--color2; 
-$btn__secondary--active-color2:                       $btn__secondary--color2; 
-$btn__secondary--active-text-color:                   $btn__secondary--hover-text-color;
-$btn__secondary--active-text-shadow:                  none;
-$btn__secondary--active-border:                       $btn__secondary--border;
-$btn__secondary--active-box-shadow:                   darken($btn__secondary--color2, 10%) 0 1px 2px inset;
-// Disabled
-$btn__secondary--disabled-color1:                     $btn__secondary--color2; 
-$btn__secondary--disabled-color2:                     $btn__secondary--color2; 
-$btn__secondary--disabled-text-color:                 white(.9);
-$btn__secondary--disabled-text-shadow:                $btn__secondary--text-shadow;
-$btn__secondary--disabled-border:                     $btn__secondary--border;
-$btn__secondary--disabled-box-shadow:                 none;
+/* Positive Button Skin */
+$btn__positive--color1:               #5B8737;
+$btn__positive--color2:               darken($btn__positive--color1, 10%);
 
-/**
- * Success Button and States
- */
-$btn__success--color1:                                #5b8737;
-$btn__success--color2:                                darken($btn__success--color1, 10%);
-$btn__success--text-color:                            $white;
-$btn__success--text-shadow:                           darken($btn__success--color1, 20%) 0 -1px 0;
-$btn__success--border:                                1px solid darken($btn__success--color1, 5%);
-$btn__success--box-shadow:                            lighten($btn__success--color1, 15%) 0 1px 0 inset;
-// Hover
-$btn__success--hover-color1:                          darken($btn__success--color2, 5%);
-$btn__success--hover-color2:                          $btn__success--color2; 
-$btn__success--hover-text-color:                      white(.9);
-$btn__success--hover-text-shadow:                     $btn__success--text-shadow;
-$btn__success--hover-border:                          $btn__success--border;
-$btn__success--hover-box-shadow:                      none;
-// Active
-$btn__success--active-color1:                         $btn__success--color2; 
-$btn__success--active-color2:                         $btn__success--color2; 
-$btn__success--active-text-color:                     $btn__success--hover-text-color;
-$btn__success--active-text-shadow:                    none;
-$btn__success--active-border:                         $btn__success--border;
-$btn__success--active-box-shadow:                     darken($btn__success--color2, 10%) 0 1px 2px inset;
-// Disabled
-$btn__success--disabled-color1:                       $btn__success--color2; 
-$btn__success--disabled-color2:                       $btn__success--color2; 
-$btn__success--disabled-text-color:                   white(.9);
-$btn__success--disabled-text-shadow:                  $btn__success--text-shadow;
-$btn__success--disabled-border:                       $btn__success--border;
-$btn__success--disabled-box-shadow:                   none;
+/* Negative Button Skin */
+$btn__negative--color1:               #E91C21;
+$btn__negative--color2:               darken($btn__negative--color1, 10%);
 
-/**
- * Danger Button
- */
-$btn__danger--color1:                                 #e91c21;
-$btn__danger--color2:                                 darken($btn__danger--color1, 10%);
-$btn__danger--text-color:                             $white;
-$btn__danger--text-shadow:                            darken($btn__danger--color1, 20%) 0 -1px 0;
-$btn__danger--border:                                 1px solid darken($btn__danger--color1, 5%);
-$btn__danger--box-shadow:                             lighten($btn__danger--color1, 15%) 0 1px 0 inset;
-// Hover
-$btn__danger--hover-color1:                           darken($btn__danger--color2, 5%);
-$btn__danger--hover-color2:                           $btn__danger--color2; 
-$btn__danger--hover-text-color:                       white(.9);
-$btn__danger--hover-text-shadow:                      $btn__danger--text-shadow;
-$btn__danger--hover-border:                           $btn__danger--border;
-$btn__danger--hover-box-shadow:                       none;
-// Active
-$btn__danger--active-color1:                          $btn__danger--color2; 
-$btn__danger--active-color2:                          $btn__danger--color2; 
-$btn__danger--active-text-color:                      $btn__danger--hover-text-color;
-$btn__danger--active-text-shadow:                     none;
-$btn__danger--active-border:                          $btn__danger--border;
-$btn__danger--active-box-shadow:                      darken($btn__danger--color2, 10%) 0 1px 2px inset;
-// Disabled
-$btn__danger--disabled-color1:                        $btn__danger--color2; 
-$btn__danger--disabled-color2:                        $btn__danger--color2; 
-$btn__danger--disabled-text-color:                    white(.9);
-$btn__danger--disabled-text-shadow:                   $btn__danger--text-shadow;
-$btn__danger--disabled-border:                        $btn__danger--border;
-$btn__danger--disabled-box-shadow:                    none;
-
-/**
- * Link Button
- *
- * de-emphasized button style, looks like link, behaves like button
- */
-$btn__link--text-color:                               blue;
-// Hover
-$btn__link--hover-text-color:                         purple;
-// Active
-$btn__link--active-text-color:                        darken(blue, 10%);
-// Disabled
-$btn__link--disabled-text-color:                      $subtle-color--txt;
-
+/* Secondary Button Skin */
+$btn__secondary--color1:              white(10%);
+$btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 
 
 /*** @export "button-structure" css */
@@ -267,77 +115,89 @@ $btn__link--disabled-text-color:                      $subtle-color--txt;
 /**
  * Button Skin
  *
- * basic skin styles for prototyping
- * override these with your project specific design
  */
-@mixin button-skin($button-skin) {
-  @if $button-skin == #{$default} {
-    background-color: $btn__default--color1;
-    color: $white;
-    border: 1px solid $strong;
-    &:hover {
-    background-color: $btn__default--color2;
-    }
-    &:active,
-    &.active {
-    background-color: tint($btn_default--color2, 10%);
-    }
-    &.disabled,
-    &[disabled] {
-    opacity: 0.6;
-    cursor: default;
-    }
+
+/**
+ * Default Button Skin
+ */
+.#{$default} {
+  background-color: $btn__default--color1;
+  color: $white;
+  border: 1px solid $strong;
+  &:hover {
+  background-color: $btn__default--color2;
   }
-  @if $button-skin == #{$positive} {
-    background-color: $btn__positive--color1;
-    color: $white;
-    border: 1px solid $strong;
-    &:hover {
-    background-color: $btn__positive--color2; 
-    }
-    &:active,
-    &.active {
-    background-color: tint($btn__positive--color2, 10%);
-    }
-    &.disabled,
-    &[disabled] {
-    opacity: 0.6;
-    cursor: default;
-    }
+  &:active,
+  &.active {
+  background-color: tint($btn__default--color2, 10%);
   }
- @if $button-skin == #{$negative} {
-    background-color: $btn__negative--color1;
-    color: $white;
-    border: 1px solid $strong;
-    &:hover {
-    background-color: $btn__negative--color2; 
-    }
-    &:active,
-    &.active {
-    background-color: tint($btn__negative--color2, 10%);
-    }
-    &.disabled,
-    &[disabled] {
-    opacity: 0.6;
-    cursor: default;
-    }
+  &.disabled,
+  &[disabled] {
+  opacity: 0.6;
+  cursor: default;
   }
- @if $button-skin == #{$secondary} {
-    background-color: $btn__secondary--color1;
-    color: $white;
-    border: 1px solid $strong;
-    &:hover {
-    background-color: $btn__secondary--color2; 
-    }
-    &:active,
-    &.active {
-    background-color: tint($btn__secondary--color2, 10%);
-    }
-    &.disabled,
-    &[disabled] {
-    opacity: 0.6;
-    cursor: default;
-    }
+}
+
+/**
+ * Positive Button Skin
+ */
+.#{$positive} {
+  background-color: $btn__positive--color1;
+  color: $white;
+  border: 1px solid $strong;
+  &:hover {
+  background-color: $btn__positive--color2; 
+  }
+  &:active,
+  &.active {
+  background-color: tint($btn__positive--color2, 10%);
+  }
+  &.disabled,
+  &[disabled] {
+  opacity: 0.6;
+  cursor: default;
+  }
+}
+
+/**
+ * Negative Button Skin
+ */
+.#{$negative} {
+  background-color: $btn__negative--color1;
+  color: $white;
+  border: 1px solid $strong;
+  &:hover {
+  background-color: $btn__negative--color2; 
+  }
+  &:active,
+  &.active {
+  background-color: tint($btn__negative--color2, 10%);
+  }
+  &.disabled,
+  &[disabled] {
+  opacity: 0.6;
+  cursor: default;
+  }
+}
+
+/**
+ * Secondary Button Skin
+ */
+.#{$secondary} {
+  background-color: $btn__secondary--color1;
+  color: $white;
+  border: 1px solid $strong;
+  &:hover {
+  background-color: $btn__secondary--color2; 
+  }
+  &:active,
+  &.active {
+  background-color: tint($btn__secondary--color2, 10%);
+  }
+  &.disabled,
+  &[disabled] {
+  opacity: 0.6;
+  cursor: default;
   }
 }
 
