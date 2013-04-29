@@ -1,37 +1,26 @@
-/**
- * Link Styles
- *
- * link styles are scoped. only 'default' values are those provided by the normalize reset
- * this is done to avoid repeatidly overridding
- * see: http://css-tricks.com/opt-in-typography/  &  http://anthonyshort.me/2012/05/global-typographic-styles-suck 
- */
-
-
-
 /*** @export "links" css */
 /**
- * Main Type Scope
+ * Links
  *
- * $main-type-scope set within base/_typography.scss
- * $copy-- variables set within base/_color-pallet.scss
+ * Links are scoped with $main-type-scope which is set in the base/_typography.scss partial
  */
+
 .#{$main-type-scope} {
   a {
-    color: $copy--link-color;
+    color: blue;
     font-weight: normal;                   
     text-decoration: none;
     &:visited { 
-      color: $copy--link-color-visited; 
+      color: blue; 
     }
     &:hover { 
-      color: $copy--link-color-hover; 
+      color: blue; 
     } 
     &:focus { 
-      color: $copy--link-color-focus; 
+      color: blue; 
     }
   }
 }
-
 
 /*** @export "external-links" css */
 /**
