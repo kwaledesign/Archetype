@@ -67,7 +67,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Small Button 
  */
-.btn--#{$small} {
+.btn__#{$small} {
   font-size: ($base-font-size - 4px);
   padding: 2px 6px; //6
   line-height: $base-line-height;//7
@@ -78,7 +78,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Medium Button 
  */
-.btn--#{$medium} {
+.btn__#{$medium} {
   font-size: ($base-font-size - 2px);
   padding: 5px 9px; //6
   line-height: $base-line-height;//7
@@ -89,7 +89,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Large Button 
  */
-.btn--#{$large} {
+.btn__#{$large} {
   font-size: ($base-font-size + 2px);
   padding: 9px 14px; //6
   line-height: $base-line-height;//7
@@ -102,7 +102,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
  *
  * full screen, block level button style for small screens 
  */
-.btn--#{$touch} {
+.btn__#{$touch} {
   @extend .btn--#{large};
   display: block;
   width: 100%;
@@ -120,7 +120,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Default Button Skin
  */
-.#{$default} {
+.btn--#{$default} {
   background-color: $btn__default--color1;
   color: $white;
   border: 1px solid $strong;
@@ -141,7 +141,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Positive Button Skin
  */
-.#{$positive} {
+.btn--#{$positive} {
   background-color: $btn__positive--color1;
   color: $white;
   border: 1px solid $strong;
@@ -162,7 +162,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Negative Button Skin
  */
-.#{$negative} {
+.btn--#{$negative} {
   background-color: $btn__negative--color1;
   color: $white;
   border: 1px solid $strong;
@@ -183,7 +183,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
 /**
  * Secondary Button Skin
  */
-.#{$secondary} {
+.btn--#{$secondary} {
   background-color: $btn__secondary--color1;
   color: $white;
   border: 1px solid $strong;
