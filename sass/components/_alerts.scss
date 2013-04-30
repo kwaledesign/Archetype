@@ -15,17 +15,17 @@
 /**
  * Alert Variables
  *
- * 1. optionally rename alert skin styles
+ * Optionally rename alert skin and structure classes
  */
 
 /**
- * Alert Structure Namespace:                     /* 1 */
+ * Alert Structure Namespace:
  */
 $small:                               small;
 $large:                               large;
 
 /**
- * Alert Skin Namespace:                          /* 1 */
+ * Alert Skin Namespace:
  */
 $default:                             info;
 $positive:                            success;
