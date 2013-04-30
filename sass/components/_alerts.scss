@@ -1,7 +1,6 @@
 /**
  * Alerts
  *
- * 1. optionally rename alert skin styles
  */
 
 
@@ -9,43 +8,29 @@
  * @todo: 
  * 1. potentially abstract alert object further, to extend to components other than alerts? 
  *    ie:  %block-relative; ****(or: partion???)***
- * 2. move object to object directory
  */
 
 
 /*** @export "alert-variables" css */
 /**
  * Alert Variables
+ *
+ * Optionally rename alert skin and structure classes
  */
 
-/* Alert Structure Namespace: */
-$small:                               small;      /* 1 */
-$large:                               large;      /* 1 */
+/**
+ * Alert Structure Namespace:
+ */
+$small:                               small;
+$large:                               large;
 
-/* Alert Skin Namespace: */
-$default:                             info;       /* 1 */
-$positive:                            success;    /* 1 */
-$negative:                            error;      /* 1 */
-$warning:                             warning;    /* 1 */
-
-/* Alert Skin Variables: */
-$alert-text-shadow:                   0 1px rgba(0,0,0,0.6);
-/* default: */
-$alert__default--color-bg:            #999;
-$alert__default--border:        2px solid darken($alert__default--color-bg, 15%);
-$alert__default--color-txt:           $white;
-/* positive: */
-$alert__success--color-bg:            #7fae00;
-$alert__success--border:        2px solid darken($alert__success--color-bg, 15%); 
-$alert__success--color-txt:           $alert__default--color-txt;
-/* warning: */
-$alert__warning--color-bg:            #f68b01;
-$alert__warning--border:        2px solid darken($alert__warning--color-bg, 15%);
-$alert__warning--color-txt:           $alert__default--color-txt;
-/* error: */
-$alert__error--color-bg:              #c00000;
-$alert__error--border:          2px solid darken($alert__error--color-bg, 15%);
-$alert__error--color-txt:             $alert__default--color-txt;
+/**
+ * Alert Skin Namespace:
+ */
+$default:                             info;
+$positive:                            success;
+$negative:                            error;
+$warning:                             warning;
 
 
 /*** @export "alert-structure" css */
@@ -54,7 +39,7 @@ $alert__error--color-txt:             $alert__default--color-txt;
  *
  * Extends alert object
  */
-.alert--#{$small} {
+.alert_#{$small} {
   padding: $quarter-spacer-unit;
   font-weight: bold;
   font-size: $base-font-size;
@@ -62,7 +47,7 @@ $alert__error--color-txt:             $alert__default--color-txt;
   border-radius: 4px;
 }
 
-.alert--#{$large} {
+.alert__#{$large} {
   padding: $half-spacer-unit;
   font-weight: bold;
   font-size: $base-font-size - 2;
@@ -76,43 +61,28 @@ $alert__error--color-txt:             $alert__default--color-txt;
  * Alert Skin 
  *
  */
-@mixin alert-skin($alert-skin) {
-  text-shadow: $alert-text-shadow;
-  @if $alert-skin == "default" {
-    background-color: $alert__default--color-bg;
-    border: $alert__default--border;
-    color: $alert__default--color-txt;
-  }
-  @if $alert-skin == "success" {
-    background-color: $alert__success--color-bg; 
-    border: $alert__success--border;
-    color: $alert__success--color-txt;
-  }
-  @if $alert-skin == "warning" {
-    background-color: $alert__warning--color-bg; 
-    border: $alert__warning--border; 
-    color: $alert__warning--color-txt;
-  }
-  @if $alert-skin == "error" {
-    background-color: $alert__error--color-bg; 
-    border: $alert__error--border;  
-    color: $alert__error--color-txt;
-  }
-}
 
 .alert--default {
-  @include alert-skin(default);
+  background-color: #999;
+  border: 2px solid darken(#999, 15%);
+  color: $white;
 }
 
 .alert--success {
-  @include alert-skin(success);
-}
-
-.alert--error {
-  @include alert-skin(error);
+  background-color: #7FAE00;
+  border: 2px solid darken(#7FAE00, 15%); 
+  color: $white;
 }
 
 .alert--warning {
-  @include alert-skin(warning);
+  background-color: #F68B01;
+  border: 2px solid darken(#F68B01, 15%);
+  color: $white;
+}
+
+.alert--error {
+  background-color: #C00000;
+  border: 2px solid darken(#C00000, 15%);
+  color: $white;
 }
 
