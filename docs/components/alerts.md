@@ -1,7 +1,7 @@
 <section class="copy">
 # Alerts
 
-Alert styles extend the [alert object](/objects/alert-object.html). Alerts are most commonly injected dynamiclly to provide context specific feedback to a specific user action. Alerts also make use of the [close-object](/objects/close-object.html) to allow users to dismiss the alert message.
+<p class="lead">Alert styles extend the [alert object](/objects/alert-object.html). Alerts are most commonly injected dynamiclly to provide context specific feedback to a specific user action. Alerts also make use of the [close-object](/objects/close-object.html) to allow users to dismiss the alert message.</p>
 
 {{ highlight(d['../markup-patterns/alerts.html|htmlsections']['alert-default-small'], "html") }}
 
