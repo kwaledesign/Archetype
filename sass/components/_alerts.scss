@@ -64,25 +64,25 @@ $warning:                             warning;
 
 .alert--default {
   background-color: #999;
-  border: 2px solid darken($alert__default--color-bg, 15%);
+  border: 2px solid darken(#999, 15%);
   color: $white;
 }
 
 .alert--success {
-  background-color: #7fae00;
-  border: 2px solid darken($alert__success--color-bg, 15%); 
+  background-color: #7FAE00;
+  border: 2px solid darken(#7FAE00, 15%); 
   color: $white;
 }
 
 .alert--warning {
-  background-color: #f68b01;
-  border: 2px solid darken($alert__warning--color-bg, 15%);
+  background-color: #F68B01;
+  border: 2px solid darken(#F68B01, 15%);
   color: $white;
 }
 
 .alert--error {
-  background-color: #c00000;
-  border: 2px solid darken($alert__error--color-bg, 15%);
+  background-color: #C00000;
+  border: 2px solid darken(#C00000, 15%);
   color: $white;
 }
 
