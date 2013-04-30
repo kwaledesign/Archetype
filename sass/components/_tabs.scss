@@ -2,8 +2,9 @@
  * Tabs
  * 
  */
- 
 
+
+/*** @export "tab-variables" css */
 /**
  * Tab Variables
  *
@@ -31,6 +32,8 @@ $tab--breakpoint:                     20em;                       /* 2 */
   @include pie-clearfix;    //@extend %cf; 
 }
 
+
+/*** @export "tab-content" css */
 /**
  * Tab Content
  *
@@ -42,6 +45,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
 } 
 
 
+/*** @export "tab-structure" css */
 /**
  * Tab Structure
  *
@@ -210,6 +214,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
 }
 
 
+/*** @export "tab-skin" css */
 /**
  * Tab Skin 
  *
