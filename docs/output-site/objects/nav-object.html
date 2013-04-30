@@ -71,34 +71,21 @@ Nav-Object description goes here...
 </p>
 <div class="highlight"><pre><a name="sass--objects--_nav-object.scss-idio.html-2"></a><span class="cm">/**</span>
 <a name="sass--objects--_nav-object.scss-idio.html-3"></a><span class="cm"> * Nav Object</span>
-<a name="sass--objects--_nav-object.scss-idio.html-4"></a><span class="cm"> * </span>
-<a name="sass--objects--_nav-object.scss-idio.html-5"></a><span class="cm"> */</span>
-<a name="sass--objects--_nav-object.scss-idio.html-6"></a>
-<a name="sass--objects--_nav-object.scss-idio.html-7"></a><span class="c1">// By default, this class displays &lt;ol&gt; and &lt;ul&gt; lists horizontally</span>
-<a name="sass--objects--_nav-object.scss-idio.html-8"></a>
-<a name="sass--objects--_nav-object.scss-idio.html-9"></a><span class="c1">// @TODO:  %nav-object {...}  %vertical-nav-object {@extend nav-object; ...}</span>
-<a name="sass--objects--_nav-object.scss-idio.html-10"></a>
-<a name="sass--objects--_nav-object.scss-idio.html-11"></a><span class="nc">.nav</span> <span class="p">{</span>
-<a name="sass--objects--_nav-object.scss-idio.html-12"></a>  <span class="na">list-style</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="sass--objects--_nav-object.scss-idio.html-13"></a>  <span class="na">margin-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>                <span class="c1">/////////vertical rythm????????</span>
-<a name="sass--objects--_nav-object.scss-idio.html-14"></a>  <span class="na">padding-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// disable default list padding</span>
-<a name="sass--objects--_nav-object.scss-idio.html-15"></a>  <span class="k">@extend</span> <span class="err">%</span><span class="nt">cf</span><span class="o">;</span>
-<a name="sass--objects--_nav-object.scss-idio.html-16"></a>    <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> 
-<a name="sass--objects--_nav-object.scss-idio.html-17"></a>      <span class="na">float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span> 
-<a name="sass--objects--_nav-object.scss-idio.html-18"></a>    <span class="p">}</span>
-<a name="sass--objects--_nav-object.scss-idio.html-19"></a>    <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="p">{</span> 
-<a name="sass--objects--_nav-object.scss-idio.html-20"></a>      <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="o">-</span><span class="no">block</span><span class="p">;</span> 
-<a name="sass--objects--_nav-object.scss-idio.html-21"></a>    <span class="p">}</span>  
-<a name="sass--objects--_nav-object.scss-idio.html-22"></a>          
-<a name="sass--objects--_nav-object.scss-idio.html-23"></a><span class="p">}</span>
-<a name="sass--objects--_nav-object.scss-idio.html-24"></a>
-<a name="sass--objects--_nav-object.scss-idio.html-25"></a><span class="cm">/*h5bp*/</span>
-<a name="sass--objects--_nav-object.scss-idio.html-26"></a><span class="nt">nav</span> <span class="nt">ul</span><span class="o">,</span>
-<a name="sass--objects--_nav-object.scss-idio.html-27"></a><span class="nt">nav</span> <span class="nt">ol</span> <span class="p">{</span>
-<a name="sass--objects--_nav-object.scss-idio.html-28"></a>  <span class="na">margin</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
-<a name="sass--objects--_nav-object.scss-idio.html-29"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
-<a name="sass--objects--_nav-object.scss-idio.html-30"></a>  <span class="na">list-style</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="sass--objects--_nav-object.scss-idio.html-31"></a><span class="p">}</span>
+<a name="sass--objects--_nav-object.scss-idio.html-4"></a><span class="cm"> *</span>
+<a name="sass--objects--_nav-object.scss-idio.html-5"></a><span class="cm"> * csswizardry.com/2011/09/the-nav-abstraction</span>
+<a name="sass--objects--_nav-object.scss-idio.html-6"></a><span class="cm"> */</span>
+<a name="sass--objects--_nav-object.scss-idio.html-7"></a><span class="nc">.nav</span> <span class="p">{</span>
+<a name="sass--objects--_nav-object.scss-idio.html-8"></a>  <span class="na">list-style</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="sass--objects--_nav-object.scss-idio.html-9"></a>  <span class="na">margin-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--objects--_nav-object.scss-idio.html-10"></a>  <span class="na">padding-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<a name="sass--objects--_nav-object.scss-idio.html-11"></a>  <span class="k">@extend</span> <span class="err">%</span><span class="nt">cf</span><span class="o">;</span>
+<a name="sass--objects--_nav-object.scss-idio.html-12"></a>  <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">{</span>
+<a name="sass--objects--_nav-object.scss-idio.html-13"></a>    <span class="k">&amp;</span><span class="o">,</span>
+<a name="sass--objects--_nav-object.scss-idio.html-14"></a>    <span class="k">&amp;</span> <span class="o">&gt;</span> <span class="nt">a</span><span class="p">{</span>
+<a name="sass--objects--_nav-object.scss-idio.html-15"></a>      <span class="nt">display</span><span class="nd">:inline-block</span><span class="o">;</span>
+<a name="sass--objects--_nav-object.scss-idio.html-16"></a>    <span class="p">}</span>
+<a name="sass--objects--_nav-object.scss-idio.html-17"></a>  <span class="p">}</span>
+<a name="sass--objects--_nav-object.scss-idio.html-18"></a><span class="p">}</span>
 </pre></div>
 
 

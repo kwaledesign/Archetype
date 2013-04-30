@@ -10,15 +10,13 @@
  * 1. https://github.com/chriseppstein/compass
  * 2. https://github.com/scottkellum/modular-scale
  * 3. https://github.com/kwaledesign/Archetype
- * 4. https://github.com/kwaledesign/Colorkit
- * 5. https://github.com/Team-Sass/breakpoint
+ * 4. https://github.com/Team-Sass/breakpoint
  */
 
 @import "compass";                                 /* 1 */
 @import "modular-scale";                           /* 2 */
 @import "archetype";                               /* 3 */
-@import "colorkit/colorkit";                       /* 4 */
-//@import "breakpoint";                            /* 5 */
+//@import "breakpoint";                            /* 4 */
 
 /**
  * Compass
