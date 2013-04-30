@@ -103,7 +103,7 @@ $btn__secondary--color2:              darken($btn__secondary--color1, 10%);
  * full screen, block level button style for small screens 
  */
 .btn__#{$touch} {
-  @extend .btn--#{large};
+  @extend .btn__#{large};
   display: block;
   width: 100%;
   padding-left: 0;
