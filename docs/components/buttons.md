@@ -2,10 +2,10 @@
 
 # Buttons
 
-<p class="lead">Buttons are a very common component in building user interactions.  The button object is very flexible and extendable mixin that can easily be customized globally by changing the button variables within the settings.scss partial, or by providing optional over-ride arguments when calling the mixin on the fly.</p>
+<p class="lead">Buttons extend the <a href="/objects/button-object.html">Button-Object</a> and are extended with a structure and a skin class.</p>
 
 ## Button Classes
-{{ highlight(d['../markup-patterns/buttons.html|htmlsections']['btn-default'], "html") }}
+{{ highlight(d['../markup-patterns/buttons.html|htmlsections']['btn-markup-pattern'], "html") }}
 
 ## Button Variables
 {{ d['../sass/components/_buttons.scss|idio']['button-variables'] }}
