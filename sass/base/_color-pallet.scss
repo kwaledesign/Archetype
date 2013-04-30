@@ -9,8 +9,9 @@
 /**
  * Import Colorkit
  * 
+ * https://github.com/kwaledesign/Colorkit
  */
-// @import "colorkit/colorkit"; // this is set within _settings.scss
+@import "colorkit/colorkit";
 
 /**
  * Color Scheme
@@ -23,7 +24,7 @@
  */
 $color-relationship: double-complementary;
 $base-color: red;
-//@include color-scheme($color-relationship, $base-color);
+@include color-scheme($color-relationship, $base-color);
 
 /**
  * Black and White
@@ -76,17 +77,6 @@ $muted-color--bg:                   $muted;
  * $brand-secondary:;
  * $brand-accent:;
  */
-
-
-/**
- * Link Colors
- * 
- * (main type scope)
- */
-$copy--link-color: blue;
-$copy--link-color-visited: purple;
-$copy--link-color-hover: red;
-$copy--link-color-focus: green;
 
 
 /**

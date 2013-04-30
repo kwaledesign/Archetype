@@ -34,6 +34,9 @@
 ## Tab Variables
 {{ d['../sass/components/_tabs.scss|idio']['tab-variables'] }}
 
+## Tab Content
+{{ d['../sass/components/_tabs.scss|idio']['tab-content'] }}
+
 ## Tab Structure
 {{ d['../sass/components/_tabs.scss|idio']['tab-structure'] }}
 
