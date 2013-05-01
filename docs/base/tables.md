@@ -1,7 +1,7 @@
 <section class="copy">
 # Tables
 
-insert table description here...
+<p class="lead">insert table description here...</p>
 
 ## Base Table Styles
 {{ highlight(d['../markup-patterns/tables.html|htmlsections']['tables'], "html") }}
