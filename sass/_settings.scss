@@ -29,6 +29,41 @@ $legacy-support-for-ie7 : false;                          /* 1 */
 $legacy-support-for-ie8 : true;                           /* 1 */
 
 /**
+ * Normalize Mixin
+ *
+ * https://github.com/kwaledesign/Archetype-Utilities/blob/master/archetype/_normalize.scss
+ * comment out any unneeded components
+ */
+$mark-color:                                              #000;
+$mark-bg:                                                 #ff0;
+$body-font:                                               sans-serif;
+$code-font:                                               monospace, serif;
+$code-font-size:                                          1em;
+$small-font-size:                                         80%;
+$sub-sup-font-size:                                       75%;
+$field-set-border:                                        1px solid #c0c0c0;
+$field-set-margin:                                        0 2px;
+$field-set-padding:                                       0.35em 0.62em 0.75em;
+$selection-highlight-color:                               #fe57a1;
+$tap-highlight-color:                                     #222;
+$selection-text-color:                                    white;
+
+@mixin normalize() {
+	@include normalize-display;
+	@include normalize-base;
+	@include normalize-links;
+	@include normalize-typography;
+	@include normalize-embeds;
+	@include normalize-figures;
+	@include normalize-forms;
+	@include normalize-tables;
+}
+/* call normalize mixin */
+@include normalize;
+
+
+
+/**
  * Modular Scale
  * 
  * https://github.com/scottkellum/modular-scale
