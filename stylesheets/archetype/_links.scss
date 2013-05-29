@@ -1,0 +1,13 @@
+/**
+ * Link Mixins
+ * 
+ */
+
+
+/**
+ * fade between default and hover colors
+ */
+@mixin link-transition($time: 0.5s, $easing: "ease-out", $property: "all") {
+  @include transition($property, $time, $easing);
+}
+

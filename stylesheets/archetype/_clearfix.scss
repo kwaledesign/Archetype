@@ -1,0 +1,26 @@
+/**
+ * Clearfix
+ * 
+ */
+
+
+/**
+ * Modern Clearfix
+ *
+ * no legacy support, but works well for modern browsers and border-box
+ * http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ *
+ * see compass docs for legacy clearfix options
+ */
+@mixin a-clearfix() {
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+%cf {
+  @include a-clearfix();
+}
+
