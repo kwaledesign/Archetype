@@ -36,7 +36,7 @@ $legacy-support-for-ie8 : true;                           /* 1 */
  */
 @mixin normalize() {
 	@include normalize-display;
-	@include normalize-base;
+	@include normalize-page;
 	@include normalize-links;
 	@include normalize-typography;
 	@include normalize-embeds;
