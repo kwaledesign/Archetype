@@ -36,7 +36,7 @@ $legacy-support-for-ie8 : true;                           /* 1 */
  */
 @mixin normalize() {
 	@include normalize-display;
-	@include normalize-base;
+	@include normalize-page;
 	@include normalize-links;
 	@include normalize-typography;
 	@include normalize-embeds;
@@ -106,6 +106,14 @@ $base-line-height: 24px;
  * 1. Text selection highlight color
  * 2. Text selection text color
  */
+
+/**
+ * @TODO: set up typography pallet partial
+ *        these variables should be initialized there
+ * 
+ */
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$body-font:                           $georgia;
 
 $selection-highlight-color:           #fe57a1;        /* 1 */
 $tap-highlight-color:                 black(75);

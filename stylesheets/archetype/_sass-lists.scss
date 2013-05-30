@@ -1,0 +1,51 @@
+/**
+ * Sass List Utilities
+ * 
+ * https://github.com/ericam/accoutrement/blob/master/stylesheets/accoutrement/_sass-lists.scss
+ */
+
+
+/**
+ * Return a list with items in reverse order
+ * 
+ * reverse($list)
+ * $list: The list to reverse.
+ */
+@function reverse($list) {
+  $l: length($list);
+  $reverse: compact();
+  @for $i from 0 to $l { $reverse: append($reverse,nth($list,$l - $i)); }
+  @return $reverse;
+}
+
+/**
+ * Return a list with all duplicates removed
+ * 
+ * remove-duplicates($list)
+ * $list: The list to clean up
+ */
+@function remove-duplicates($list) {
+  $clean: compact();
+  @each $item in $list {
+    @if not index($clean, $item) { $clean: append($clean, $item) }
+  }
+  @return $clean;
+}
+
+/**
+ * Return a list with specific items removed
+ * 
+ * filter($list, $target)
+ * $list: The list to filter
+ * $target: An item to be removed from the list
+ */
+@function filter($list, $target) {
+  $clean: compact();
+  @if index($list, $target) {
+    @each $item in $list {
+      $clean: if($item == $target, $clean, append($clean, $item));
+    }
+  } @else { $clean: $list; }
+  @return $clean;
+}
+

@@ -1,0 +1,104 @@
+/**
+ * Fields
+ *
+ * note: underscores in field names are replaced with dashes
+ */
+
+
+/*
+ * Field wrappers when the Fences module is enabled.
+ */
+
+// The optional label for a field
+.field-label { 
+}
+
+// underscores in field name are replaced with dashes
+.field-FIELDNAME { 
+}
+
+
+/*
+ * If not using Fences module use these selectors instead:
+ */
+/*
+// wrapper for any field
+.field {
+}
+*/
+
+/*
+ * Field types (Core)
+ */
+/*
+.field-type-text {
+}
+
+.field-type-text-long {
+}
+
+.field-type-text-with-summary {
+}
+
+.field-type-image {
+}
+
+.field-type-file {
+}
+
+.field-type-taxonomy-term-reference {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-list-text {
+}
+
+.field-type-list-boolean {
+}
+
+.field-type-list-integer {
+}
+
+.field-type-list-float {
+}
+*/
+
+/*
+ * Field types (Contrib)
+ */
+/*
+// Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy
+.field-type-datetime { }
+
+.field-type-node-reference {
+}
+
+.field-type-user-reference {
+}
+*/
+
+/*
+ * Named fields
+ */
+/*
+.field-name-body {
+}
+
+.field-name-field-image {
+}
+
+.field-name-field-tags {
+}
+
+// underscores in field name are replaced with dashes
+.field-name-field-FIELDNAME { 
+}
+*/

@@ -1,0 +1,110 @@
+/**
+ * Accessibility
+ * 
+ */
+
+
+/**
+ * Focus state for keyboard and accessibility
+ *
+ * https://github.com/jlong/sass-twitter-bootstrap/blob/master/lib/_mixins.scss
+ * ex: &:focus { @include tab-focus(); }
+ */
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/**
+ * Image Replacement
+ */
+@mixin ir() {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+  }
+}
+
+%ir {
+  @include ir;
+}
+
+/**
+ * Hidden
+ * 
+ * http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+ * same as compass: @include hide-text(); which includes a hide-left argument
+ */
+@mixin hidden {
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+%hidden {
+  @include hidden;  
+}
+
+/**
+ * Invisable
+ *
+ * Hide from both screenreaders and browsers: h5bp.com/u 
+ * http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone
+ * http://a11yproject.com/posts/how-to-hide-content
+ * 
+ * also consider adding: aria-hidden="true" attribute
+ */
+@mixin invisable {
+  display: none !important;
+  visibility: hidden;
+}
+
+%hidden {
+  @include hidden;
+}
+
+/**
+ * Visually Hidden
+ * 
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v 
+ * 
+ * $focus-state argument extends the .visuallyhidden class
+ * allows the element to be focusable when navigated to via the keyboard: h5bp.com/p 
+ */
+@mixin visually-hidden($focus-state: null) {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px; 
+  @if $focus-state == "focusable" {   
+    &:active, 
+    &:focus { 
+      clip: auto; 
+      height: auto; 
+      margin: 0; 
+      overflow: visible; 
+      position: static; 
+      width: auto; 
+    }
+  }
+}
+
+%visuallyhidden {
+  @include visually-hidden;
+}
+%visuallyhidden-focusable {
+  @include visually-hidden(focusable);
+}
+

@@ -1,0 +1,123 @@
+/**
+ * Media
+ * 
+ * intrinsic ratio, and hifi
+ */
+
+
+/**
+ * hidpi
+ *
+ * media query syntax: http://css-tricks.com/snippets/css/retina-display-media-query/
+ *
+ * 1. recommended values for $resolution: 1, 1.3, 1.5, 2;
+ */
+$default-hidpi-ratio:                         1.3 !default;       /* 1 */
+
+@mixin hidpi($resolution: $default-hidpi-ratio) {
+  @media 
+    only screen and (-webkit-min-device-pixel-ratio: $resolution),
+    only screen and (min-resolution: #{round($resolution * 96 )}dpi) {
+      @content;
+  }
+}
+
+
+/**
+ * Fluid Ratios
+ * 
+ * Force an element and its children to hold a fluid ratio
+ * http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+ * https://github.com/ericam/accoutrement/blob/master/stylesheets/accoutrement/_media.scss
+ *
+ * also see: jquery solution: http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ *
+ * @include fluid-ratio([$ratio, $width, $children])
+ * $ratio:      16/9, 4/3, 3/2
+ * $width:      Fluid width
+ * $children:   Child elements to keep within the ratio
+ *
+ * 1. Default fluid ratio
+ * 2. Default fluid ratio width
+ * 3. Child elements to keep within the ratio
+ */
+$default-fluid-ratio:                         16/9 !default;      /* 1 */
+$default-fluid-ratio-width:                   100% !default;      /* 2 */
+$default-fluid-ratio-children:                '*'  !default;      /* 3 */
+
+@mixin fluid-ratio(
+  $ratio: $default-fluid-ratio,
+  $width: $default-fluid-ratio-width,
+  $children: $default-fluid-ratio-children) {
+  position: relative;
+  height: 0;
+  padding-top: (1 / $ratio) * $width;
+  width: $width;
+  @if $children {
+    > #{$children} {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+ 
+/**
+ * Fluid Scaling 
+ * 
+ * https://github.com/Snugug/toolkit/blob/master/compass/stylesheets/toolkit/_intrinsic-ratio.scss
+ */
+
+$intrinsic-ratio:           16/9 !default;
+$intrinsic-ratio-width:     100% !default;
+$intrinsic-ratio-elements:  '> *' !default;
+$intrinsic-ratio-extend:    true !default;
+
+@mixin intrinsic-ratio-parent {
+    position: relative;
+    height: 0;
+}
+
+@mixin intrinsic-ratio-child {
+  display: block;
+  position: absolute;
+  width: 100% !important; // Nuke the external styles
+  height: 100% !important; // Nuke the external styles
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin intrinsic-ratio($ratio: $intrinsic-ratio, $width: $intrinsic-ratio-width, $elements: $intrinsic-ratio-elements, $extend: $intrinsic-ratio-extend) {
+  @if not $extend {
+    @include intrinsic-ratio-parent;
+  }
+  @else {
+    @extend %intrinsic-ratio-parent;
+  }
+  padding-top: (1 / $ratio) * $width;
+  width: $width;
+  @each $element in $elements {
+    #{$element} {
+      @if not $extend {
+  @include intrinsic-ratio-child;
+      }
+      @else {
+  @extend %intrinsic-ratio-child;
+      }
+    }
+  }
+}
+
+%intrinsic-ratio-parent {
+  @include intrinsic-ratio-parent;
+}
+
+%intrinsic-ratio-child {
+  @include intrinsic-ratio-child;
+}
+

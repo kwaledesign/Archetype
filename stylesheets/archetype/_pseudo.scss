@@ -1,0 +1,49 @@
+/**
+ * Pseudo Elements
+ * 
+ * https://github.com/ericam/accoutrement/blob/master/stylesheets/accoutrement/_pseudo-elements.scss
+ */
+
+/**
+ * Before
+ * 
+ * Add content before an element
+ *
+ * @include before($content)
+ * $content: The string to add before
+ */
+@mixin before($content) {
+  &:before {
+    content: $content;
+    @content;
+  }
+}
+
+/**
+ * After
+ * 
+ * Add content after an element
+ * @include after($content)
+ * $content: The string to add after
+ */
+@mixin after($content) {
+  &:after {
+    content: $content;
+    @content;
+  }
+}
+
+/**
+ * Wrap
+ * 
+ * Wrap content before and after an element
+ *
+ * @include wrap($content)
+ * $content: The strings to add before and after
+ */
+@mixin wrap-content($content: "“" "”") {
+  $content: if(length($content) < 2, $content $content, $content);
+  @include before(nth($content,1)) { @content; };
+  @include after(nth($content,2)) { @content; };
+}
+
