@@ -1,0 +1,32 @@
+/**
+ * Alignment
+ * 
+ */
+
+/**
+ * Center-align a block level element
+ * 
+ */
+@mixin horizontal-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%horizontal-center {
+  @include horizontal-center;
+}
+
+/**
+ * Vertical Align of content
+ * 
+ * http://css-tricks.com/vertically-center-multi-lined-text/
+ */
+@mixin vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+%vertical-center {
+  @include vertical-center;
+}

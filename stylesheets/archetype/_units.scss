@@ -1,0 +1,46 @@
+/**
+ * Units
+ * 
+ */
+
+
+/**
+ * Percentage 
+ * 
+ * calculate a percentage based on values independant of Susy
+ */
+@function calc-percent($target, $container) {
+  @return $target / $container * 100%;
+}
+
+/**
+ * Ems
+ * 
+ * calculate an em value based on values independant of Susy
+ */
+@function calc-em($target, $container) {
+  @return $target / $container * 1em;
+}
+
+/**
+ * Convert to Ems
+ * 
+ * convert given value to em units
+ */
+@function convert-to-em($value) {
+  $unit: unit($value);
+  
+  @if $unit == 'px' {
+    @return $value / $base-font-size * 1em;
+  }
+  @else if $unit == '%' {
+    @return $value / 100% * 1em;
+  }
+  @else if $unit == 'em' {
+    @return $value;
+  }
+  @else {
+    @return $value;
+  }
+}
+

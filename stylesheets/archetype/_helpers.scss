@@ -1,0 +1,45 @@
+/**
+ * Helper Utilities
+ *
+ */
+
+
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.caps {
+  text-transform: uppercase;
+}
+
+
+
+/**
+ * Text Overflow
+ * 
+ * Requires inline-block or block for proper styling
+ */
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/**
+ * Drupal Unpublished Node / Comment
+ *
+ * The word "Unpublished" displayed underneath unpublished nodes and comments.
+ * http://drupal.org/project/zen
+ */
+@mixin unpublished-div {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; // A very nice CSS3 property
+}
