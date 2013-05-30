@@ -1,0 +1,32 @@
+/*** @export "page" css */
+/**
+ * Page
+ *
+ * Normalize:
+ * 1. Sets default font family to $normalize-body-font
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom.
+ * 3. Removes default margin
+ * 
+ * Archetype:
+ *
+ */
+
+html {
+  font-family: $body-font;                                /* 1 */
+  -webkit-text-size-adjust: 100%;                         /* 2 */
+  -ms-text-size-adjust: 100%;                             /* 2 */
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  color: $copy--body-text-color;
+  background: $copy--body-bg-color;
+  font-family: $copy--body-text;
+  font-weight: normal;
+  margin: 0;                                              /* 3 */
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
