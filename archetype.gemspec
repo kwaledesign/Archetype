@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.1.beta.4"
-  s.date = "2013-05-28"
+  s.version = "0.1.beta.5"
+  s.date = "2013-05-30"
 
   # Gem Details
   s.name = "archetype"
