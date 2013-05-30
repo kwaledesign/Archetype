@@ -26,13 +26,16 @@ $container-style:                                         fluid;                
  * Grid Background
  *
  * Visually debug grid layouts
+ *
+ * Note: Sub-pixel rounding can lead to several pixels of variation between browsers
+ *       Susy columns tend to be more accurate than gradient grid-backgrounds 
  */
 $grid-background-baseline-color:                          rgba(255, 0, 0, 0.20);
 $grid-background-column-color:                            rgba(100, 100, 225, 0.15);
 $grid-background-gutter-color:                            rgba(0, 0, 0, 0);
 
 @mixin susy-grid-background {
-  @include grid-background($total-cols, $col-width, $gutter-width, $base-line-height, $side-gutter-width, $force-fluid: true);
+  @include grid-background();
 }
 
 /**
