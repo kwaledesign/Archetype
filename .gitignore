@@ -2,7 +2,4 @@
 .cache/
 .sass-cache/
 css/
-docs/artifacts
 docs/logs
-docs/output
-docs/output-long
