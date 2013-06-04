@@ -1,0 +1,141 @@
+/**
+ * Archetype Settings 
+ *
+ */
+
+
+/**
+ * Imports
+ *
+ * 1. https://github.com/chriseppstein/compass
+ * 2. https://github.com/scottkellum/modular-scale
+ * 3. https://github.com/kwaledesign/Archetype
+ * 4. https://github.com/Team-Sass/breakpoint
+ */
+
+@import "compass";                                 /* 1 */
+@import "modular-scale";                           /* 2 */
+@import "archetype";                               /* 3 */
+//@import "breakpoint";                            /* 4 */
+
+/**
+ * Compass
+ * 
+ * 1. Enable Compass to use HTML hacks to support IE 6 and 7
+ *    Note: Archetype supports IE9+ (IE6-8 are served a linear layout)
+ */
+$legacy-support-for-ie6 : false;                          /* 1 */
+$legacy-support-for-ie7 : false;                          /* 1 */
+$legacy-support-for-ie8 : true;                           /* 1 */
+
+/**
+ * Normalize Mixin
+ *
+ * https://github.com/kwaledesign/Archetype-Utilities/blob/master/archetype/_normalize.scss
+ * comment out any unneeded components
+ */
+@mixin normalize() {
+	@include normalize-display;
+	@include normalize-page;
+	@include normalize-links;
+	@include normalize-typography;
+	@include normalize-embeds;
+	@include normalize-figures;
+	@include normalize-forms;
+	@include normalize-tables;
+}
+/* call normalize mixin */
+@include normalize;
+
+
+
+/**
+ * Modular Scale
+ * 
+ * https://github.com/scottkellum/modular-scale
+ * http://thesassway.com/projects/modular-scale
+ * http://modularscales.com
+ *
+ * To set multiple $base-size and/or $ratio values use a space separated list. If
+ * you use multiple $base-size values, the starting point of the scale will always
+ * be the lowest value in this list.
+ *
+ * golden 1:1.618 (default)
+ * double-octave 1:4 
+ * major-twelfth 1:3
+ * major-eleventh 3:8 
+ * major-tenth 2:5
+ * octave 1:2
+ * major-seventh 8:15
+ * minor-seventh 9:16
+ * major-sixth
+ * minor-sixth 5:8
+ * fifth 2:3
+ * augfourth 1:√2
+ * fourth 3:4
+ * major-third 4:5
+ * minor-third 5:6
+ * major-second 8:9
+ * minor-second 15:16
+ *
+ * 1. Default to $base-font-size 
+ */
+
+$base-size: 16px;                                     /* 1 */
+$ratio: fourth();
+
+
+/*** @export "vertical-rhythm" css */
+/**
+ * Compass Vertical Rhythm 
+ * 
+ * 1. Set this false for px's
+ * 2. This is automaticly converted to 100% by compass
+ * 3. Establishes a baseline for $base-font-size
+ */
+$relative-font-sizing : true;                         /* 2 */
+$base-font-size: $base-size;                          /* 2 */ 
+$base-line-height: 24px;
+@include establish-baseline($base-font-size);         /* 3 */
+
+
+/*** @export "typography-variables" css */
+/**
+ * Typography Variables
+ *
+ * 1. Text selection highlight color
+ * 2. Text selection text color
+ */
+
+/**
+ * @TODO: set up typography pallet partial
+ *        these variables should be initialized there
+ * 
+ */
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$body-font:                           $georgia;
+
+$selection-highlight-color:           #fe57a1;        /* 1 */
+$tap-highlight-color:                 black(75);
+$selection-text-color:                $white;         /* 2 */
+
+
+/**
+ * Spacer Units
+ */
+$base-spacer-unit: $base-font-size;
+
+$half-spacer-unit: $base-spacer-unit / 2;
+$third-spacer-unit: $base-spacer-unit / 3;
+$quarter-spacer-unit: $base-spacer-unit / 4;
+
+$media--spacer: $half-spacer-unit;
+
+/**
+ * Radius Unit
+ * 
+ */
+$radius-unit--small: 3px;
+$radius-unit--large: 6px;
+
+

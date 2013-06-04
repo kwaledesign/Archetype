@@ -1,0 +1,112 @@
+/**
+ * Color Pallet
+ * 
+ * global color settings
+ */
+
+
+/*** @export "colorkit" css */
+/**
+ * Import Colorkit
+ * 
+ * https://github.com/kwaledesign/Colorkit
+ */
+@import "colorkit/colorkit";
+
+/**
+ * Color Scheme
+ * 
+ * Generate harmonious color scheme based on a single key-color ($base-color)
+ *
+ * $base-color: any CSS color value or keyword
+ * $color-relationship: monochromatic/complementary/spit-complementary/analogous/triadic/tetradic/quadradic
+ * $color-angle: (defaults to 30)
+ */
+$color-relationship: double-complementary;
+$base-color: red;
+@include color-scheme($color-relationship, $base-color);
+
+/**
+ * Black and White
+ */
+$white:                             white(0);
+$black:                             black(0);
+
+/**
+ * Shadow and Highlight
+ */
+$highlight-color:                   alpha-white(.5)!default;
+$shadow-color:                      alpha-black(.2) !default;
+
+/**
+ * Semantic Utilities
+ *
+ * utility color variables to extend with semantic variable names
+ */
+$strong:                            black(20%) !default;
+$subtle:                            black(60%) !default;
+$muted:                             black(70%) !default;
+$accent:                            yellow !default;
+
+/**
+ * Text Colors
+ */
+$strong-color--txt:                 $strong;
+$subtle-color--txt:                 $subtle;
+$muted-color--txt:                  $muted;
+$accent-color--txt:                 $accent;
+
+/**
+ * Background Colors
+ */
+$strong-color--bg:                  $strong;
+$subtle-color--bg:                  $subtle;
+$muted-color--bg:                   $muted;
+
+/**
+ * Brand Colors
+ *
+ * prefixed with '$brand-' to avoid proper color names for ease of use and to avoid collision with CSS color keywords
+ * ex: $brand-blue: deepskyblue; or: $brand-accent: tint($brand-blue, 12%);
+ */
+
+/**
+ * ex:
+ * $brand-blue:;
+ * $brand-primary:;
+ * $brand-secondary:;
+ * $brand-accent:;
+ */
+
+
+/**
+ * UI and State Colors
+ *
+ */
+/*
+$primary-color:                     #2ba6cb !default;
+$secondary-color:                   #e9e9e9 !default;
+$tertiary-color: 
+$accent-color: $accent;
+*/
+
+$warning-color:                     #fCF8E3 !default;
+$warning-color--txt:                tint($warning-color, 25%);
+$warning-color--bg:                 $warning-color;
+$warning-color--border:             darken(adjust-hue($warning-color, -10), 3%) !default;
+
+$error-color:                       #F2DEDE !default;
+$error-color--txt:                  tint($error-color, 25%);
+$error-color--bg:                   $error-color;
+$error-color--border:               darken(adjust-hue($error-color, -10), 3%) !default;
+
+$success-color:                     #DFF0D8 !default;
+$success-color--txt:                tint($success-color, 25%);
+$success-color--bg:                 $success-color;
+$success-color--border:             darken(adjust-hue($success-color, -10), 5%) !default;
+
+$info-color:                        #D9EDF7 !default;
+$info-color--txt:                   tint($info-color, 25%);
+$info-clor--bg:                     $info-color;
+$info-color--border:                darken(adjust-hue($info-color, -10), 7%) !default;
+
