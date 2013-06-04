@@ -30,19 +30,6 @@
 ## Vertical Pills
 {{ (d['../markup-patterns/tabs.html|htmlsections']['vertical-pills']) }}
 
-
-## Tab Variables
-{{ d['../sass/components/_tabs.scss|idio']['tab-variables'] }}
-
-## Tab Content
-{{ d['../sass/components/_tabs.scss|idio']['tab-content'] }}
-
-## Tab Structure
-{{ d['../sass/components/_tabs.scss|idio']['tab-structure'] }}
-
-## Tab Skin
-{{ d['../sass/components/_tabs.scss|idio']['tab-skin'] }}
-
 </section>
 
 <script src="../js/jquery.easytabs.js" type="text/javascript"></script>
