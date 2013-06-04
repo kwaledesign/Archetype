@@ -5,8 +5,8 @@ site:
     - .scss|idio
 
 assets:
-    - .css
-    - .js
-    - .png
-    - .jpg
+  - .css
+  - .js
+  - .png
+  - .jpg
 

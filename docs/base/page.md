@@ -2,7 +2,7 @@
 # Page
 Page styles description goes here...
 
-{{ d['../sass/base/_page.scss|idio']['page'] }}
+{{ d['../project/base/_page.scss|idio']['page'] }}
 
 
 </section>

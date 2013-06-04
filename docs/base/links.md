@@ -4,11 +4,11 @@
 {{ (d['../markup-patterns/links.html|htmlsections']['links']) }}
 
 ## Link Styles
-{{ d['../sass/base/_links.scss|idio']['links'] }}
+{{ d['../project/base/_links.scss|idio']['links'] }}
 
 ## External Links
 indicate external links with the class <code>.external</code>
-{{ d['../sass/base/_links.scss|idio']['external-links'] }}
+{{ d['../project/base/_links.scss|idio']['external-links'] }}
 
 {{ (d['../markup-patterns/links.html|htmlsections']['external-example']) }}
 

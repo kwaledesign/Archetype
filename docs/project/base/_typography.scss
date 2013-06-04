@@ -1,0 +1,241 @@
+/**
+ * Typography
+ * 
+ * typography styles are scoped. only 'default' type values are those provided by the normalize reset
+ * this is done to avoid repeatidly overridding
+ * see: http://css-tricks.com/opt-in-typography/  &  http://anthonyshort.me/2012/05/global-typographic-styles-suck
+ */
+
+
+/**
+ * Typography Variables
+ * 
+ * 1. typography styles and variables are scoped. see comment in modules/core/_typography.scss
+ * 2. path to web font or icon font used in font-face mixin
+ */
+
+
+/* button Structure Namespace: */
+$main-type-scope:                     copy;         /* 1 */
+// $file-path:;                       path_to_font  /* 2 */
+
+/**
+ * Font Stack Variables
+ */
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif !default;
+$verdana: Verdana, Geneva, sans-serif !default;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace, serif !default;
+
+
+/**
+ * Main Type Scope
+ * 
+ * Abstracting typographic element variables to allow for easily adding additional type scopes if needed.
+ * Add the additional typography scope styles and variables next to the main typ scope styles and variables.
+ */
+
+/**
+ * Headers
+ */
+// Header Text
+$copy--header-text-color:             black(40);
+$copy--header-text:                   $helvetica;
+// Header Sizes
+$copy--h1-size:                       ms(5); 
+$copy--h2-size:                       ms(4); 
+$copy--h3-size:                       ms(3); 
+$copy--h4-size:                       ms(2); 
+$copy--h5-size:                       ms(1); 
+$copy--h6-size:                       ms(0);
+
+/**
+ * Hero Unity
+ */
+// hero unit color
+// $hero-text-color:;
+
+/**
+ * Sub Header 
+ */
+$copy--subheader-text-color:          $subtle-color--txt;
+$copy--subheader-text-size:           ms(3);  // one larger than the paragraph lead size on the ms scale
+
+/**
+ * Main Body Text
+ */
+$copy--body-bg-color:                 $white !default;
+$copy--body-text-color:               black(30) !default;
+$copy--accent-text-color:             $accent-color--txt;
+$copy--body-text:                     $georgia;
+$copy--accent-text:                   $helvetica;
+
+/**
+ * Paragraph Lead
+ */
+$copy--lead-text-color:               $subtle-color--txt;
+$copy--lead-size:                     ms(2);
+
+/**
+ * Meta Text 
+ */
+$copy--meta-size:                     ms(-1);
+$copy--meta-line-height:              2/3;  // every third meta line will line up with every seoncond baseline
+
+/**
+ * Footnote
+ */
+$copy--footnote-size:                 ms(-2);
+$copy--footnote-line-height:          2/3; // every third meta line will line up with every seoncond baseline
+
+/**
+ * Small Element
+ */
+$copy--small-font-size:               ms(-1);    // .80 or about 13px        
+$copy--sub-sup-font-size:             ms(-2);  // .75 or about 12px
+
+/**
+ * Horizontal Rule
+ */
+$copy--hr-width:                      1px;
+$copy--hr-color:                      black(80);
+
+/**
+ * Del
+ */
+$copy--deleted-color:                 $subtle-color--txt;
+
+/**
+ * Ins
+ */
+$copy--ins-bg-color:                  #ff9;
+$copy--ins-text-color:                $black;
+
+/**
+ * Mark
+ */
+$copy--mark-bg-color:                 yellow;
+$copy--mark-text-color:               $white;
+
+
+/**
+ * Main Copy Scope 
+ */
+.#{$main-type-scope} {
+
+/**
+ * Font-face & Icon Fonts
+ */
+//@include font-face();
+
+/**
+ * Headers 
+ */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: $copy--header-text-color;                 
+    font-family: $copy--header-text;
+    // Fix the character spacing for headings
+    text-rendering: optimizelegibility;  
+  }
+
+  h1 {
+    @include adjust-font-size-to($copy--h1-size);
+    margin: 0 auto rhythm(1, $copy--h1-size);
+  }
+
+  h2 {
+    @include adjust-font-size-to($copy--h2-size);
+    margin: 0 auto rhythm(1, $copy--h2-size);
+  }
+
+  h3 {
+    @include adjust-font-size-to($copy--h3-size);
+    margin: 0 auto rhythm(1, $copy--h3-size);
+  }
+
+  h4 {
+    @include adjust-font-size-to($copy--h4-size);
+    margin: 0 auto rhythm(1, $copy--h4-size);
+  }
+
+  h5 {
+    @include adjust-font-size-to($copy--h5-size);
+    margin: 0 auto rhythm(1, $copy--h5-size);
+  }
+
+  h6 {
+    @include adjust-font-size-to($copy--h6-size);
+    margin: 0 auto rhythm(1, $copy--h6-size);
+  }
+
+  .subheader { 
+    color: $copy--subheader-text-color; 
+    font-weight: normal; 
+  }
+
+  p {
+    //margin-bottom: $base-line-height;
+    //font-family: $body-text;                           ////////does this not inherit from above??
+    margin: 0 auto rhythm(1);
+  }
+
+// use indentation rather than spacing with consequitive paragraphs. csswizardry.com/2010/12/mo-robust-paragraph-indenting/
+// p+p { text-indent: 2em; margin-top: -1.5em; }
+
+  .lead {  
+    @include adjust-font-size-to($copy--lead-size);
+    margin: 0 auto rhythm(1, $copy--lead-size);
+    color: $copy--lead-text-color;
+  }
+
+  .meta {
+    @include adjust-font-size-to($copy--meta-size, $copy--meta-line-height);
+  }
+
+  .footnote {
+    @include adjust-font-size-to($copy--footnote-size, $copy--footnote-line-height);
+  }
+
+  .muted {
+    color: $muted-color--txt;
+  }
+
+  address {
+    display: block;
+    margin-bottom: $base-line-height;
+    line-height: $base-line-height;
+    font-style: normal;
+  }
+  del {
+    color: $copy--deleted-color;
+    text-decoration: line-through;
+  }
+ 
+  cite {
+    font-style: normal;
+  }
+
+  em, 
+  dfn {
+    font-style: italic;
+  }
+  
+  dfn {
+    font-weight: bold;
+  }
+
+  ins { 
+    background: $copy--ins-bg-color; 
+    color: $copy--ins-text-color; 
+    text-decoration: none; 
+  }
+
+  /*h5bp*/
+  mark {
+  font-style: italic;
+  font-weight: bold;
+  }
+}
+

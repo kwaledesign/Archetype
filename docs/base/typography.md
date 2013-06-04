@@ -11,7 +11,7 @@ Vertical rhythm in Archetype is maintained by setting the <code>$base-font-size<
 
 <p style="color:red;">link / note to vertical rhythm in rwd</p>
 
-{{ d['../sass/_settings.scss|idio']['vertical-rhythm'] }}
+{{ d['../project/_settings.scss|idio']['vertical-rhythm'] }}
 
 ## Headings
 <hr>

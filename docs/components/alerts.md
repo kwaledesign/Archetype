@@ -19,12 +19,12 @@
 {{ (d['../markup-patterns/alerts.html|htmlsections']['alert-warning-small']) }}
 
 ## Alert Variables
-{{ d['../sass/components/_alerts.scss|idio']['alert-variables'] }}
+{{ d['../project/components/_alerts.scss|idio']['alert-variables'] }}
 
 ## Alert Structure
-{{ d['../sass/components/_alerts.scss|idio']['alert-structure'] }}
+{{ d['../project/components/_alerts.scss|idio']['alert-structure'] }}
 
 ## Alert Skin
-{{ d['../sass/components/_alerts.scss|idio']['alert-skin'] }}
+{{ d['../project/components/_alerts.scss|idio']['alert-skin'] }}
 
 </section>
