@@ -23,15 +23,13 @@ The <code>.label</code> class ... <code>&lt;strong&gt;</code> or <code>&lt;i&gt;
 {{ (d['../markup-patterns/labels.html|htmlsections']['label-inline']) }}
 
 ## Label Variables
-{{ d['../sass/components/_labels.scss|idio']['label-variables'] }}
+{{ d['../project/components/_labels.scss|idio']['label-variables'] }}
 
 ## Label Structure
-{{ d['../sass/components/_labels.scss|idio']['label-structure'] }}
+{{ d['../project/components/_labels.scss|idio']['label-structure'] }}
 
 ## Label Skin
-{{ d['../sass/components/_labels.scss|idio']['label-skin'] }}
-
-
+{{ d['../project/components/_labels.scss|idio']['label-skin'] }}
 
 
 

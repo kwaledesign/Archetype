@@ -59,7 +59,17 @@
  * Layout
  * 
  */
-@import "layout/susy-grid";
-@import "layout/singularity-grid";
+//@import "layout/susy-grid";
+//@import "layout/singularity-grid";
 @import "layout/print";
+
+/**
+ * Docs
+ */
+@import "docs/settings";
+@import "docs/pygments";
+@import "docs/components";
+@import "docs/layout";
+
+@import "docs/fonts.scss";
 

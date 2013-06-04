@@ -2,4 +2,5 @@
 .cache/
 .sass-cache/
 css/
-docs/logs
+logs/
+.trash/
