@@ -1,17 +1,17 @@
 # Susy - https://github.com/ericam/susy
-require 'susy'
+# require 'susy'
 
 # Singularity - https://github.com/Team-Sass/Singularity
-# require 'singularitygs'
+require 'singularitygs'
 
 # Singularity-Extras - https://github.com/Team-Sass/Singularity-Extras
-# requier 'singularity-extras'
+require 'singularity-extras'
 
 # Modular Scale https://github.com/scottkellum/modular-scale
 require 'modular-scale'
 
 # Breakpoint - https://github.com/Team-Sass/breakpoint
-#requier 'breakpoint'
+require 'breakpoint'
 
 # Archetype - https://github.com/kwaledesign/Archetype
 require 'archetype'
