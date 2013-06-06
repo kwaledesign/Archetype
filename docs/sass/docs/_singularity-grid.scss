@@ -37,11 +37,16 @@ $gutters: add-gutter(.25 at 50em);
  * Layout
  * 
  */
+
+.grid-link { 
+}
+
+
 .container {
-  @include background-grid();
   margin: 0 auto;
   min-height: 100%;
   @include pie-clearfix;
+  &.active-grid { @include background-grid(); }
 }
 
 
