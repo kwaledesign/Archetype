@@ -1,5 +1,13 @@
 stylesheet 'screen.scss'
-stylesheet '_settings.scss'
+
+# Base
+stylesheet 'base/_color-pallet.scss'
+stylesheet 'base/_typography-pallet.scss'
+stylesheet 'base/_page.scss'
+stylesheet 'base/_breakpoints.scss'
+stylesheet 'base/_settings.scss'
+stylesheet 'base/_structure-units.scss'
+stylesheet 'base/_skin-units.scss'
 
 # Objects
 stylesheet 'objects/_label-object.scss'
@@ -10,21 +18,17 @@ stylesheet 'objects/_nav-object.scss'
 stylesheet 'objects/_close-object.scss'
 stylesheet 'objects/_alert-object.scss'
 
-# Base
-stylesheet 'base/_color-pallet.scss'
-stylesheet 'base/_forms.scss'
-stylesheet 'base/_rules.scss'
-stylesheet 'base/_typography.scss'
-stylesheet 'base/_links.scss'
-stylesheet 'base/_lists.scss'
-stylesheet 'base/_tables.scss'
-stylesheet 'base/_media.scss'
-stylesheet 'base/_page.scss'
-stylesheet 'base/_figures.scss'
-stylesheet 'base/_code.scss'
-stylesheet 'base/_quotes.scss'
-
 # Components
+stylesheet 'components/_forms.scss'
+stylesheet 'components/_rules.scss'
+stylesheet 'components/_typography.scss'
+stylesheet 'components/_links.scss'
+stylesheet 'components/_lists.scss'
+stylesheet 'components/_tables.scss'
+stylesheet 'components/_media.scss'
+stylesheet 'components/_figures.scss'
+stylesheet 'components/_code.scss'
+stylesheet 'components/_quotes.scss'
 stylesheet 'components/_alerts.scss'
 stylesheet 'components/_labels.scss'
 stylesheet 'components/_partitions.scss'
