@@ -27,22 +27,24 @@
  */
 @import "base/typography";
 @import "base/page";
-@import "base/lists";
-@import "base/tables";
-@import "base/links";
-@import "base/forms";
-@import "base/code";
-@import "base/figures";
-@import "base/links";
-@import "base/media";
-@import "base/quotes";
-@import "base/rules";
+
 
 
 /**
  * Components
  * 
  */
+@import "components/lists";
+@import "components/tables";
+@import "components/links";
+@import "components/forms";
+@import "components/code";
+@import "components/figures";
+@import "components/links";
+@import "components/media";
+@import "components/quotes";
+@import "components/rules";
+
 @import "components/alerts";
 @import "components/buttons";
 @import "components/close";
