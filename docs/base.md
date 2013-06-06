@@ -5,19 +5,13 @@ Archetype's base styles are scoped using CSS classes to avoid applying styles to
 
 Base style's include
 <ul>
+  <li><a href="/base/breakpoints.html">Breakpoints</a></li>
   <li><a href="/base/color-pallet.html">Color-Pallet</a></li>
-  <li><a href="/base/reset.html">Reset</a></li>
+  <li><a href="/base/typorgraphy-pallet.html">Typography-Pallet</a></li>
+  <li><a href="/base/settings.html">Settings</a></li>
   <li><a href="/base/page.html">Page</a></li>
-  <li><a href="/base/typography.html">Typography</a></li>
-  <li><a href="/base/quotes.html">Quotes</a></li>
-  <li><a href="/base/tables.html">Tables</a></li>
-  <li><a href="/base/rules.html">Rules</a></li>
-  <li><a href="/base/lists.html">Lists</a></li>
-  <li><a href="/base/links.html">Links</a></li>
-  <li><a href="/base/figures.html">Figures</a></li>
-  <li><a href="/base/code.html">Code</a></li>
-  <li><a href="/base/forms.html">Forms</a></li>
-  <li><a href="/base/media.html">Media</a></li>
+  <li><a href="/base/structure-units.html">Structure-Units</a></li>
+  <li><a href="/base/skin-units.html">Skin-Units</a></li>
 </ul>
 
 </section>
