@@ -1,16 +1,23 @@
 /**
- * Achetype
+ * Archetype
  * 
- * 1. Imported first to allow for color variables to be available within the settings file.
  */
 
-@import "base/color-pallet";                          /* 1 */
-@import "settings";
+
+/**
+ * Base
+ */
+@import "base/breakpoints";
+@import "base/color-pallet";
+@import "base/typography-pallet";
+@import "base/settings";
+@import "base/page";
+@import "base/structure-units";
+@import "base/skin-units";
 
 
 /**
  * Objects
- * 
  */
 @import "objects/alert-object";
 @import "objects/button-object";
@@ -22,27 +29,19 @@
 
 
 /**
- * Base
- * 
- */
-@import "base/typography";
-@import "base/page";
-@import "base/lists";
-@import "base/tables";
-@import "base/links";
-@import "base/forms";
-@import "base/code";
-@import "base/figures";
-@import "base/links";
-@import "base/media";
-@import "base/quotes";
-@import "base/rules";
-
-
-/**
  * Components
- * 
  */
+@import "components/typography";
+@import "components/lists";
+@import "components/tables";
+@import "components/links";
+@import "components/forms";
+@import "components/code";
+@import "components/figures";
+@import "components/links";
+@import "components/media";
+@import "components/quotes";
+@import "components/rules";
 @import "components/alerts";
 @import "components/buttons";
 @import "components/close";
@@ -62,15 +61,4 @@
 //@import "layout/susy-grid";
 //@import "layout/singularity-grid";
 @import "layout/print";
-
-/**
- * Docs
- */
-@import "docs/settings";
-@import "docs/pygments";
-@import "docs/components";
-//@import "docs/layout";
-@import "docs/fonts.scss";
-
-@import "docs/singularity-grid";
 
