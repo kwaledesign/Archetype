@@ -11,6 +11,6 @@ Blockquote description here...
 ## Right Blockquote
 {{ (d['../markup-patterns/quotes.html|htmlsections']['right-blockquote']) }}
 
-{{ d['../project/base/_quotes.scss|idio']['quotes'] }}
+{{ d['../project/components/_quotes.scss|idio']['quotes'] }}
 
 </section>
