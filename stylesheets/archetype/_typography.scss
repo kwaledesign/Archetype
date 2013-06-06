@@ -1,0 +1,62 @@
+/**
+ * Font-Face
+ * 
+ * base on:
+ * https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/css3/_font-face.scss
+ */
+@mixin font-face($font-stack, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+      font-family: $font-stack;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+      font-weight: $font-weight;
+      font-style: $font-style;
+  }
+}
+
+/**
+ * Box Emboss
+ * 
+ * example:  .box{ @include box-emboss(0.8, 0.05); }
+ */
+@mixin box-emboss($opacity, $opacity2){
+  box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+/**
+ * Text Emboss (letterpress)
+ *
+ * makes the text more readable by providing a sharper separation between letters and background
+ * example: .letterpress { @include text-emboss(0.7); }
+ */
+@mixin text-emboss($opacity){
+  text-shadow:white($opacity) 0 1px 0;
+}
+
+/**
+ * CSS Hyphens
+ * 
+ * word wrapping for skinny boxes:
+ * http://trentwalton.com/2011/09/07/css-hyphenation
+ *
+ * $value: none | manual | auto
+ */
+@mixin hyphen($value) {
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+//  Compass Stich
+//  Nicer text rendering in webkit and gecko
+//  @see http://www.aestheticallyloyal.com/public/optimize-legibility/
+//  @see http://files.christophzillgens.com/webkit-font-smoothing.html
+//
+@mixin improve-text-rendering {
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
