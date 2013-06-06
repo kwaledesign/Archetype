@@ -5,7 +5,7 @@
 require 'singularitygs'
 
 # Singularity-Extras - https://github.com/Team-Sass/Singularity-Extras
-require 'singularity-extras'
+#require 'singularity-extras'
 
 # Modular Scale https://github.com/scottkellum/modular-scale
 require 'modular-scale'
