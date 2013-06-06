@@ -47,4 +47,4 @@ stylesheet 'layout/_singularity-grid.scss'
 #stylesheet 'layout/l-modules/_l-tabs.scss'
 
 # Bower
-file '.bowerrc'
+file '/.bowerrc'
