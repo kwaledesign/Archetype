@@ -1,3 +1,6 @@
+# Bower
+file 'README.md'
+
 stylesheet 'screen.scss'
 
 # Base
@@ -43,8 +46,8 @@ stylesheet 'components/_buttons.scss'
 stylesheet 'layout/_print.scss'
 stylesheet 'layout/_susy-grid.scss'
 stylesheet 'layout/_singularity-grid.scss'
-#stylesheet 'layout/l-modules/_l-partitions.scss'
-#stylesheet 'layout/l-modules/_l-tabs.scss'
 
-# Bower
-file '/.bowerrc'
+welcome_message %Q{
+Congradulations! You've successfully installed Archetype. Please see the README.md file within your project root for additional setup information.
+}
+
