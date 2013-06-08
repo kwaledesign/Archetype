@@ -13,8 +13,8 @@
  * Adds top and bottom margins to container
  */
 %vert-seperated {
-  margin-top: $base-spacer-unit;
-  margin-bottom: $base-spacer-unit;
+  margin-top: $spacer-unit;
+  margin-bottom: $spacer-unit;
 }
 
 /**
@@ -23,8 +23,8 @@
  * Adds top and bottom padding to container
  */
 %vert-seperated {
-  padding-top: $base-spacer-unit;
-  padding-bottom: $base-spacer-unit;
+  padding-top: $spacer-unit;
+  padding-bottom: $spacer-unit;
 }
 
 /**
@@ -33,7 +33,7 @@
  * Adds top margin to container
  */
 %top-seperated {
-  margin-top: $base-spacer-unit;
+  margin-top: $spacer-unit;
 }
 
 /**
@@ -42,7 +42,7 @@
  * Adds top padding to container
  */
 %top-padded {
-  padding-top: $base-spacer-unit;
+  padding-top: $spacer-unit;
 }
 
 /**
@@ -51,7 +51,7 @@
  * Adds bottom margin to container
  */
 %bottom-seperated {
-  bottom-margin: $base-spacer-unit;
+  bottom-margin: $spacer-unit;
 }
 
 /**
@@ -60,7 +60,7 @@
  * Adds bottom padding to container
  */
 %bottom-padded {
-  bottom-padding: $base-spacer-unit;
+  bottom-padding: $spacer-unit;
 }
 /**
  * Side Spacers
@@ -72,8 +72,8 @@
  * Adds standard padding unit as side margins
  */
 %margined-container {
-  margin-left: $base-spacer-unit;
-  margin-right: $base-spacer-unit;
+  margin-left: $spacer-unit;
+  margin-right: $spacer-unit;
 }
 
 /**
@@ -82,8 +82,8 @@
  * Adds standard padding unit as side padding
  */
 %padded-container {
-  padding-left: $base-spacer-unit;
-  padding-right: $base-spacer-unit;
+  padding-left: $spacer-unit;
+  padding-right: $spacer-unit;
 }
 
 /**
@@ -92,8 +92,8 @@
  * Adds an extra padding unit as side padding
  */
 %extra-padded-container {
-  padding-left: $base-spacer-unit * 2;
-  padding-right: $base-spacer-unit * 2;
+  padding-left: $spacer-unit * 2;
+  padding-right: $spacer-unit * 2;
 }
 
 /**
@@ -102,8 +102,8 @@
  * Allows an container to reach the border of a padded container
  */
 %full-bleed {
-  padding-left: $base-spacer-unit * -1;
-  padding-right: $base-spacer-unit * -1;
+  padding-left: $spacer-unit * -1;
+  padding-right: $spacer-unit * -1;
 }
 
 /**
@@ -112,7 +112,7 @@
  * Allows an container to reach the border of an extra padded container
  */
 %extra-full-bleed {
-  padding-left: $base-spacer-unit * -2;
-  padding-right: $base-spacer-unit * -2;
+  padding-left: $spacer-unit * -2;
+  padding-right: $spacer-unit * -2;
 }
 
