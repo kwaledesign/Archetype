@@ -22,8 +22,8 @@
  */
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    color: $copy--header-text-color;                 
-    font-family: $copy--header-text;
+    color: $copy--header-color-txt;                 
+    font-family: $copy--header-txt;
     // Fix the character spacing for headings
     text-rendering: optimizelegibility;  
   }
@@ -59,7 +59,7 @@
   }
 
   .subheader { 
-    color: $copy--subheader-text-color; 
+    color: $copy--subheader-color-txt; 
     font-weight: normal; 
   }
 
@@ -75,7 +75,7 @@
   .lead {  
     @include adjust-font-size-to($copy--lead-size);
     margin: 0 auto rhythm(1, $copy--lead-size);
-    color: $copy--lead-text-color;
+    color: $copy--lead-color-txt;
   }
 
   .meta {
@@ -115,8 +115,8 @@
   }
 
   ins { 
-    background: $copy--ins-bg-color; 
-    color: $copy--ins-text-color; 
+    background: $copy--ins-color-bg; 
+    color: $copy--ins-color-txt; 
     text-decoration: none; 
   }
 

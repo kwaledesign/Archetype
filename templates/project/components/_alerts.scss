@@ -40,18 +40,18 @@ $warning:                             warning;
  * Extends alert object
  */
 .alert_#{$small} {
-  padding: $quarter-spacer-unit;
+  padding: $spacer-unit--quarter;
   font-weight: bold;
   font-size: $base-font-size;
-  margin: $half-spacer-unit 0;
+  margin: $spacer-unit--half 0;
   border-radius: 4px;
 }
 
 .alert__#{$large} {
-  padding: $half-spacer-unit;
+  padding: $spacer-unit--half;
   font-weight: bold;
   font-size: $base-font-size - 2;
-  margin: $half-spacer-unit 0;
+  margin: $spacer-unit--half 0;
   border-radius: 2px;
 }
 
