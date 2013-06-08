@@ -2,9 +2,12 @@ Archetype
 =========
 
 Archetype (n)
-: 1. A symbol, pattern, or prototype upon which others are copied, patterned,
+  : 1. A symbol, pattern, or prototype upon which others are copied, patterned,
 or emulated;
-: 2. A flexible, object oriented, Sass architecture for responsive builds.
+  : 2. A flexible, object oriented, Sass architecture for responsive builds.
+
+## Introduction
+Archetype is a Compass plugin and front-end toolkit designed with the principles of [OOCSS](https://github.com/stubbornella/oocss) and [SMACSS](http://smacss.com) for building responsive, mobile-first front-ends and Drupal themes using a specific [coding standardard](https://github.com/kwaledesign/Coding-Standards).
 
 ## Installation
 Archetype is still in Beta and although stable, still under rapid development.
@@ -55,5 +58,5 @@ the gem, or requiring the gem within `config.rb`. Simply install with Bower and
 
 <hr>
 ### License
-© Kwale Design - Original source code dual licensed under [MIT license](http://www.opensource.org/licenses/mit-license.php)/[GPL2 license](http://www.gnu.org/licenses/gpl-2.0.html). Open-sourced projects used within this project retain their original licenses.
+© Kwale Design - Original source code dual licensed under [MIT license](http://www.opensource.org/licenses/mit-license.php) / [GPL2 license](http://www.gnu.org/licenses/gpl-2.0.html). Open-sourced projects used within this project retain their original licenses.
 
