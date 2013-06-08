@@ -10,7 +10,12 @@ or emulated;
 Documentation coming soon...
 
 ### License
-Duel licensed under MIT/GPL:
+© Kwale Design
+
+Original source code dual licensed under MIT/GPL:
 
 [GPL2 license](http://www.gnu.org/licenses/gpl-2.0.html)
 [MIT license](http://www.opensource.org/licenses/mit-license.php)
+
+Open-sourced projects used within this project retain their original licenses.
+
