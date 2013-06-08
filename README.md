@@ -33,7 +33,6 @@ $ gem install archetpe
 Once installed starting an Archetype project is easy:
 ```
 $ compass create <new_project_name> -r modular-scale -r breakpoint -r archetype -r colorkit --using archetype --css-dir css --javascript-dir js
-
 ```
 
 ## Integration with Bower
@@ -56,10 +55,5 @@ the gem, or requiring the gem within `config.rb`. Simply install with Bower and
 
 <hr>
 ### License
-© Kwale Design - Original source code dual licensed under MIT/GPL:
-
-[GPL2 license](http://www.gnu.org/licenses/gpl-2.0.html)
-[MIT license](http://www.opensource.org/licenses/mit-license.php)
-
-Open-sourced projects used within this project retain their original licenses.
+© Kwale Design - Original source code dual licensed under [MIT license](http://www.opensource.org/licenses/mit-license.php)/[GPL2 license](http://www.gnu.org/licenses/gpl-2.0.html). Open-sourced projects used within this project retain their original licenses.
 
