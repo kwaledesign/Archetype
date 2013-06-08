@@ -28,14 +28,14 @@ $negative-close:                      dark;     /* 1 */
  */
 .close--#{$small-close} {
   font-size: ms(1); 
-  padding: $quarter-spacer-unit;
+  padding: $spacer-unit--quarter;
   right: 2px; 
   top: 2px;  
 }
 
 .close--#{$large-close} {
   font-size: ms(2); 
-  padding: $half-spacer-unit;
+  padding: $spacer-unit--half;
   right: 4px; 
   top: 4px;  
 }

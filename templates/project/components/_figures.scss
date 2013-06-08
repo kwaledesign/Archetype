@@ -8,14 +8,14 @@
   figure {
     margin-bottom: $base-line-height;
     img {
-      margin-bottom: $quarter-spacer-unit;
+      margin-bottom: $spacer-unit--quarter;
     }
     figcaption {
       display: block;
       font-weight: normal;
       font-size: ms(-1);
       color: $subtle-color--txt;
-      font-family: $copy--body-text;
+      font-family: $copy--body-txt;
     }
   }
 }
