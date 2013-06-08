@@ -6,6 +6,29 @@
  * 2. Text selection text color
  */
 
+
+/**
+ * Typography Variables
+ * 
+ * 1. typography styles and variables are scoped. see comment in modules/core/_typography.scss
+ * 2. path to web font or icon font used in font-face mixin
+ */
+
+/** 
+ * Type Scope Namespace: 
+ */
+$main-type-scope:                     copy;         /* 1 */
+// $file-path:;                       path_to_font  /* 2 */
+
+/**
+ * Font Stack Variables
+ */
+$georgia:       Georgia, Cambria, "Times New Roman", Times, serif !default;
+$helvetica:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif !default;
+$verdana:       Verdana, Geneva, sans-serif !default;
+$monospace:     "Bitstream Vera Sans Mono", Consolas, Courier, monospace, serif !default;
+
 /**
  * Modular Scale
  * 
@@ -44,55 +67,33 @@ $base-size: 16px;                                     /* 1 */
 $ratio: fourth();
 
 
-
-$georgia: Georgia, Cambria, "Times New Roman", Times, serif !default;
-
-
-$body-font:                           $georgia;
-
-$selection-highlight-color:           #fe57a1;        /* 1 */
-$tap-highlight-color:                 black(75);
-$selection-text-color:                $white;         /* 2 */
-
-
-
-
-/**
- * Typography Variables
- * 
- * 1. typography styles and variables are scoped. see comment in modules/core/_typography.scss
- * 2. path to web font or icon font used in font-face mixin
- */
-
-
-/* button Structure Namespace: */
-$main-type-scope:                     copy;         /* 1 */
-// $file-path:;                       path_to_font  /* 2 */
-
-/**
- * Font Stack Variables
- */
-$georgia: Georgia, Cambria, "Times New Roman", Times, serif !default;
-$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif !default;
-$verdana: Verdana, Geneva, sans-serif !default;
-$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace, serif !default;
+$selection--color-bg:                 #fe57a1;        /* 1 */
+$tap--color-bg:                       black(75);
+$selection--color-txt:                $white;         /* 2 */
 
 
 /**
  * Main Type Scope
  * 
  * Abstracting typographic element variables to allow for easily adding additional type scopes if needed.
- * Add the additional typography scope styles and variables next to the main typ scope styles and variables.
+ * Add the additional typography scope styles and variables next to the main type scope styles and variables.
  */
+
+$copy--body-font:                     $georgia;
 
 /**
  * Headers
  */
-// Header Text
-$copy--header-text-color:             black(40);
+
+/**
+ * Header Text
+ */
+$copy--header-color-txt:              black(40);
 $copy--header-text:                   $helvetica;
-// Header Sizes
+
+/**
+ * Header Sizes
+ */
 $copy--h1-size:                       ms(5); 
 $copy--h2-size:                       ms(4); 
 $copy--h3-size:                       ms(3); 
@@ -109,22 +110,22 @@ $copy--h6-size:                       ms(0);
 /**
  * Sub Header 
  */
-$copy--subheader-text-color:          $subtle-color--txt;
-$copy--subheader-text-size:           ms(3);  // one larger than the paragraph lead size on the ms scale
+$copy--subheader-color-txt:           $subtle-color--txt;
+$copy--subheader-size:                ms(3);  // one larger than the paragraph lead size on the ms scale
 
 /**
  * Main Body Text
  */
-$copy--body-bg-color:                 $white !default;
-$copy--body-text-color:               black(30) !default;
-$copy--accent-text-color:             $accent-color--txt;
-$copy--body-text:                     $georgia;
+$copy--body-color-bg:                 $white !default;
+$copy--body-color-txt:                black(30) !default;
+$copy--accent-color-txt:              $accent-color--txt;
+$copy--body-txt:                      $georgia;
 $copy--accent-text:                   $helvetica;
 
 /**
  * Paragraph Lead
  */
-$copy--lead-text-color:               $subtle-color--txt;
+$copy--lead-color-txt:                $subtle-color--txt;
 $copy--lead-size:                     ms(2);
 
 /**
@@ -142,8 +143,8 @@ $copy--footnote-line-height:          2/3; // every third meta line will line up
 /**
  * Small Element
  */
-$copy--small-font-size:               ms(-1);    // .80 or about 13px        
-$copy--sub-sup-font-size:             ms(-2);  // .75 or about 12px
+$copy--small-size:                    ms(-1);    // .80 or about 13px        
+$copy--sub-sup-size:                  ms(-2);  // .75 or about 12px
 
 /**
  * Horizontal Rule
@@ -159,14 +160,12 @@ $copy--deleted-color:                 $subtle-color--txt;
 /**
  * Ins
  */
-$copy--ins-bg-color:                  #ff9;
-$copy--ins-text-color:                $black;
+$copy--ins-color-bg:                  #ff9;
+$copy--ins-color-txt:                 $black;
 
 /**
  * Mark
  */
-$copy--mark-bg-color:                 yellow;
-$copy--mark-text-color:               $white;
-
-
+$copy--mark-color-bg:                 yellow;
+$copy--mark-color-txt:                $white;
 
