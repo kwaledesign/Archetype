@@ -7,26 +7,26 @@
 /**
  * Table Variables
  */
-$table--bg-color:                                                       $muted-color--bg;
+$table--color-bg:                                                       $muted-color--bg;
 
 $table--border-radius:                                                  4px;         //$global__border-radius;
 $table--border:                                                         1px solid #333;
-$table--bg-color-hover:                                                 darken(#D5D5E5, 5%);
-$table--strip-color:                                                    darken($table--bg-color, 10%);
+$table--color-bg-hover:                                                 darken(#D5D5E5, 5%);
+$table--stripe-color:                                                   darken($table--color-bg, 10%);
  
-$table--bg-color-success:                                               lighten(green, 60%);
-$table--bg-color-error:                                                 lighten(red, 30%);
-$table--bg-color-warning:                                               lighten(yellow, 30%);
+$table--color-bg-success:                                               lighten(green, 60%);
+$table--color-bg-error:                                                 lighten(red, 30%);
+$table--color-bg-warning:                                               lighten(yellow, 30%);
 
-$table-border-color:                                                    $strong-color--bg;
-$table-border:                                                          1px solid $table-border-color;
-$table-head-bg-color:                                                   $subtle-color--bg;
+$table--color-border:                                                   $strong-color--bg;
+$table--border:                                                         1px solid $table--color-border;
+$table--head-color-bg:                                                  $subtle-color--bg;
 
 /* zebra striping (even rows) */
-$table-zebra-bg-color:                                                  $muted-color--bg;
-$table-footer-bg-color:                                                 $subtle-color--bg;
+$table--zebra-color-bg:                                                  $muted-color--bg;
+$table--footer-color-bg:                                                 $subtle-color--bg;
  
-$table-header-text:                                                     $strong-color--txt;
+$table--header-text:                                                     $strong-color--txt;
  
 
 /*** @export "base-table-styles" css */
@@ -50,7 +50,7 @@ table {
 .table {
   width: 100%;
   margin-bottom: $base-line-height;
-  background-color: $table--bg-color;
+  background-color: $table--color-bg;
   border: $table--border;
   border-collapse: separate;                                              /* 1 */
   border-left: 0;
@@ -126,7 +126,7 @@ table {
 .table--srtriped  tbody {
   > tr:nth-child(odd) > td,
   > tr:nth-child(odd) > th {
-    background-color: $table--strip-color;
+    background-color: $table--stripe-color;
   }
 }   
  
@@ -138,7 +138,7 @@ table {
 .table--hover tbody {
   tr:hover td,
   tr:hover th {
-    background-color: $table--bg-color-hover;
+    background-color: $table--color-bg-hover;
   }
 }
 
@@ -147,7 +147,7 @@ table {
 /**
  * Table States
  */
-.is-table--error { background-color: $table--bg-color-error; }
-.is-table--warning { background-color: $table--bg-color-warning; }
-.is-table--success { background-color: $table--bg-color-success; }
+.is-table--error { background-color: $table--color-bg-error; }
+.is-table--warning { background-color: $table--color-bg-warning; }
+.is-table--success { background-color: $table--color-bg-success; }
 
