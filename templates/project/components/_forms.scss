@@ -6,43 +6,52 @@
 /**
  * Form Variables
  */
-$base-line-height:                     24px;
-$base-font-size:                       16px;
-$form-input-bg:                        white;
-$form-input-border:                    #ccc;
-$input-border-radius:                  3px;
-$placeholder-color-txt:                #ccc;
-$form-legend-text-color:               #666;
-$vertical-form-spacer:                 $base-line-height;
-$horizontal-form-spacer:               160px;
-/* form feild state variables */
-$field-color-txt:                      #555;
-$field-color-border:                   #ccc;
-$field-color-bg:                       #f5f5f5;
+$form--input-color-bg:                  white;
+$form--input-color-border:              #ccc;
+$form--input-border-radius:             3px;
+$form--placeholder-color-txt:           #ccc;
+$form--legend-color-txt:                #666;
+$form--vertical-spacer:                 $base-line-height;
+$form--horizontal-spacer:               160px;
+/** 
+ * form feild state variables 
+ */
+$form--field-color-txt:                 #555;
+$form--field-color-border:              #ccc;
+$form--field-color-bg:                  #f5f5f5;
 
-/* Primary Form Scope */
+/**
+ * Primary Form Scope 
+ */
 $primary-form-scope:                   "form";
 
-/* input sizes */
+/** 
+ * Input sizes 
+ */
 
 /**
  * Form Utilities
  *
  */
-/* form placeholder mixin */
-@mixin placeholder($color: $placeholder-color-txt) {
+
+/**
+ * Form placeholder mixin 
+ */
+@mixin placeholder($color: $form--placeholder-color-txt) {
   &:-moz-placeholder { color: $color; }
   &:-ms-input-placeholder { color: $color; }
   &::-webkit-input-placeholder { color: $color; }
 }
 
-/* form field states */
-@mixin field-state($field-color-txt, $field-color-border, $field-color-bg) {
+/**
+ * Form field states 
+ */
+@mixin field-state($form--field-color-txt, $form--field-color-border, $form--field-color-bg) {
   /* text color */
   .control-label,
   .form-help-block,
   .form-help-inline {
-    color: $field-color-txt;
+    color: $form--field-color-txt;
   }
   /* input text color */
   .checkbox,
@@ -50,17 +59,17 @@ $primary-form-scope:                   "form";
   input,
   select,
   textarea {
-    color: $field-color-txt;
+    color: $form--field-color-txt;
   }
   /* input border color */
   input,
   select,
   textarea {
-    border-color: $field-color-bg;
+    border-color: $form--field-color-bg;
     @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
     &:focus {
-      border-color: darken($field-color-bg, 10%);
-      @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($field-color-bg, 20%));
+      border-color: darken($form--field-color-bg, 10%);
+      @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($form--field-color-bg, 20%));
     }
   }
 }
@@ -101,7 +110,7 @@ $all-text-inputs-focus: ();
 
 /* spacing between groups */
   .control-group {
-    margin-bottom: $vertical-form-spacer;
+    margin-bottom: $form--vertical-spacer;
   }  
   
 /**
@@ -123,7 +132,7 @@ $all-text-inputs-focus: ();
     margin-bottom: $base-line-height;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    color: $form-legend-text-color;
+    color: $form--legend-color-txt;
     border: 0;
   }
   
@@ -148,9 +157,9 @@ $all-text-inputs-focus: ();
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: #999;
-    background-color: $form-input-bg;
-    border: 1px solid $form-input-border;
-    @include border-radius($input-border-radius);
+    background-color: $form--input-color-bg;
+    border: 1px solid $form--input-color-border;
+    @include border-radius($form--input-border-radius);
     @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
     @include transition(border linear .2s, box-shadow linear .2s);
   }
@@ -286,7 +295,7 @@ $all-text-inputs-focus: ();
   }
 /* Form Info State */
   .is-field-info {
-    @include field-state($field-color-txt, $field-color-border, $field-color-bg);
+    @include field-state($form--field-color-txt, $form--field-color-border, $form--field-color-bg);
   }
 
 /**
@@ -356,13 +365,13 @@ $all-text-inputs-focus: ();
   .form-horizontal {
     .control-label {
       float: left;
-      width: $horizontal-form-spacer - 20;
+      width: $form--horizontal-spacer - 20;
       padding-top: 5px;
       text-align: right;
     }
     /* align input controls */
     .controls {
-      margin-left: $horizontal-form-spacer;
+      margin-left: $form--horizontal-spacer;
     }
   }
 }
