@@ -96,75 +96,75 @@ Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
 
 <h2 id="label-variables">Label Variables</h2>
-<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-16"></a><span class="cm">/**</span>
-<a name="project--components--_labels.scss-idio.html-17"></a><span class="cm"> * Label Variables</span>
-<a name="project--components--_labels.scss-idio.html-18"></a><span class="cm"> * </span>
-<a name="project--components--_labels.scss-idio.html-19"></a><span class="cm"> * 1. optionally rename label skin styles</span>
-<a name="project--components--_labels.scss-idio.html-20"></a><span class="cm"> */</span>
-<a name="project--components--_labels.scss-idio.html-21"></a>
-<a name="project--components--_labels.scss-idio.html-22"></a><span class="cm">/* label Structure Namespace: */</span>
-<a name="project--components--_labels.scss-idio.html-23"></a><span class="nv">$small-label</span><span class="o">:</span>                         <span class="no">inline</span><span class="p">;</span>     <span class="cm">/* 1 */</span>
-<a name="project--components--_labels.scss-idio.html-24"></a><span class="nv">$large-label</span><span class="o">:</span>                         <span class="no">block</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
-<a name="project--components--_labels.scss-idio.html-25"></a>
-<a name="project--components--_labels.scss-idio.html-26"></a><span class="cm">/* label Skin Namespace: */</span>
-<a name="project--components--_labels.scss-idio.html-27"></a><span class="nv">$default-label</span><span class="o">:</span>                       <span class="n">info</span><span class="p">;</span>       <span class="cm">/* 1 */</span>
-<a name="project--components--_labels.scss-idio.html-28"></a><span class="nv">$positive-label</span><span class="o">:</span>                      <span class="n">success</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
-<a name="project--components--_labels.scss-idio.html-29"></a><span class="nv">$negative-label</span><span class="o">:</span>                      <span class="n">error</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
-<a name="project--components--_labels.scss-idio.html-30"></a><span class="nv">$warning-label</span><span class="o">:</span>                       <span class="n">warning</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
+<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-8"></a><span class="cm">/**</span>
+<a name="project--components--_labels.scss-idio.html-9"></a><span class="cm"> * Label Variables</span>
+<a name="project--components--_labels.scss-idio.html-10"></a><span class="cm"> * </span>
+<a name="project--components--_labels.scss-idio.html-11"></a><span class="cm"> * 1. optionally rename label skin styles</span>
+<a name="project--components--_labels.scss-idio.html-12"></a><span class="cm"> */</span>
+<a name="project--components--_labels.scss-idio.html-13"></a>
+<a name="project--components--_labels.scss-idio.html-14"></a><span class="cm">/* label Structure Namespace: */</span>
+<a name="project--components--_labels.scss-idio.html-15"></a><span class="nv">$small-label</span><span class="o">:</span>                         <span class="no">inline</span><span class="p">;</span>     <span class="cm">/* 1 */</span>
+<a name="project--components--_labels.scss-idio.html-16"></a><span class="nv">$large-label</span><span class="o">:</span>                         <span class="no">block</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
+<a name="project--components--_labels.scss-idio.html-17"></a>
+<a name="project--components--_labels.scss-idio.html-18"></a><span class="cm">/* label Skin Namespace: */</span>
+<a name="project--components--_labels.scss-idio.html-19"></a><span class="nv">$default-label</span><span class="o">:</span>                       <span class="n">info</span><span class="p">;</span>       <span class="cm">/* 1 */</span>
+<a name="project--components--_labels.scss-idio.html-20"></a><span class="nv">$positive-label</span><span class="o">:</span>                      <span class="n">success</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
+<a name="project--components--_labels.scss-idio.html-21"></a><span class="nv">$negative-label</span><span class="o">:</span>                      <span class="n">error</span><span class="p">;</span>      <span class="cm">/* 1 */</span>
+<a name="project--components--_labels.scss-idio.html-22"></a><span class="nv">$warning-label</span><span class="o">:</span>                       <span class="n">warning</span><span class="p">;</span>    <span class="cm">/* 1 */</span>
 </pre></div>
 
 
 <h2 id="label-structure">Label Structure</h2>
-<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-34"></a><span class="cm">/**</span>
-<a name="project--components--_labels.scss-idio.html-35"></a><span class="cm"> * Label Structure</span>
-<a name="project--components--_labels.scss-idio.html-36"></a><span class="cm"> */</span>
-<a name="project--components--_labels.scss-idio.html-37"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$small-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-38"></a>  <span class="na">line-height</span><span class="o">:</span> <span class="nv">$base-line-height</span><span class="p">;</span>  
-<a name="project--components--_labels.scss-idio.html-39"></a>  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-40"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-41"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-42"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-43"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span> 
-<a name="project--components--_labels.scss-idio.html-44"></a><span class="p">}</span>
-<a name="project--components--_labels.scss-idio.html-45"></a>
-<a name="project--components--_labels.scss-idio.html-46"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$large-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-47"></a>  <span class="na">line-height</span><span class="o">:</span> <span class="nv">$base-line-height</span><span class="p">;</span>  
-<a name="project--components--_labels.scss-idio.html-48"></a>  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-49"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-50"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-51"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span><span class="p">;</span> 
-<a name="project--components--_labels.scss-idio.html-52"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span> 
-<a name="project--components--_labels.scss-idio.html-53"></a><span class="p">}</span>
+<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-26"></a><span class="cm">/**</span>
+<a name="project--components--_labels.scss-idio.html-27"></a><span class="cm"> * Label Structure</span>
+<a name="project--components--_labels.scss-idio.html-28"></a><span class="cm"> */</span>
+<a name="project--components--_labels.scss-idio.html-29"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$small-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-30"></a>  <span class="na">line-height</span><span class="o">:</span> <span class="nv">$base-line-height</span><span class="p">;</span>  
+<a name="project--components--_labels.scss-idio.html-31"></a>  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-32"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-33"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-34"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-35"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span> 
+<a name="project--components--_labels.scss-idio.html-36"></a><span class="p">}</span>
+<a name="project--components--_labels.scss-idio.html-37"></a>
+<a name="project--components--_labels.scss-idio.html-38"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$large-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-39"></a>  <span class="na">line-height</span><span class="o">:</span> <span class="nv">$base-line-height</span><span class="p">;</span>  
+<a name="project--components--_labels.scss-idio.html-40"></a>  <span class="na">display</span><span class="o">:</span> <span class="no">inline</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-41"></a>  <span class="na">border-radius</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-42"></a>  <span class="na">padding</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-43"></a>  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$base-font-size</span><span class="p">;</span> 
+<a name="project--components--_labels.scss-idio.html-44"></a>  <span class="na">font-weight</span><span class="o">:</span> <span class="no">bold</span><span class="p">;</span> 
+<a name="project--components--_labels.scss-idio.html-45"></a><span class="p">}</span>
 </pre></div>
 
 
 <h2 id="label-skin">Label Skin</h2>
-<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-57"></a><span class="cm">/**</span>
-<a name="project--components--_labels.scss-idio.html-58"></a><span class="cm"> * Label Skin </span>
-<a name="project--components--_labels.scss-idio.html-59"></a><span class="cm"> */</span>
-<a name="project--components--_labels.scss-idio.html-60"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$default-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-61"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#929498</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-62"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-63"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-64"></a><span class="p">}</span>
-<a name="project--components--_labels.scss-idio.html-65"></a>
-<a name="project--components--_labels.scss-idio.html-66"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$positive-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-67"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#7fae00</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-68"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-69"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-70"></a><span class="p">}</span>
-<a name="project--components--_labels.scss-idio.html-71"></a>
-<a name="project--components--_labels.scss-idio.html-72"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$negative-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-73"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#E91C21</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-74"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-75"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-76"></a><span class="p">}</span>
-<a name="project--components--_labels.scss-idio.html-77"></a>
-<a name="project--components--_labels.scss-idio.html-78"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$warning-label</span><span class="si">}</span> <span class="p">{</span>
-<a name="project--components--_labels.scss-idio.html-79"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-80"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-81"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
-<a name="project--components--_labels.scss-idio.html-82"></a><span class="p">}</span>
+<div class="highlight"><pre><a name="project--components--_labels.scss-idio.html-49"></a><span class="cm">/**</span>
+<a name="project--components--_labels.scss-idio.html-50"></a><span class="cm"> * Label Skin </span>
+<a name="project--components--_labels.scss-idio.html-51"></a><span class="cm"> */</span>
+<a name="project--components--_labels.scss-idio.html-52"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$default-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-53"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#929498</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-54"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-55"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-56"></a><span class="p">}</span>
+<a name="project--components--_labels.scss-idio.html-57"></a>
+<a name="project--components--_labels.scss-idio.html-58"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$positive-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-59"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#7fae00</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-60"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-61"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-62"></a><span class="p">}</span>
+<a name="project--components--_labels.scss-idio.html-63"></a>
+<a name="project--components--_labels.scss-idio.html-64"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$negative-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-65"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="mh">#E91C21</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-66"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-67"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-68"></a><span class="p">}</span>
+<a name="project--components--_labels.scss-idio.html-69"></a>
+<a name="project--components--_labels.scss-idio.html-70"></a><span class="nc">.label--</span><span class="si">#{</span><span class="nv">$warning-label</span><span class="si">}</span> <span class="p">{</span>
+<a name="project--components--_labels.scss-idio.html-71"></a>  <span class="na">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-72"></a>  <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-73"></a>  <span class="na">border</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+<a name="project--components--_labels.scss-idio.html-74"></a><span class="p">}</span>
 </pre></div>
 
 

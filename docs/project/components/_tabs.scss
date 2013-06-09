@@ -56,7 +56,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
  * 2. Overlay the bottom border for horizontal tabs
  * 3. Remove bottom border of active tab
  */
-.tabs__top {
+.tabs--top {
   border-bottom: 1px solid;                                         /* 1 */
   & > li {
     margin: 0 0 -1px 0;                                             /* 2 */
@@ -84,7 +84,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
  *    style declarations into structure / skin and we want to ensure border-color we assign overrides
  *    the browser's default
  */
-.tabs__bottom {
+.tabs--bottom {
   border-top: 1px solid;                                            /* 1 */
   & > li {
     margin: -1px 0 0 0;                                             /* 2 */
@@ -113,7 +113,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
  *    style declarations into structure / skin and we want to ensure border-color we assign overrides
  *    the browser's default
  */
-.tabs__side-left {
+.tabs--side-left {
   border-right: 1px solid;                                          /* 1 */
   float: left;
   margin-right: ms(1);
@@ -145,7 +145,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
  *    style declarations into structure / skin and we want to ensure border-color we assign overrides
  *    the browser's default
  */
-.tabs__side-right {
+.tabs--side-right {
   border-left: 1px solid;                                          /* 1 */
   float: right;
   margin-left: ms(1);
@@ -176,7 +176,7 @@ $tab--breakpoint:                     20em;                       /* 2 */
  * 1. Round the top corners of the first tab
  * 2. Round the bottom corners of the last tab
  */
-.tabs__vertical {
+.tabs--vertical {
   & > li {
   }
   & > li > a {
