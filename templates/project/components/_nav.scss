@@ -1,6 +1,6 @@
 
 /**
- * Nav Object Modifiers
+ * Nav Sub-Objects
  *
  * Extend the Nav-Object
  *
@@ -11,7 +11,7 @@
 /**
  * Vertical Navigation
  */
-.nav--vertical {
+.nav__vertical {
   & > li { 
     display: list-item;
     & > a { display: block; } 
@@ -22,7 +22,7 @@
 /**
  * Full Nav
  */
-.nav--full {
+.nav__full {
   display: table;
   width: 100%;
   & > li {
@@ -37,7 +37,7 @@
 /**
  * Block Nav
  */
-.nav--block {
+.nav__block {
   & > li {
     display: block;
     & > a {
@@ -50,7 +50,7 @@
 /**
  * Center Nav
  */
-.nav--center {
+.nav__center {
   text-align: center;
 }
 
