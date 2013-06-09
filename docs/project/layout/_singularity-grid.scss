@@ -5,8 +5,19 @@
  * http://singularity.gs
  */
 
+@import "singularitygs";
+
 /**
- * Variables
+ * Breakpoint settings:
+ */
+$breakpoint-no-query-fallbacks:             true;
+$breakpoint-to-ems:                         true;
+$breakpoints:                               '6 columns' 30em,
+                                            '8 columns' 40em,
+                                            '12 columns' 50em;
+
+/**
+ * Singularity Settings
  * 
  * 1. Can be a number or a list of non-uniform column widths
  * 2. Must be of the same unit type of defined columns
@@ -21,33 +32,27 @@ $dir:                                       ltr;                  /* 4 */
 $rtl-selector:                              '[dir="rtl"]';        /* 5 */
 $grids-mobile-first:                        true;
 
-
-/**
- * Multiple Grids
- *
- */
-//$grids: ();
-//$gutters: ();
-//$paddings: ();
-
-
 /** 
  * Container
- *
  */
+$output:                                    "float";
 $container:                                 100%;
-//$containers: ();
-$container-to-ems:                          false;
+$container-to-ems:                          true;
+$background-grid-color:                     lighten(purple, 50%);
 
 
 /**
- * Visually Debug Grid Layout
- * 
+ * Grids
  */
+$grids: 4;
+$grids: add-grid(6 at 30em);
+$grids: add-grid(8 at 40em);
+$grids: add-grid(12 at 50em);
 
-/*
-$prefix: 'a';
-$color: purple;
-@include test-grid($columns, $gutter, $padding, $prefix, $color);
-*/
+/**
+ * Gutters
+ */
+$gutters: 1/3;
+$gutters: add-gutter(.25 at 50em);
+
 

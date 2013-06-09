@@ -4,13 +4,6 @@
  */
 
 
-/**
- * @todo: 
- * 1. potentially abstract alert object further, to extend to components other than alerts? 
- *    ie:  %block-relative; ****(or: partion???)***
- */
-
-
 /*** @export "alert-variables" css */
 /**
  * Alert Variables
@@ -40,18 +33,18 @@ $warning:                             warning;
  * Extends alert object
  */
 .alert_#{$small} {
-  padding: $quarter-spacer-unit;
+  padding: $spacer-unit--quarter;
   font-weight: bold;
   font-size: $base-font-size;
-  margin: $half-spacer-unit 0;
+  margin: $spacer-unit--half 0;
   border-radius: 4px;
 }
 
 .alert__#{$large} {
-  padding: $half-spacer-unit;
+  padding: $spacer-unit--half;
   font-weight: bold;
   font-size: $base-font-size - 2;
-  margin: $half-spacer-unit 0;
+  margin: $spacer-unit--half 0;
   border-radius: 2px;
 }
 
