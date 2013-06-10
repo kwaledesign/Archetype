@@ -1,12 +1,5 @@
 Archetype
 =========
-
-Archetype (n)
-  : 1. A symbol, pattern, or prototype upon which others are copied, patterned,
-or emulated;
-  : 2. A flexible, object oriented, Sass architecture for responsive builds.
-
-## Introduction
 Archetype is a Compass plugin and front-end toolkit designed with the principles of [OOCSS](https://github.com/stubbornella/oocss) and [SMACSS](http://smacss.com) for building responsive, mobile-first front-ends and Drupal themes using a specific [coding standardard](https://github.com/kwaledesign/Coding-Standards).
 
 ## Installation
