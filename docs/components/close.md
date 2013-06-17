@@ -9,7 +9,7 @@ Close styles extend the [close-object](/objects/close-object.html). See [alerts]
 {{ highlight(d['../markup-patterns/close.html|htmlsections']['close'], "html") }}
 
 ## Variables
-{{ d['../project/components/_close.scss|idio']['close-variables'] }}
+{{ d['../sass/components/_close.scss|idio']['close-variables'] }}
 
 ## Small Light Close
 <div class="partition partition--small">
@@ -32,9 +32,9 @@ Close styles extend the [close-object](/objects/close-object.html). See [alerts]
 </div>
 
 ## Close Structure
-{{ d['../project/components/_close.scss|idio']['close-structure'] }}
+{{ d['../sass/components/_close.scss|idio']['close-structure'] }}
 
 ## Close Skin
-{{ d['../project/components/_close.scss|idio']['close-skin'] }}
+{{ d['../sass/components/_close.scss|idio']['close-skin'] }}
 
 </section>

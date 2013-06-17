@@ -8,24 +8,24 @@
 
 {{ (d['../markup-patterns/tables.html|htmlsections']['tables']) }}
 
-{{ d['../project/components/_tables.scss|idio']['base-table-styles'] }}
+{{ d['../sass/components/_tables.scss|idio']['base-table-styles'] }}
 
 ## Zebra Striped Tables
 {{ highlight(d['../markup-patterns/tables.html|htmlsections']['table-zebra-stripes-markup-pattern'], "html") }}
 
 {{ (d['../markup-patterns/tables.html|htmlsections']['table-zebra-stripes']) }}
 
-{{ d['../project/components/_tables.scss|idio']['table-zebra-stripes'] }}
+{{ d['../sass/components/_tables.scss|idio']['table-zebra-stripes'] }}
 
 ## Table Hover State
 {{ highlight(d['../markup-patterns/tables.html|htmlsections']['table-hover-highlight-markup-pattern'], "html") }}
 
 {{ (d['../markup-patterns/tables.html|htmlsections']['table-hover-highlight']) }}
 
-{{ d['../project/components/_tables.scss|idio']['table-hover-highlight'] }}
+{{ d['../sass/components/_tables.scss|idio']['table-hover-highlight'] }}
 
 ## Table States
 {{ (d['../markup-patterns/tables.html|htmlsections']['table-states']) }}
 
-{{ d['../project/components/_tables.scss|idio']['table-states'] }}
+{{ d['../sass/components/_tables.scss|idio']['table-states'] }}
 </section>

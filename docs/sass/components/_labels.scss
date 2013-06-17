@@ -30,7 +30,7 @@ $warning-label:                       warning;    /* 1 */
   line-height: $base-line-height;  
   display: inline;
   border-radius: 0px;
-  padding: 1px 4px 2px;
+  padding: convert-to-em(1px) convert-to-em(4px) convert-to-em(2px);
   font-size: $base-font-size;
   font-weight: bold; 
 }
@@ -39,7 +39,7 @@ $warning-label:                       warning;    /* 1 */
   line-height: $base-line-height;  
   display: inline;
   border-radius: 0px;
-  padding: 1px 4px 2px;
+  padding: convert-to-em(1px) convert-to-em(4px) convert-to-em(2px);
   font-size: $base-font-size; 
   font-weight: bold; 
 }
@@ -50,25 +50,25 @@ $warning-label:                       warning;    /* 1 */
  * Label Skin 
  */
 .label--#{$default-label} {
-  background-color: #929498;
+  background-color: $label--default--color-bg;
   color: $white;
   border: none;
 }
 
 .label--#{$positive-label} {
-  background-color: #7fae00;
+  background-color: $label--positive--color-bg;
   color: $white;
   border: none;
 }
 
 .label--#{$negative-label} {
-  background-color: #E91C21;
+  background-color: $label--negative--color-bg;
   color: $white;
   border: none;
 }
 
 .label--#{$warning-label} {
-  background-color: red;
+  background-color: $label--warning--color-bg;
   color: $white;
   border: none;
 }

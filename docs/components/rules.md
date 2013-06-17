@@ -7,6 +7,6 @@ Insert rules description here...
 
 {{ (d['../markup-patterns/rules.html|htmlsections']['rules']) }}
 
-{{ d['../project/components/_rules.scss|idio']['rules'] }}
+{{ d['../sass/components/_rules.scss|idio']['rules'] }}
 
 </section>

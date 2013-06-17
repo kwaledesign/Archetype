@@ -83,12 +83,10 @@ $muted-color--bg:                   $muted;
  * UI and State Colors
  *
  */
-/*
-$primary-color:                     #2ba6cb !default;
-$secondary-color:                   #e9e9e9 !default;
-$tertiary-color: 
-$accent-color: $accent;
-*/
+$primary-color:                     $subtle;   //#2ba6cb !default;
+$secondary-color:                   $muted;    //#e9e9e9 !default;
+$tertiary-color:                    $blue-green--tint-1;
+$accent-color:                      $accent;
 
 $warning-color:                     #fCF8E3 !default;
 $warning-color--txt:                tint($warning-color, 25%);
@@ -109,4 +107,13 @@ $info-color:                        #D9EDF7 !default;
 $info-color--txt:                   tint($info-color, 25%);
 $info-clor--bg:                     $info-color;
 $info-color--border:                darken(adjust-hue($info-color, -10), 7%) !default;
+
+
+/**
+ * Label Colors
+ */
+$label--default--color-bg:          $primary-color;
+$label--positive--color-bg:         $success-color;
+$label--negative--color-bg:         $error-color;
+$label--warning--color-bg:          $warning-color;
 
