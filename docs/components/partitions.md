@@ -17,11 +17,11 @@
 {{ (d['../markup-patterns/partitions.html|htmlsections']['partition-large-secondary']) }}
 
 ## Partition Variables
-{{ d['../project/components/_partitions.scss|idio']['partition-variables'] }}
+{{ d['../sass/components/_partitions.scss|idio']['partition-variables'] }}
 
 ## Partition Structure
-{{ d['../project/components/_partitions.scss|idio']['partition-structure'] }}
+{{ d['../sass/components/_partitions.scss|idio']['partition-structure'] }}
 
 ## Partition Skin
-{{ d['../project/components/_partitions.scss|idio']['partition-skin'] }}
+{{ d['../sass/components/_partitions.scss|idio']['partition-skin'] }}
 </section>

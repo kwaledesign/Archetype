@@ -8,7 +8,7 @@
 {{ highlight(d['../markup-patterns/buttons.html|htmlsections']['btn-markup-pattern'], "html") }}
 
 ## Button Variables
-{{ d['../project/components/_buttons.scss|idio']['button-variables'] }}
+{{ d['../sass/components/_buttons.scss|idio']['button-variables'] }}
 
 ## Default Buttons
 {{ (d['../markup-patterns/buttons.html|htmlsections']['btn-default']) }}
@@ -35,9 +35,9 @@
 {{ (d['../markup-patterns/buttons.html|htmlsections']['full-btn']) }}
 
 ## Button Structure
-{{ d['../project/components/_buttons.scss|idio']['button-structure'] }}
+{{ d['../sass/components/_buttons.scss|idio']['button-structure'] }}
 
 ## Button Skin
-{{ d['../project/components/_buttons.scss|idio']['button-skin'] }}
+{{ d['../sass/components/_buttons.scss|idio']['button-skin'] }}
 
 </section>

@@ -8,7 +8,7 @@ When prototyping a project, it is helpful to keep your edits to ```_color-pallet
 View the code on [GitHub](https://github.com/kwaledesign/Archetype/blob/mast../../templates/project/base/_color-pallet.scss).
 
 
-{{ d['../project/base/_color-pallet.scss|idio']['colorkit'] }}
+{{ d['../sass/base/_color-pallet.scss|idio']['colorkit'] }}
 
 
 </section>
