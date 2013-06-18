@@ -3,33 +3,50 @@ Archetype
 Archetype is a Compass plugin and front-end toolkit designed with the principles of [OOCSS](https://github.com/stubbornella/oocss) and [SMACSS](http://smacss.com) for building responsive, mobile-first front-ends and Drupal themes using a specific [coding standardard](https://github.com/kwaledesign/Coding-Standards).
 
 ## Installation
-Archetype is still in Beta and although stable, still under rapid development.
-Once out of Beta, it will be published on rubygems.org. Until then Archetype
-can be installed locally.
+Archetype is stable, yet still in Beta and under rapid development. It can be
+isntalled as a [Compass
+Extension](https://github.com/kwaledesign/Archetype-Compass) or via Git.
 
-### Dependencies 
-Archetype is built with Sass on top of Compass. Additionally, it uses
-[Modular-Scale](https://github.com/Team-Sass/modular-scale) and [Breakpoint](https://github.com/Team-Sass/breakpoint). 
 ```
-$ gem install modular-scale breakpoint
+$ mkdir your-new-project
+$ cd your-new-project
+$ git clone https://github.com/kwaledesign/Archetype.git sass
+
+```
+This creates a cloned Archetype repository named `sass/` within your root
+project. To complete the setup of your new project you can run the
+`archetype-setup.sh` shell script to automate the removal of unnecessary files,
+initialize Git, and then remove the setup-script when complete.
+
+If you are a [Zsh](http://zsh.sourceforge.net/) user, you'll need to switch
+over to `bash` to run the script.
+
+```
+$ exec bash
 ```
 
-Archetype also uses [Colorkit](https://github.com/kwaledesign/Colorkit). Currently, Colorkit must also be installed locally, do so using:
+Then run the setup script
+
 ```
-$ git clone https://github.com/kwaledesign/Colorkit.git
-$ gem install colorkit
+$ . archetype-setup.sh
 ```
 
-Install Archetype:
+Zsh users switch back to your prefered shell
+
 ```
-$ git clone https://github.com/kwaledesign/Archetype.git
-$ gem install archetpe
+$ exec zsh
 ```
 
-Once installed starting an Archetype project is easy:
+You can now make your first commit
+
 ```
-$ compass create <new_project_name> -r modular-scale -r breakpoint -r archetype -r colorkit --using archetype --css-dir css --javascript-dir js
+$ git commit -m "init commit"
 ```
+
+You are now setup and ready to begin development on your project. For further
+infomation, consult the [Archetype
+Docs](http://kwaledesign.github.io/Archetype/).
+
 
 ## Integration with Bower
 [Bower](http://bower.io/) is a package manager for the web. If you want to use Bower within an Archetype project you need to first create a `.bowerrc` file. This can be done globally within your home directory which will apply to all projects or within your project's root. There are several configurations available, but we simply need to rename Bower's default directory to keep Bower components separate from Archetype components.
