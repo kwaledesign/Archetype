@@ -1,6 +1,6 @@
 Archetype
 =========
-Archetype is a Compass plugin and front-end toolkit designed with the principles of [OOCSS](https://github.com/stubbornella/oocss) and [SMACSS](http://smacss.com) for building responsive, mobile-first front-ends and Drupal themes using a specific [coding standardard](https://github.com/kwaledesign/Coding-Standards).
+Archetype is a front-end toolkit designed with the principles of [OOCSS](https://github.com/stubbornella/oocss) and [SMACSS](http://smacss.com) for building responsive, mobile-first front-ends using a specific [coding standardard](https://github.com/kwaledesign/Coding-Standards).
 
 ## Installation
 Archetype is stable, yet still in Beta and under rapid development. It can be
