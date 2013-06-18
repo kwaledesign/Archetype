@@ -10,8 +10,8 @@ git init                  &&\
 git add sass/             &&\
 cd sass                   &&\
 rm archetype-setup.sh     &&\
-cd ../
-
-echo "Archetype successfully installed and setup"
-
+cd ../                    &&\
 git status
+
+echo "Archetype successfully installed and setup. Ready to commit."
+
