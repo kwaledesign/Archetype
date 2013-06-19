@@ -1,7 +1,7 @@
 <section class="copy">
 # Base
 
-Archetype's base styles are scoped using CSS classes to avoid applying styles to elements directly. Base styles are distinguished from [component]() styles in the way they do not sepperate structure from skin.
+Archetype treats everything within the design system as a component. Global settings used to alter multiple component's structure or skin are abstracted. These abstracted component settings are called base styles. Base styles are convenient for maintaining consistency within a design system. For example, by abstracting border-radius styles or interface colors it becomes much easier to make quick changes globally, as well as ensure that these values are consistently applied. 
 
 Base style's include
 <ul>
