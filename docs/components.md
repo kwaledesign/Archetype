@@ -1,6 +1,10 @@
 <section class="copy">
 # Components
 
+
+Archetype's base styles are scoped using CSS classes to avoid applying styles to elements directly. Base styles are distinguished from [component]() styles in the way they do not sepperate structure from skin.
+
+
 Archetype's component styles are sepperated into [object](), structure, and skin styles.  Some, but not all component styles extend an object. Abstracting structure and skin provides the ability to build prototypes without applying visual design, as well as easily re-design an existing component by easily swapping out skin styles.
 
 Component style's include:
