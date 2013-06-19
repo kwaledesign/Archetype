@@ -9,7 +9,6 @@ Base style's include
   <li><a href="/base/color-pallet.html">Color-Pallet</a></li>
   <li><a href="/base/typorgraphy-pallet.html">Typography-Pallet</a></li>
   <li><a href="/base/settings.html">Settings</a></li>
-  <li><a href="/base/page.html">Page</a></li>
   <li><a href="/base/structure-units.html">Structure-Units</a></li>
   <li><a href="/base/skin-units.html">Skin-Units</a></li>
 </ul>

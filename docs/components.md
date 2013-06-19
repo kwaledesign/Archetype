@@ -10,6 +10,7 @@ Archetype's component styles are sepperated into [object](), structure, and skin
 Component style's include:
 <ul>
   <li><a href="/components/typography.html">Typography</a></li>
+  <li><a href="/components/page.html">Page</a></li>
   <li><a href="/components/quotes.html">Quotes</a></li>
   <li><a href="/components/tables.html">Tables</a></li>
   <li><a href="/components/rules.html">Rules</a></li>
