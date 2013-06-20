@@ -9,6 +9,7 @@ cd ../                    &&\
 git init                  &&\
 git add sass/             &&\
 cd sass                   &&\
+mv config.rb ../          &&\
 rm archetype-setup.sh     &&\
 cd ../                    &&\
 git status
