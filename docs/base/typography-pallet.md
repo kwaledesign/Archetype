@@ -1,7 +1,5 @@
-# Typography Pallet
-
 <div class="copy">
-# Typography
+# Typography Pallet
 
 <p class="lead">All typographical elements are styled with rhythm-unit variables establishing consistiency and allowing for easy customization. The typography partial is responsible for styling headings, paragraphs, lists, and inline elements.</p>
 <hr>
@@ -47,6 +45,5 @@ Vertical rhythm in Archetype is maintained by setting the <code>$base-font-size<
 Inline contextual emphasis can be applied with the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags.
 {{ (d['../markup-patterns/typography.html|htmlsections']['emphasis']) }}
 
-
-
 </div>
+
