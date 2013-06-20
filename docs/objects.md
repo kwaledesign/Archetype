@@ -1,7 +1,9 @@
 <section class="copy">
 # Objects
 
-Archetype objects are styles that are extended by a [component]() only. They are never applied to a [base]() style. These abstractions are unique in the way the do not change.  Object styles remain consistient accross all of a components structures and skins.
+Object styles remain consistent and unchanged within a component regardless of skin or structure. These styles are abstracted and may be used as a foundation for building additional components. These generic abstractions are applied as base classes and can be modified or extended with a structure and skin. Each object is defined within its own partial inside the object directory.
+
+See the [Coding Standards](https://github.com/kwaledesign/Coding-Standards/blob/master/css.md) for further details.
 
 Archetype object styles include:
 <ul>
