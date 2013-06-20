@@ -1,7 +1,9 @@
 <section class="copy">
 # Base
 
-Archetype treats everything within the design system as a component. Global settings used to alter multiple component's structure or skin are abstracted. These abstracted component settings are called base styles. Base styles are convenient for maintaining consistency within a design system. For example, by abstracting border-radius styles or interface colors it becomes much easier to make quick changes globally, as well as ensure that these values are consistently applied. 
+The base directory contains styles and settings that apply to the entire project. These include the global settings used to alter multiple component's structure or skin as well as settings for compass and compass plugins. Base styles are convenient for maintaining consistency within a design system. 
+
+See the [Coding Standards](https://github.com/kwaledesign/Coding-Standards/blob/master/css.md) for further details.
 
 Base style's include
 <ul>
