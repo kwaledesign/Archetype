@@ -30,7 +30,4 @@ Component style's include:
   <li><a href="/components/icons.html">Icons</a></li>
 </ul>
 
-
-* Typography (move this to Archetype-Utilities)
-
 </section>
