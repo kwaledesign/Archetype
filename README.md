@@ -5,7 +5,8 @@ Archetype is a front-end toolkit designed with the principles of [OOCSS](https:/
 ## Installation
 Archetype is stable, yet still in Beta and under rapid development. It can be
 isntalled as a [Compass
-Extension](https://github.com/kwaledesign/Archetype-Compass) or via Git.
+Extension](https://github.com/kwaledesign/Archetype-Compass) or via Git. If Installing with Git, you'll also need to install [Archetype-Utilities](https://github.com/kwaledesign/Archetype-Utilities#installation).
+
 
 ```
 $ mkdir your-new-project
