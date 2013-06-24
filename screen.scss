@@ -11,7 +11,6 @@
 @import "base/color-pallet";
 @import "base/typography-pallet";
 @import "base/settings";
-@import "base/page";
 @import "base/structure-units";
 @import "base/skin-units";
 
@@ -31,6 +30,7 @@
 /**
  * Components
  */
+@import "components/page";
 @import "components/typography";
 @import "components/lists";
 @import "components/tables";
