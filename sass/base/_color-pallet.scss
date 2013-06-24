@@ -102,6 +102,15 @@ $success-color--border:             darken(adjust-hue($success-color, -10), 5%) 
 
 $info-color:                        $blue-green--tint-2 !default;
 $info-color--txt:                   tint($info-color, 25%);
-$info-clor--bg:                     $info-color;
+$info-color--bg:                    $info-color;
 $info-color--border:                darken(adjust-hue($info-color, -10), 7%) !default;
+
+/**
+ * Label Colors
+ */
+$label--default--color-bg:          $info-color--bg;
+$label--positive--color-bg:         $success-color--bg;
+$label--negative--color-bg:         $error-color--bg;
+$label--warning--color-bg:          $warning-color--bg;
+
 
