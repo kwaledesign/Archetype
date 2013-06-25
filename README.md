@@ -9,12 +9,10 @@ Extension](https://github.com/kwaledesign/Archetype-Compass) or via Git. If Inst
 
 
 ```
-$ mkdir your-new-project
-$ cd your-new-project
-$ git clone https://github.com/kwaledesign/Archetype.git sass
+$ git clone https://github.com/kwaledesign/Archetype.git <your-project-name>
 
 ```
-This creates a cloned Archetype repository named `sass/` within your root
+This creates a cloned Archetype repository named `<your-project-name>` within your root
 project. To complete the setup of your new project you can run the
 `archetype-setup.sh` shell script to automate the removal of unnecessary files,
 initialize Git, and then remove the setup-script when complete.
@@ -47,7 +45,6 @@ $ git commit -m "init commit"
 You are now setup and ready to begin development on your project. For further
 infomation, consult the [Archetype
 Docs](http://kwaledesign.github.io/Archetype/).
-
 
 ## Integration with Bower
 [Bower](http://bower.io/) is a package manager for the web. If you want to use Bower within an Archetype project you need to first create a `.bowerrc` file. This can be done globally within your home directory which will apply to all projects or within your project's root. There are several configurations available, but we simply need to rename Bower's default directory to keep Bower components separate from Archetype components.
