@@ -9,7 +9,8 @@ cp -rf components   ../docs/sass        && \
 cp -rf layout       ../docs/sass        && \
 cp -rf temp         ../docs/sass        && \
  
-echo "Docs successfully updated!"
+echo "Docs successfully updated!"       && \
  
-cd docs/
+cd ../docs                              && \
+git status
   
