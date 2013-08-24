@@ -5,13 +5,11 @@
  * global color settings
  */
 
-
 /**
  * Import Colorkit
  * 
- * https://github.com/kwaledesign/Colorkit
  */
-@import "colorkit/colorkit";
+@import "colorkit";
 
 /**
  * Color Scheme
@@ -46,7 +44,7 @@ $shadow-color:                      alpha-black(.2) !default;
 $strong:                            black(20%) !default;
 $subtle:                            black(60%) !default;
 $muted:                             black(70%) !default;
-$accent:                            yellow !default;
+$accent:                            $blue-green--tint-2;
 
 /**
  * Text Colors
@@ -54,7 +52,7 @@ $accent:                            yellow !default;
 $strong-color--txt:                 $strong;
 $subtle-color--txt:                 $subtle;
 $muted-color--txt:                  $muted;
-$accent-color--txt:                 $accent;
+$accent-color--txt:                 $blue-green--tint-6;
 
 /**
  * Background Colors
@@ -78,42 +76,42 @@ $muted-color--bg:                   $muted;
  * $brand-accent:;
  */
 
-
 /**
  * UI and State Colors
  *
  */
-$primary-color:                     $subtle;   //#2ba6cb !default;
-$secondary-color:                   $muted;    //#e9e9e9 !default;
-$tertiary-color:                    $blue-green--tint-1;
+$primary-color:                     $blue-green--tone-2 !default;
+$secondary-color:                   $blue-green--tone-4 !default;
+$tertiary-color:                    $blue-green--shade-2 !default; 
 $accent-color:                      $accent;
 
-$warning-color:                     #fCF8E3 !default;
+$warning-color:                     $red-orange--tint-2 !default;
 $warning-color--txt:                tint($warning-color, 25%);
 $warning-color--bg:                 $warning-color;
 $warning-color--border:             darken(adjust-hue($warning-color, -10), 3%) !default;
 
-$error-color:                       #F2DEDE !default;
+$error-color:                       $red--tint-2 !default;
 $error-color--txt:                  tint($error-color, 25%);
 $error-color--bg:                   $error-color;
 $error-color--border:               darken(adjust-hue($error-color, -10), 3%) !default;
 
-$success-color:                     #DFF0D8 !default;
+$success-color:                     $green--tint-2 !default;
 $success-color--txt:                tint($success-color, 25%);
 $success-color--bg:                 $success-color;
 $success-color--border:             darken(adjust-hue($success-color, -10), 5%) !default;
 
-$info-color:                        #D9EDF7 !default;
+$info-color:                        $blue-green--tint-2 !default;
 $info-color--txt:                   tint($info-color, 25%);
 $info-clor--bg:                     $info-color;
 $info-color--border:                darken(adjust-hue($info-color, -10), 7%) !default;
 
 
 /**
- * Label Colors
+ * Label Component Variables
+ *
  */
-$label--default--color-bg:          $primary-color;
-$label--positive--color-bg:         $success-color;
-$label--negative--color-bg:         $error-color;
-$label--warning--color-bg:          $warning-color;
 
+$label--default--color-bg: $info-color;
+$label--positive--color-bg: $success-color;
+$label--negative--color-bg: $error-color;
+$label--warning--color-bg: $warning-color;
