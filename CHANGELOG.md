@@ -1,13 +1,9 @@
 # Archetype Changelog
 
-Because Archetype is currently under such significant development, changes will not be documented here until Archetype is out of Beta.
-
-Archetype will remain in Beta until all of the following conditions are met:
-  1. Semantic versioning is implemented 
-  2. Git tags are implemented that correspond to the version numbers
-  3. Git branches are implemented that correspond to the version numbers
-  4. Archetype core reaches stability
-
-Once out of Beta, changes to Archetype will be clearly documented here and the plugin will be published on the rubygems. Until then, please consult the repo's commit history.
-
+## Sat Aug 24, 2012
+  * Merged docs into core Archetype
+  * Removed bower-integration.md because no longer necessary due to recent Bower update that renames `components` to `bower_components` as default.
+  * Updated docs-update.sh bash script to new file paths. Also added a `git status` command.
+  * Cleaned up README.md with new install instructions
+  * Add Archetype-Utilities as a dependency now that it has been converted to a compass extension.
 
