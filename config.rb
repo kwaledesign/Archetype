@@ -1,4 +1,4 @@
-require 'archetype'
+require 'archetype-utilities'
 require 'colorkit'
 require 'modular-scale'
 require 'breakpoint'
